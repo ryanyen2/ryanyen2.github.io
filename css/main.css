@@ -2086,7 +2086,7 @@ adding a border to the button */
 
 #resume .timeline-block {
 	position: relative;
-	padding-top: 1.5rem;
+	padding-top: 3.5rem;
 }
 
 #resume .timeline-ico {
@@ -2099,7 +2099,7 @@ adding a border to the button */
 	color: #FFFFFF;
 	position: absolute;
 	left: 35%;
-	top: .9rem;
+	/* top: .9rem; */
 	margin-left: -2.4rem;
 }
 
@@ -2126,6 +2126,15 @@ adding a border to the button */
 	color: #888888;
 }
 
+#resume .tineline-header .timeline-image {
+	display: inline-block;
+	height: 4.8rem;
+	width: 4.8rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 1.5rem;
+}
+
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
@@ -2134,6 +2143,17 @@ adding a border to the button */
 #resume .timeline-content h4 {
 	position: relative;
 	padding-bottom: 1.8rem;
+}
+
+/* at the end of the h4:after line */
+#resume .timeline-content h4 span {
+	font-size: 1.2rem;
+	color: #888888;
+	font-family: "poppins-regular", sans-serif;
+
+	position: absolute;
+	right: 0;
+	bottom: -10px;
 }
 
 #resume .timeline-content h4::after {
@@ -2147,9 +2167,64 @@ adding a border to the button */
 	bottom: 0;
 }
 
+#resume .timeline-content  p {
+	font-size: 1.4rem;
+	color: #888888;
+}
+
 #resume .section-intro h1 {
 	text-decoration: underline;
 }
+
+#resume .timeline-content .authors-list {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	color: #0d0d0d;
+}
+
+#resume .timeline-content .authors-list .my-name {
+	color: #000;
+	font-weight: bold;
+}
+
+#resume .timeline-content .tag-list {
+	margin-bottom: 6rem;
+}
+
+#resume .timeline-content .tag {
+    color: #fefefe;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin: 2px;
+    font-size: 1rem;
+    font-style: italic;
+    width: fit-content;
+	line-height: 1rem;
+	float: right;
+}
+
+#resume .timeline-content .research-line-tag {
+	background-color: #4a95cc;
+}
+
+#resume .timeline-content .conferece-tag {
+	background-color: #990047;
+}
+
+#resume .timeline-content .award-tag {
+	background-color: #FF0077;
+}
+
+#resume .timeline-content .contribution-tag {
+	background-color: #FF6600;
+}
+
+#resume .timeline-content .keyword-tag {
+	background-color: #888888;
+	opacity: 0.8;
+}
+
+
 
 /**
  * responsive:
@@ -2510,9 +2585,20 @@ adding a border to the button */
  * ------------------------------------------------------------------- 
  */
 #cta {
-	padding-top: 10.2rem;
-	padding-bottom: 9rem;
+	/* padding-top: 10.2rem; */
+	/* padding-bottom: 9rem; */
 	text-align: center;
+	/* box like with shadow */
+	background: #F1F1F1;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 2rem 3rem 5rem 3rem;
+	margin-top: 2rem;
+}
+
+#cta .border-beside {
+    border-right: .5px dashed #6e6e6e;
+	border-left: .5px dashed #6e6e6e;
 }
 
 #cta p.lead {
@@ -2533,6 +2619,13 @@ adding a border to the button */
 	width: 7.8rem;
 	border-radius: 50%;
 }
+
+#cta ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 
 /**
  * section ads - (_layout.scss)
