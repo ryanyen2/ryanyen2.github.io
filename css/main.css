@@ -1365,9 +1365,9 @@ header .top-bar {
 
 header .logo {
 	float: left;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	margin-right: 50px;
-	margin-top: 25px;
+	margin-top: 5px;
 	position: relative;
 }
 
@@ -1376,16 +1376,16 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	/* font: 0/0 a; */
+	font: 0/0 a;
 	text-shadow: none;
 	color: #FF0077;
 	font-size: large;
 	font-weight: 900;
-	/* color: transparent; */
-	/* width: 92px;
-	height: 15px; */
-	/* background: url("../images/logo.png") no-repeat center; */
-	/* background-size: 92px 15px; */
+	color: transparent;
+	width: 60px;
+	height: 64px;
+	background: url("../images/logo.png") no-repeat center;
+	background-size: 60px 64px;
 }
 
 /**
@@ -2207,6 +2207,22 @@ adding a border to the button */
 	background-color: #4a95cc;
 }
 
+.about-content .info-list .research-line-tag {
+	background-color: #4a95cc;
+}
+
+.about-content .info-list .tag {
+    color: #fefefe;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin: 2px;
+    font-size: 1.2rem;
+    font-style: italic;
+    width: fit-content;
+	line-height: 1.5rem;
+	/* float: left; */
+}
+
 #resume .timeline-content .conferece-tag {
 	background-color: #990047;
 }
@@ -2859,8 +2875,8 @@ adding a border to the button */
  */
 #contact {
 	background: #151515;
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
+	/* padding-top: 12rem; */
+	padding-bottom: 3rem;
 }
 
 #contact .section-intro h1 {
