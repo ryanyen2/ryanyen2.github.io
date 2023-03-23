@@ -3298,3 +3298,11 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+.unavailable {
+	color: #D3D3D3 !important;
+	pointer-events: none;
+
+}
