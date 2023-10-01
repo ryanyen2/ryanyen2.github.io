@@ -1806,7 +1806,7 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 5rem;
 }
 
 #about .section-intro {
@@ -1822,14 +1822,14 @@ header .logo a {
 .intro-info img {
 	height: 24rem;
 	width: 24rem;
-	border-radius: 50%;
+	border-radius: 8%;
 	margin: 0 2rem 0 0;
 	float: left;
 }
 
 .intro-info .lead {
 	text-align: justify;
-	padding-left: 13rem;
+	/* padding-left: 13rem; */
 }
 
 .about-content {
@@ -2051,8 +2051,9 @@ adding a border to the button */
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 0;
+	padding-bottom: 8rem;
+	background-color: #FFFFFF;
 }
 
 #resume .resume-header {
@@ -2111,8 +2112,8 @@ adding a border to the button */
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
-	padding-right: 90px;
+	width: 33%;
+	padding-right: 5px;
 	text-align: right;
 }
 
@@ -2184,7 +2185,10 @@ adding a border to the button */
 
 #resume .timeline-content .authors-list .my-name {
 	color: #000;
-	font-weight: bold;
+	font-weight: 800;
+
+	/* prominent */
+	font-size: 1.7rem;
 }
 
 #resume .timeline-content .tag-list {
@@ -2605,9 +2609,9 @@ adding a border to the button */
 	/* padding-bottom: 9rem; */
 	text-align: center;
 	/* box like with shadow */
-	background: #F1F1F1;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
+	background: #FFFFFF;
+	/* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+	/* border-radius: 5px; */
 	padding: 2rem 3rem 5rem 3rem;
 	margin-top: 2rem;
 }
@@ -3181,7 +3185,7 @@ footer {
 
 footer a,
 footer a:visited {
-	color: #FFFFFF;
+	color: #151515;
 }
 
 footer a:hover,
@@ -3213,7 +3217,7 @@ footer .footer-social li {
 }
 
 footer .footer-social li a {
-	color: #FFFFFF;
+	color: #151515;
 }
 
 footer .copyright span {
