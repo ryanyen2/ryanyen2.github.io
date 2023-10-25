@@ -37,10 +37,11 @@
 	$("#owl-slider").owlCarousel({
 		navigation: false,
 		pagination: true,
+		loop:true,
 		itemsCustom: [
 			[0, 1],
-			[700, 2],
-			[960, 3],
+			[960, 2],
+			// [960, 3],
 		],
 		navigationText: false,
 	});

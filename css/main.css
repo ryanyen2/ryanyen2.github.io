@@ -2698,6 +2698,58 @@ adding a border to the button */
 }
 
 
+
+#reading {
+	text-align: left;
+	background: #FFFFFF;
+	padding: 12rem 3rem 5rem 3rem;
+	color: #6e6e6e;
+}
+
+#reading .paper {
+	display: grid;
+	margin-bottom: 1.2rem;
+	width: 100%;
+	padding: 0 4rem;
+	min-height: 27rem;
+	margin: 0 0 2rem 0;
+	padding: 1rem;
+}
+
+#reading .paper:hover {
+	/* animate transition */
+	transition: all 0.2s ease-in-out;
+
+	/* border: .5px solid rgba(0, 0, 0, 0.1); */
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* #reading .paper-content {
+	float: left;
+} */
+
+#reading .paper-content h4 {
+	text-transform: none;
+	margin-bottom: 0;
+}
+
+#reading .paper-content span {
+	font-size: 1.2rem;
+	color: #888888;
+	font-style: italic;
+	margin-bottom: 1.2rem;
+}
+
+#reading .paper-content .desc {
+	color: #6e6e6e;
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+
+
+
 /** 
  * ===================================================================
  * 15. services - (_layout.scss)
@@ -2791,7 +2843,7 @@ adding a border to the button */
 	margin: 1.2rem .8rem 0 .8rem;
 	border-radius: 50%;
 	display: inline-block;
-	background: #FFFFFF;
+	background: #888888;
 }
 
 .owl-theme .owl-controls .owl-page.active span {
@@ -3315,3 +3367,39 @@ footer .copyright span:last-child::after {
 	pointer-events: none;
 
 }
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
