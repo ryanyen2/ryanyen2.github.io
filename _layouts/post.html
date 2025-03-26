@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if site.posts.size > 1 %}
+  <div class="backlinks">
+    <h2>Backlinks</h2>
+    <ul>
+    {% for post in site.posts %}
+      {% if post.url != page.url %}
+        {% if post.content contains page.title %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article> 

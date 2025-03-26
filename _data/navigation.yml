@@ -1,0 +1,14 @@
+- title: "About Me"
+  link: "/about/"
+
+- title: "Publications"
+  link: "#publications"
+  children:
+    - title: "Paper 1"
+      link: "/publications/paper-1"
+
+- title: "Blog"
+  link: "/blog/"
+  children:
+    - title: "Design Thoughts"
+      link: "/blog/design-thoughts" 

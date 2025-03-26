@@ -4,23 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    </nav>
-  </header>
+<body class="bg-parchment">
+  <div class="container">
+    <div class="sidebar">
+      <h2>{{ site.title }}</h2>
+      <nav class="tree-nav">
+        <ul>
+          {% for item in site.data.navigation %}
+            <li class="{% if item.children %}has-children{% endif %}">
+              <a href="{{ item.link | relative_url }}">{{ item.title }}</a>
+              {% if item.children %}
+                <ul class="child-items">
+                  {% for child in item.children %}
+                    <li><a href="{{ child.link | relative_url }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="content">
+      {% include header.html %}
 
-  <main>
-    {{ content }}
-  </main>
+      <main>
+        {{ content }}
+      </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-  </footer>
+      {% include footer.html %}
+    </div>
+  </div>
+  
+  <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
 </body>
 </html> 
