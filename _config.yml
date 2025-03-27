@@ -30,6 +30,19 @@ github_username: ryanyen2
 # Build settings
 # theme: minima  # Commented out to avoid conflicts
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+highlighter: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -42,6 +55,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  readings:
+    output: true
+    permalink: /readings/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
 
 # Default front matter
 defaults:
@@ -51,12 +70,25 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      use_syntax_highlighting: true
   -
     scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "readings"
+    values:
+      layout: "reading"
+  -
+    scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "default"
   -
     scope:
       path: ""
@@ -72,6 +104,37 @@ exclude:
   - .sass-cache
   - .jekyll-cache
   - .git
+
+# Giscus comments configuration (GitHub Discussions)
+# <script src="https://giscus.app/client.js"
+#         data-repo="ryanyen2/ryanyen2.github.io"
+#         data-repo-id="R_kgDOI9Xwbw"
+#         data-category="[ENTER CATEGORY NAME HERE]"
+#         data-category-id="[ENTER CATEGORY ID HERE]"
+#         data-mapping="pathname"
+#         data-strict="0"
+#         data-reactions-enabled="1"
+#         data-emit-metadata="0"
+#         data-input-position="bottom"
+#         data-theme="preferred_color_scheme"
+#         data-lang="en"
+#         data-loading="lazy"
+#         crossorigin="anonymous"
+#         async>
+# </script>
+giscus:
+  enabled: true
+  repo: "ryanyen2/ryanyen2.github.io"
+  repo_id: "R_kgDOI9Xwbw"
+  category_name: "Comments"
+  category_id: "DIC_kwDOI9Xwb84CJQ0y"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "preferred_color_scheme"
+  lang: "en"
 
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.

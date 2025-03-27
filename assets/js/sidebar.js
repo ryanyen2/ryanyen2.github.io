@@ -68,33 +68,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Wiki-style internal linking with smooth transitions
-  function handleWikiLinks() {
+  // Enhance all wiki-style links with smooth transitions
+  function enhanceWikiLinks() {
     const content = document.querySelector('.content');
     
     if (content) {
-      // Convert [[wiki links]] to clickable links
-      const regex = /\[\[(.*?)\]\]/g;
-      content.innerHTML = content.innerHTML.replace(regex, function(match, p1) {
-        // Create slug from the link text
-        const slug = p1.toLowerCase().replace(/\s+/g, '-');
-        
-        // Determine where to link to based on context
-        let href = '';
-        if (p1.match(/publication/i) || p1.match(/Code Shaping/i) || p1.match(/CoLadder/i) || p1.match(/CoPrompt/i)) {
-          href = `/publications/${slug}`;
-        } else if (p1 === 'Blog') {
-          href = '/blog/';
-        } else if (p1.match(/Domain Specific Languages/i)) {
-          href = '/blog/domain-specific-languages';
-        } else {
-          href = `/blog/${slug}`;
-        }
-        
-        return `<a href="${href}" class="wiki-link" data-target="${p1}">${p1}</a>`;
-      });
-      
-      // Add click handler for smooth transitions
+      // Add click handler for smooth transitions to all wiki links
       document.querySelectorAll('.wiki-link').forEach(link => {
         link.addEventListener('click', function(e) {
           e.preventDefault();
@@ -173,6 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Initialize all features
-  handleWikiLinks();
+  enhanceWikiLinks();
   setupPageTransitions();
 }); 

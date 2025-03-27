@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="reading">
+  <header class="reading-header">
+    <h1 class="reading-title">{{ page.title }}</h1>
+    <p class="reading-meta">{{ page.authors }} - {{ page.year }}</p>
+    {% if page.link %}
+    <p class="reading-link">
+      <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">Read Paper →</a>
+    </p>
+    {% endif %}
+  </header>
+
+  <div class="reading-content">
+    <h2>Abstract</h2>
+    <div class="reading-abstract">
+      {{ page.abstract }}
+    </div>
+
+    {% if page.reflection %}
+    <h2>Reflection</h2>
+    <div class="reading-reflection">
+      {{ page.reflection }}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if site.data.backlinks[page.title] %}
+  <div class="backlinks">
+    <h2>Referenced in</h2>
+    <ul>
+      {% for backlink in site.data.backlinks[page.title] %}
+      <li>
+        <a href="{{ backlink.url | relative_url }}" class="backlink">{{ backlink.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if site.giscus.enabled %}
+  <div class="comments">
+    <h2>Comments</h2>
+    {% include giscus.html %}
+  </div>
+  {% endif %}
+</article> 

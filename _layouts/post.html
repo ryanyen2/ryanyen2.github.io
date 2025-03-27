@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+{% if page.use_syntax_highlighting or layout.use_syntax_highlighting %}
+<link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+{% endif %}
+
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -11,18 +19,57 @@ layout: default
     {{ content }}
   </div>
 
-  {% if site.posts.size > 1 %}
+  {% if site.data.backlinks[page.title] %}
   <div class="backlinks">
-    <h2>Backlinks</h2>
+    <h2>Mentioned in</h2>
     <ul>
-    {% for post in site.posts %}
-      {% if post.url != page.url %}
-        {% if post.content contains page.title %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+      {% for backlink in site.data.backlinks[page.title] %}
+      <li>
+        <a href="{{ backlink.url | relative_url }}" class="backlink">{{ backlink.title }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </div>
   {% endif %}
-</article> 
+  
+  {% if site.giscus.enabled %}
+  <div class="comments">
+    <h2>Comments</h2>
+    {% include giscus.html %}
+  </div>
+  {% endif %}
+</article>
+
+<script>
+  // Add language attribute to code blocks for styling
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      // Find the language class (usually the second class after 'highlight')
+      const classes = block.className.split(' ');
+      if (classes.length > 1) {
+        const lang = classes[1].replace('language-', '');
+        block.setAttribute('data-lang', lang);
+      }
+    });
+    
+    // Fix figure references
+    const figures = document.querySelectorAll('figure[id]');
+    const links = document.querySelectorAll('a[href^="#figure"]');
+    
+    // Create a map of figure IDs
+    const figureMap = {};
+    figures.forEach(figure => {
+      figureMap[figure.id] = true;
+    });
+    
+    // Check if links point to valid figures
+    links.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!figureMap[targetId]) {
+        console.warn(`Reference to non-existent figure: ${targetId}`);
+      }
+    });
+  });
+</script> 

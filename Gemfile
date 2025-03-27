@@ -37,3 +37,7 @@ gem "webrick", "~> 1.8"
 gem "csv", "~> 3.2"
 gem "base64", "~> 0.1"
 gem "bigdecimal", "~> 3.1"
+
+# For video embeds and remote content
+# gem "jekyll-embed-video", "~> 1.0"  # Removed due to unavailability
+gem "jekyll-remote-include", "~> 1.0"

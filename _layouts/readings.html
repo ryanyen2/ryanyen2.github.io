@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="readings-list">
+  {{ content }}
+
+  {% if site.readings.size > 0 %}
+  <div class="all-readings">
+    {% assign sorted_readings = site.readings | sort: 'year' | reverse %}
+    {% for reading in sorted_readings %}
+    <article class="reading-item">
+      <h3><a href="{{ reading.url | relative_url }}">{{ reading.title }}</a></h3>
+      <p class="reading-meta">{{ reading.authors }} - {{ reading.year }}</p>
+      <div class="reading-abstract">{{ reading.abstract }}</div>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div> 

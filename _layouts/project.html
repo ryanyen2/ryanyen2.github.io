@@ -31,4 +31,11 @@ layout: default
     </ul>
   </div>
   {% endif %}
+  
+  {% if site.giscus.enabled %}
+  <div class="comments">
+    <h2>Comments</h2>
+    {% include giscus.html %}
+  </div>
+  {% endif %}
 </article> 

@@ -4,43 +4,39 @@ title: Home
 ---
 
 
-## 哩賀 (lí hó) I am <span class="annotation-highlight"><b>Ryan Yen</b></span>
-My present research interest are malleable programming interaction interface and [[semi-formal programming]]/ representation.
+## Hey, I am <span class="annotation-highlight"><b>Ryan Yen</b></span>
+I do research, which means I mostly spend my days hitting my head against the wall trying to figure things out.
 
-<!-- I will pursue my PhD at MIT CSAIL under the supervision of <a href='https://arvindsatya.com/' alt='arvind webstie'>Dr. Arvind Satyanarayan</a> to continue my research in programming interface. I studied master in Computer Science at the University of Waterloo, mentored by <a href='https://www.jeffjianzhao.com/'>Dr. Jian Zhao </a> of the WVisdom Lab at UWaterloo. I was guided by Dr. Zhicong Lu from DEER Lab and Dr. Can Liu of the ERFI Lab at CityU HK. -->
+Overal, my thinking mostly revolves around AI-driven programming interfaces. Currently, I'm exploring malleable programming interfaces and [[Semi-formal Programming]], ways to represent and work with code that sit somewhere between structure and informal representation.
+Also, here's my [Curriculum Vitae](/assets/cv.pdf) if this is what you are looking for.
 
-### Publications
-I have been thinking about programming in different ways:
-- <span class="annotation-underline">Code Shaping</span>: Iterative Code Editing with Free-form Sketching
-- <span class="annotation-underline">CoLadder</span>: Manipulating Code Generation via Multi-Level Blocks
-- CoPrompt: Supporting Prompt Sharing and Referring in Collaborative Natural Language Programming
+---
 
+### Works
+I’ve been thinking about enable programmers to program in different ways. I love writing code with a keyboard, but I don’t think it’s the only way to program (and it's not, coding != typing code).
 
-There are some works about information space too:
-- Memolet: Reifying the Reuse of User-AI Conversational Memories
-- To Search or To Gen? Exploring the Synergy between Generative AI and Web Search in Programming
+Lately, the whole “vibe coding” trend partially resonates with what I care about, though I want to push it further (or hold back a bit): I’m interested in preserving the *informality* and fluidity of that approach, while still introducing structure, so that it doesn’t backfire.
 
+One example is [[Code Shaping]], where we explore using freeform sketching *on and around* code to edit it iteratively with GenAI, helping programmers express ideas at a much higher level of abstraction. Another is [[CoLadder]], which explores multi-level blocks for code generation, letting users manipulate abstraction layers dynamically.
 
-Some of my ealy works that fading away:
-- Gait Gestures: Examining Stride and Foot Strike Variation as an Input Method While Walking
-- StoryChat: Designing a Narrative-Based Viewer Participation Tool for Live Streaming Chatrooms
-- Gist and Verbatim: Understanding Speech to Inform New Interfaces for Verbal Text Composition
-- Wizundry: A Cooperative Wizard of Oz Platform for Simulating Future Speech-based Interfaces with Multiple Wizards
+I’ve also worked outside the programming space. In [[Memolet]], I looked at how we can reuse conversational memory in AI-human interactions. In [[To Search or To Gen?]], we explored how generative AI and web search could complement each other in programming. That said, I’ve stepped away from the “sensemaking” side of AI for now. It’s a deep space, and one I’d have to devote myself to completely. Even with Memolet, I felt like something was missing. There’s still no good way to represent the in-between space: the messy mental models we form while thinking, and the text that tries (and often fails) to capture them. We’re missing a middle layer, some kind of abstraction that helps externalize thought without asking too much of the reader. I don’t know what it is yet.
 
-### Thoughts 
-I kept having random thought... and I kept all of them in the...
-See more on my [[Blog]] where I discuss some of these in detail.
+---
 
+### Thoughts
+
+I like writing things down... even if some of them are kind of half-baked. I revisit and update my ideas when I can.
+If you’re curious about the things I’m noodling on, you’ll find more on my [[Blog]].
+
+---
 
 ### Readings
-Many of my thoughts are being shaped by these readings... which I found profoundly affecting me in the way of approaching research, some of them are about day-to-day life, some of them, just lovely to read.
+A lot of my thinking is shaped by what I read. Honestly, reading feels like time-traveling conversations with other thinkers. Nerdy, I know, but it's true. I just wish I had more time to do it.
 
-- [[The Design of Everyday Things]]
-- [[The Art of Computer Programming]]
-- [[The Pragmatic Programmer]]
-- [[The Mythical Man-Month]]
-- [[The Psychology of Computer Programming]]
+Some of the pieces that have stuck with me, including [[Reification, Polymorphism and Reuse]], [[Demonstrational Interfaces]], [[Cognitive Engineering]], [[Designing Interaction, not Interfaces]], [[Instrumental Interaction]], [[Direct Manipulation Interfaces]], [[Thinking with External Representations]], [[Ultra-Lightweight Constraints]], [[What Is Interaction?]], and [[Usability Analysis of Visual Programming Environments]].
 
 
 ### Contact
-dont contact me
+[Google Scholar](https://scholar.google.com/citations?user=9LztrWkAAAAJ&hl=en&oi=ao), [LinkedIn](https://www.linkedin.com/in/ryan-yen/), [Twitter](https://twitter.com/ryanyen22), [GitHub](https://github.com/ryanyen2)
+
+[Email: ryanyen2@myschool_start_with_m.edu](mailto:ryanyen2@____.edu)

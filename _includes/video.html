@@ -1,0 +1,87 @@
+{% if include.type and include.type == 'youtube' %}
+  {% assign video_id = include.id | split: 'v=' | last | split: '&' | first %}
+  <div class="video-container">
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/{{ video_id }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="{{ include.title }}"
+      loading="lazy"
+    ></iframe>
+  </div>
+{% else %}
+  <div class="video-container">
+    <video
+      id="video-{{ include.id }}"
+      width="100%"
+      height="400"
+      preload="metadata"
+      muted autoplay controls
+      title="{{ include.title }}"
+    >
+      <source src="/assets/videos/{{ include.id }}.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+{% endif %}
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lazy loading behavior to videos
+  const videos = document.querySelectorAll('.video-container video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        // Only load the video when it's in viewport
+        if (!video.getAttribute('data-loaded')) {
+          video.load();
+          video.setAttribute('data-loaded', 'true');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script> 
