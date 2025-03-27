@@ -2,6 +2,14 @@
 layout: default
 ---
 
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+{% if page.use_syntax_highlighting or layout.use_syntax_highlighting %}
+<link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+{% endif %}
+
 <div class="home">
   {{ content }}
 

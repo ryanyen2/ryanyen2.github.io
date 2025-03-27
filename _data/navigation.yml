@@ -20,6 +20,8 @@
   children:
     - title: "Semi-formal Programming"
       link: "/blog/semi-formal-programming"
+    - title: "Malleable Interaction Interface"
+      link: "/blog/malleable-interaction-interface"
 
 - title: "Readings"
   link: "/readings/"

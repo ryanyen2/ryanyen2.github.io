@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Semi-formal Programming"
-date: 2023-05-20 10:00:00 -0500
+date: 2025-03-12 10:00:00 -0500
 categories: blog
 breadcrumb: "Blog > Semi-formal Programming"
 use_math: true

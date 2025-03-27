@@ -13,7 +13,7 @@ Also, here's my [Curriculum Vitae](/assets/cv.pdf) if this is what you are looki
 ---
 
 ### Works
-I’ve been thinking about enable programmers to program in different ways. I love writing code with a keyboard, but I don’t think it’s the only way to program (and it's not, coding != typing code).
+I’ve been thinking about enable programmers to program in different ways. I love writing code with a keyboard, but I don’t think it’s the only way to program (and it's not, coding ≠ typing code).
 
 Lately, the whole “vibe coding” trend partially resonates with what I care about, though I want to push it further (or hold back a bit): I’m interested in preserving the *informality* and fluidity of that approach, while still introducing structure, so that it doesn’t backfire.
 

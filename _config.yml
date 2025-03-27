@@ -52,9 +52,6 @@ permalink: /blog/:title/
 
 # Collections
 collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
   readings:
     output: true
     permalink: /readings/:path/
@@ -71,12 +68,6 @@ defaults:
     values:
       layout: "post"
       use_syntax_highlighting: true
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
   -
     scope:
       path: ""
@@ -109,8 +100,8 @@ exclude:
 # <script src="https://giscus.app/client.js"
 #         data-repo="ryanyen2/ryanyen2.github.io"
 #         data-repo-id="R_kgDOI9Xwbw"
-#         data-category="[ENTER CATEGORY NAME HERE]"
-#         data-category-id="[ENTER CATEGORY ID HERE]"
+#         data-category="General"
+#         data-category-id="DIC_kwDOI9Xwb84CohW2"
 #         data-mapping="pathname"
 #         data-strict="0"
 #         data-reactions-enabled="1"
@@ -118,7 +109,6 @@ exclude:
 #         data-input-position="bottom"
 #         data-theme="preferred_color_scheme"
 #         data-lang="en"
-#         data-loading="lazy"
 #         crossorigin="anonymous"
 #         async>
 # </script>
@@ -126,8 +116,8 @@ giscus:
   enabled: true
   repo: "ryanyen2/ryanyen2.github.io"
   repo_id: "R_kgDOI9Xwbw"
-  category_name: "Comments"
-  category_id: "DIC_kwDOI9Xwb84CJQ0y"
+  category_name: "General"
+  category_id: "DIC_kwDOI9Xwb84CohW2"
   mapping: "pathname"
   strict: "0"
   reactions_enabled: "1"
@@ -135,6 +125,9 @@ giscus:
   input_position: "bottom"
   theme: "preferred_color_scheme"
   lang: "en"
+  loading: "lazy"
+  crossorigin: "anonymous"
+  async: true
 
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.

@@ -15,7 +15,7 @@ title: Code Shaping
   <div class="publication-links">
     <a href="/assets/papers/CodeShape.pdf" target="_blank">[pdf]</a>
     <a href="/assets/papers/codeshaping_poster.pdf" target="_blank">[poster]</a>
-    <a class="unavailable" href="" target="_blank">[video]</a>
+    <a class="unavailable" href="" target="_blank" disabled>[video]</a>
   </div>
 </div>
 

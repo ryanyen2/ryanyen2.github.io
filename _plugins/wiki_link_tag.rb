@@ -48,7 +48,7 @@ module Jekyll
           path = "/readings/#{slug}"
         elsif @text =~ /project/i
           path = "/projects/#{slug}"
-        elsif @text == 'Blog' || @text == 'About'
+        elsif @text == 'Blog'
           path = "/#{slug.downcase}/"
         else
           # Default to blog if we can't determine
@@ -88,7 +88,7 @@ module Jekyll
             path = "/readings/#{slug}"
           elsif text =~ /project/i
             path = "/projects/#{slug}"
-          elsif text == 'Blog' || text == 'About'
+          elsif text == 'Blog'
             path = "/#{slug.downcase}/"
           else
             # Default to blog if we can't determine

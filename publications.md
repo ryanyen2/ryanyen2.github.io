@@ -10,7 +10,7 @@ I have been exploring different approaches to programming interfaces, focusing o
 ## Research Projects
 
 ### [[Code Shaping]]: Iterative Code Editing with Free-form Sketching
-*ACM CHI 2025*
+*CHI 2025, Best Paper Award (Top 1%)*
 
 Code Shaping introduces a novel approach to code editing through free-form sketching gestures, allowing developers to edit code through approximate structural representations.
 
@@ -42,14 +42,7 @@ This study investigates the complementary relationship between generative AI too
 A system supporting exploration of academic literature through interactive visualizations of latent space embeddings with conversational interfaces.
 
 ## Earlier Work
-
-### [[Gait Gestures]]: Examining Stride and Foot Strike Variation as an Input Method While Walking
-*UIST 2024*
-
-A systematic examination of different kinds of intentional variations from normal walking that can be used as input actions in mobile and AR contexts.
-
-### Other Projects
-
-- **StoryChat**: Designing a Narrative-Based Viewer Participation Tool for Live Streaming Chatrooms
-- **Gist and Verbatim**: Understanding Speech to Inform New Interfaces for Verbal Text Composition
-- **Wizundry**: A Cooperative Wizard of Oz Platform for Simulating Future Speech-based Interfaces with Multiple Wizards 
+- **[[Gait Gestures]]**: Examining Stride and Foot Strike Variation as an Input Method While Walking [UIST 2024]
+- **StoryChat**: Designing a Narrative-Based Viewer Participation Tool for Live Streaming Chatrooms [CHI 2023]
+- **Gist and Verbatim**: Understanding Speech to Inform New Interfaces for Verbal Text Composition [CUI 2023]
+- **Wizundry**: A Cooperative Wizard of Oz Platform for Simulating Future Speech-based Interfaces with Multiple Wizards [CSCW 2023]

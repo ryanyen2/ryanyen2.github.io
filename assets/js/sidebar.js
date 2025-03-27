@@ -2,14 +2,46 @@ document.addEventListener('DOMContentLoaded', function() {
   // Tree navigation toggle
   const treeItems = document.querySelectorAll('.tree-nav .has-children > a');
   
-  treeItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-      if (this.getAttribute('href') === '#') {
-        e.preventDefault();
-      }
-      const parent = this.parentElement;
+  // Helper function to handle expanding/collapsing
+  function toggleTreeItem(element, force = null) {
+    const parent = element.parentElement;
+    if (force === true) {
+      parent.classList.add('expanded');
+    } else if (force === false) {
+      parent.classList.remove('expanded');
+    } else {
       parent.classList.toggle('expanded');
+    }
+  }
+  
+  treeItems.forEach(item => {
+    // Add a separate toggle button for expanding/collapsing
+    const toggleBtn = document.createElement('span');
+    toggleBtn.className = 'tree-toggle';
+    item.appendChild(toggleBtn);
+
+    // Handle toggle button clicks
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleTreeItem(item);
     });
+
+    // Handle link clicks
+    // item.addEventListener('click', function(e) {
+    //   // Only handle actual link clicks, not toggle clicks
+    //   if (e.target === this) {
+    //     if (this.getAttribute('href') === '#') {
+    //       e.preventDefault();
+    //     } else {
+    //       // For real links, only expand if needed
+    //       const parent = this.parentElement;
+    //       if (!parent.classList.contains('expanded')) {
+    //         toggleTreeItem(this, true);
+    //       }
+    //     }
+    //   }
+    // });
   });
   
   // Current page tracking in navigation
@@ -56,16 +88,40 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle child and grandchild navigation
   const childItems = document.querySelectorAll('.tree-nav .child-items > li > a');
   childItems.forEach(item => {
-    // Check if this item has grandchildren
     const parent = item.parentElement;
     if (parent.querySelector('.grandchild-items')) {
-      item.addEventListener('click', function(e) {
-        if (this.getAttribute('href') === '#') {
-          e.preventDefault();
-        }
-        parent.classList.toggle('expanded');
-      });
+      const toggleBtn = document.createElement('span');
+      toggleBtn.className = 'tree-toggle';
+      item.appendChild(toggleBtn);
+
+      // toggleBtn.addEventListener('click', function(e) {
+      //   e.preventDefault();
+      //   e.stopPropagation();
+      //   toggleTreeItem(item);
+      // });
+
+      // item.addEventListener('click', function(e) {
+      //   if (e.target === this) {
+      //     if (this.getAttribute('href') === '#') {
+      //       e.preventDefault();
+      //     } else if (!parent.classList.contains('expanded')) {
+      //       toggleTreeItem(this, true);
+      //     }
+      //   }
+      // });
     }
+  });
+  
+  // Add hover effects for a more interactive feel
+  const allTreeItems = document.querySelectorAll('.tree-nav a');
+  allTreeItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+      this.classList.add('hover');
+    });
+    
+    item.addEventListener('mouseleave', function() {
+      this.classList.remove('hover');
+    });
   });
   
   // Enhance all wiki-style links with smooth transitions
