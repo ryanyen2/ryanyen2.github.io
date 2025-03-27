@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username: ryanyen2
 
 # Build settings
-theme: minima
+# theme: minima  # Commented out to avoid conflicts
 markdown: kramdown
 plugins:
   - jekyll-feed
