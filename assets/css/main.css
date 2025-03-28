@@ -417,7 +417,7 @@ footer {
   text-decoration: none;
 }
 
-.wiki-link::before {
+/* .wiki-link::before {
   content: '';
   display: inline-block;
   width: 12px;
@@ -426,18 +426,30 @@ footer {
   background: url('/assets/images/icons/link.svg') no-repeat center center;
   background-size: contain;
   opacity: 0.7;
-}
+} */
 
 .wiki-link[href*="/publications/"]::before {
-  background-image: url('/assets/images/icons/writing.svg');
+  /* background-image: url('/assets/images/icons/writing.svg'); */
+  background-image: none;
+  width: 0;
+  height: 0;
+  margin-right: 0;
 }
 
 .wiki-link[href*="/blog/"]::before {
-  background-image: url('/assets/images/icons/pen.svg');
+  /* background-image: url('/assets/images/icons/pen.svg'); */
+  background-image: none;
+  width: 0;
+  height: 0;
+  margin-right: 0;
 }
 
 .wiki-link[href*="/readings/"]::before {
-  background-image: url('/assets/images/icons/reading.svg');
+  /* background-image: url('/assets/images/icons/reading.svg'); */
+  background-image: none;
+  width: 0;
+  height: 0;
+  margin-right: 0;
 }
 
 .wiki-link:after {
@@ -479,17 +491,17 @@ footer {
   font-weight: 500;
   font-size: 1.1em;
 }
-
+/* 
 .mobile-title::before {
   content: '';
   display: inline-block;
   width: 18px;
   height: 18px;
   margin-right: 8px;
-  background: url('/assets/images/icons/idea.svg') no-repeat center center;
+  background: url('/assets/images/icons/work-with-cat.svg') no-repeat center center;
   background-size: contain;
   opacity: 0.9;
-}
+} */
 
 .hamburger-menu {
   width: 30px;
@@ -584,6 +596,81 @@ footer {
     width: 14px;
     height: 14px;
   }
+
+  /* Publication specific mobile styles */
+  .publication-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .publication-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .publication-links a {
+    font-size: 0.9em;
+  }
+
+  /* Figure and image handling */
+  figure {
+    margin: 15px 0;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 0.8em;
+    padding: 5px 0;
+  }
+
+  /* Code block adjustments */
+  pre[class*="language-"] {
+    font-size: 0.85em;
+    padding: 0.8em;
+  }
+
+  .copy-button {
+    padding: 0.3em 0.6em;
+    font-size: 0.75em;
+  }
+
+  /* LaTeX adjustments */
+  .MathJax {
+    font-size: 0.9em;
+  }
+
+  .MathJax_Display {
+    font-size: 0.9em;
+  }
+
+  /* Blockquote adjustments */
+  .post-content blockquote {
+    font-size: 1.1em;
+    padding: 2px 12px;
+  }
+
+  /* Inline code adjustments */
+  .inline-code {
+    font-size: 0.8em;
+    padding: 0.15em 0.3em;
+  }
+
+  /* Flex container adjustments */
+  div[style*="display: flex"] {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Video/iframe adjustments */
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
 }
 
 @media (max-width: 480px) {
@@ -603,6 +690,27 @@ footer {
   
   .sidebar {
     width: 85%;
+  }
+
+  /* Additional small screen adjustments */
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .publication-meta {
+    font-size: 0.9em;
+  }
+
+  .publication-links a {
+    font-size: 0.85em;
+  }
+
+  .post-content p {
+    font-size: 0.95em;
   }
 }
 
@@ -686,13 +794,6 @@ div[class*="language-"] pre {
   position: relative;
 }
 
-div[class*="language-bibtex"] pre {
-  background: #fdfbf7;
-  border-radius: 8px;
-  padding: 1em;
-  margin: 1em 0;
-  overflow: auto;
-}
 
 code[class*="language-"] {
   font-family: 'Fira Code', monospace;

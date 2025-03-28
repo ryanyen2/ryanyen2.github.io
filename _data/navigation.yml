@@ -4,6 +4,8 @@
 - title: "Publications"
   link: "/publications/"
   children:
+    - title: "Semi-formal Programming"
+      link: "/publications/semi-formal-programming"
     - title: "Code Shaping"
       link: "/publications/code-shaping"
     - title: "CoLadder"
@@ -18,8 +20,12 @@
 - title: "Blog"
   link: "/blog/"
   children:
-    - title: "Semi-formal Programming"
-      link: "/blog/semi-formal-programming"
+    # - title: "Semi-formal Programming"
+    #   link: "/blog/semi-formal-programming"
+    - title: "The Untold Story of Code Shaping"
+      link: "/blog/code-shaping"
+    - title: "Map and Territory"
+      link: "/blog/map-and-territory"
     - title: "Malleable Interaction Interface"
       link: "/blog/malleable-interaction-interface"
 

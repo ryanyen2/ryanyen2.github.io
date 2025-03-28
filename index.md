@@ -4,10 +4,10 @@ title: Home
 ---
 
 
-## Hey, I am <span class="annotation-highlight"><b>Ryan Yen</b></span>
-I do research, which means I mostly spend my days hitting my head against the wall trying to figure things out.
+## Hey, I am <span class="annotation-highlight"><b>Ryan Yen</b></span> <img src="/assets/images/icons/work-with-cat.svg" alt="Work with Cat Icon" style="width: 36px; height: 36px; vertical-align: bottom;">
+I do research, which means I spend my days banging my head against the wall trying to figure things out.
 
-Overal, my thinking mostly revolves around AI-driven programming interfaces. Currently, I'm exploring malleable programming interfaces and [[Semi-formal Programming]], ways to represent and work with code that sit somewhere between structure and informal representation.
+Overal, my thinking mostly revolves around AI-driven programming interfaces. Currently, I'm exploring malleable programming interfaces and [[Semi-formal Programming]]at [MIT VIS Lab](https://vis.csail.mit.edu/), ways to represent and work with code that sit somewhere between structure and informal representation.
 Also, here's my [Curriculum Vitae](/assets/cv.pdf) if this is what you are looking for.
 
 ---

@@ -13,10 +13,10 @@ title: To Search or To Gen?
     <a href="https://www.jeffjianzhao.com/" target="_blank">Jian Zhao</a>
   </p>
   <div class="publication-links">
-    <a href="/assets/papers/SearchNGen.pdf" target="_blank">[pdf]</a>
-    <a href="/assets/papers/SearchGen_poster.pdf" target="_blank">[poster]</a>
-    <a href="https://doi.org/10.1145/3613905.3650867" target="_blank">[doi]</a>
-    <a href="https://www.youtube.com/watch?v=PQ8wmIQ6iNk" target="_blank">[video]</a>
+    <a href="/assets/papers/SearchNGen.pdf" target="_blank">[<img src="/assets/images/icons/bookmark-doc.svg" alt="Bookmark Document Icon" style="width: 24px; height: 24px; vertical-align: middle;"> pdf]</a>
+    <a href="/assets/papers/SearchGen_poster.pdf" target="_blank">[<img src="/assets/images/icons/file-text-graph.svg" alt="Poster Icon" style="width: 24px; height: 24px; vertical-align: middle;"> poster]</a>
+    <a href="https://doi.org/10.1145/3613905.3650867" target="_blank">[<img src="/assets/images/icons/typewritter.svg" alt="TypeWritter Icon" style="width: 24px; height: 24px; vertical-align: middle;"> DOI]</a>
+    <a href="https://www.youtube.com/watch?v=PQ8wmIQ6iNk" target="_blank">[<img src="/assets/images/icons/movie-clapboard.svg" alt="Movie Clapboard Icon" style="width: 24px; height: 24px; vertical-align: middle;"> video]</a>
   </div>
 </div>
 

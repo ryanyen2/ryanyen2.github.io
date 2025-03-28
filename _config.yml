@@ -79,7 +79,8 @@ defaults:
       path: ""
       type: "publications"
     values:
-      layout: "default"
+      layout: "publication"
+      use_syntax_highlighting: true
   -
     scope:
       path: ""

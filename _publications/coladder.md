@@ -15,9 +15,9 @@ title: CoLadder
     <a href="https://www.jeffjianzhao.com/" target="_blank">Jian Zhao</a>
   </p>
   <div class="publication-links">
-    <a href="/assets/papers/CoLadder.pdf" target="_blank">[pdf]</a>
-    <a href="https://doi.org/10.1145/3654777.3676357" target="_blank">[doi]</a>
-    <a href="https://youtu.be/q_QtMA7h7QM" target="_blank">[video]</a>
+    <a href="/assets/papers/CoLadder.pdf" target="_blank">[<img src="/assets/images/icons/bookmark-doc.svg" alt="Bookmark Document Icon" style="width: 24px; height: 24px; vertical-align: middle;"> pdf]</a>
+    <a href="https://doi.org/10.1145/3654777.3676357" target="_blank">[<img src="/assets/images/icons/typewritter.svg" alt="TypeWritter Icon" style="width: 24px; height: 24px; vertical-align: middle;"> DOI]</a>
+    <a href="https://youtu.be/q_QtMA7h7QM" target="_blank">[<img src="/assets/images/icons/movie-clapboard.svg" alt="Movie Clapboard Icon" style="width: 24px; height: 24px; vertical-align: middle;"> video]</a>
   </div>
 </div>
 

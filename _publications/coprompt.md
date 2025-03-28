@@ -18,9 +18,9 @@ title: CoPrompt
     <span class="equal-contribution">*These authors contributed equally to this work.</span>
   </p>
   <div class="publication-links">
-    <a href="/assets/papers/coprompt_arxiv.pdf" target="_blank">[pdf]</a>
-    <a href="https://dl.acm.org/doi/10.1145/3613904.3642212" target="_blank">[doi]</a>
-    <a href="https://www.youtube.com/watch?v=JGnXe_geyY0" target="_blank">[video]</a>
+    <a href="/assets/papers/coprompt_arxiv.pdf" target="_blank">[<img src="/assets/images/icons/bookmark-doc.svg" alt="Bookmark Document Icon" style="width: 24px; height: 24px; vertical-align: middle;"> pdf]</a>
+    <a href="https://dl.acm.org/doi/10.1145/3613904.3642212" target="_blank">[<img src="/assets/images/icons/typewritter.svg" alt="TypeWritter Icon" style="width: 24px; height: 24px; vertical-align: middle;"> DOI]</a>
+    <a href="https://www.youtube.com/watch?v=JGnXe_geyY0" target="_blank">[<img src="/assets/images/icons/movie-clapboard.svg" alt="Movie Clapboard Icon" style="width: 24px; height: 24px; vertical-align: middle;"> video]</a>
   </div>
 </div>
 
