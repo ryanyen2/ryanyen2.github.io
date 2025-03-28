@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://ryanyen2.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ryanyen2.github.io/" rel="alternate" type="text/html" /><updated>2025-03-28T14:25:21+00:00</updated><id>https://ryanyen2.github.io/feed.xml</id><title type="html">Ryan Yen</title><subtitle>Personal Website for Ryan Yen</subtitle><entry><title type="html">The Untold Story of Code Shaping</title><link href="https://ryanyen2.github.io/blog/code-shaping/" rel="alternate" type="text/html" title="The Untold Story of Code Shaping" /><published>2025-03-27T15:00:00+00:00</published><updated>2025-03-27T15:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/code-shaping</id><content type="html" xml:base="https://ryanyen2.github.io/blog/code-shaping/"><![CDATA[<p>If you are looking at this, it means you are as gossipy as I am. Well, this is no hot tea to spill, but I want to talk more about the insider scoop of [[Code Shaping]] <img src="/assets/images/icons/draw-pad.svg" alt="Draw Pad Icon" style="width: 24px; height: 24px; vertical-align: top;" />.</p>
+
+<h3 id="code-shaping-is-not-a-system-paper">Code Shaping is Not a System Paper</h3>
+
+<p>We deliberately framed <strong>Code Shaping</strong> as a paradigm rather than presenting it purely as a “system” paper. The primary reason behind this choice is our focus: we’re less concerned about the technical and engineering specifics (like runtime optimization or integration with existing IDEs) and more invested in exploring how users interact conceptually with this new paradigm.</p>
+
+<p>That doesn’t mean we disregard engineering entirely. Yet, the most challenging and interesting part, and the core focus of our exploration, lies in navigating the conceptual interplay between canvas, AI, and code itself.</p>
+
+<p>This conceptual focus is also why we intentionally avoided the typical system-paper “template”: formative study → build a system → evaluate → outperform baseline → Hooray (I’ve tried this before, and personally, I think it does not make any sense). Instead, we adopted an iterative approach, one without a predefined endpoint. With each iteration, we encountered both successes and failures. If you find the time to look into the paper, please pay special attention to the results sections across these iterations, they embody the true heart of our exploration.</p>
+
+<h3 id="no-future-work">(No) Future Work?</h3>
+
+<p>I’m genuinely grateful that this paper has resonated so widely (some also made it into Instagram reel and went viral!). Many have asked me: “What’s next?” The honest, albeit brief, answer is: <strong>I don’t yet see an approach that we are confident enough to move forward.</strong></p>
+
+<p>Perhaps my brain isn’t big enough, or maybe I haven’t thought deeply enough. But every time I attempt the next iteration or prototype, I find myself stuck between expressivity of sketch and the rigidity of code. While Code Shaping opens intriguing possibilities and could significantly enhance “vibe coding,” problems arise when trying to give users more control than merely relying on AI model performance.</p>
+
+<p>When we start patching formal structures to sketches, such as assigning explicit properties to sketches to help AI interpret them (akin to <a href="https://www.inkandswitch.com/inkbase/">Ink&amp;Switch’s Inkbase</a>), we inadvertently constrain the natural expressivity of users. Suddenly, users aren’t freely externalizing their thoughts; they’re conforming their expressions to match the predefined system properties. In doing so, we risk losing the spontaneous, intuitive nature that makes stylus-based interactions appealing.</p>
+
+<p>This tension became vividly clear in our adoption of command brush in the second iteration, which was essentially a failure. Users didn’t want special brushes or predefined constraints that help the AI “understand.” Instead, they wanted freedom of expression, even at the risk of ambiguity and misunderstanding by the AI.</p>
+
+<blockquote>
+  <p><img src="/assets/images/icons/idea.svg" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> If we constrain the system too much, the interaction no longer serves the user’s genuine intentions, it serves the developer’s preconceived understanding.</p>
+</blockquote>
+
+<p>That’s why now I’m approaching to this problem with a different angle, which we explored in [[Semi-Formal Programming]].</p>
+
+<h3 id="i-almost-gave-up">I Almost Gave Up</h3>
+
+<p>The emotional rollercoaster is familiar territory for researchers. Throughout this project, I often questioned myself… is this work genuinely interesting? Is it practically useful? Is it generative enough to spark new ideas or provoke thought?</p>
+
+<p>A significant internal conflict emerged from feedback conversations. One particularly powerful and valid criticism was: “But we don’t code on tablets.” And it’s true, this practical reality kept nudging at me, pressing me to think about how we could make this approach more directly useful and integrate it seamlessly into everyday workflows.</p>
+
+<p>However, a conversation with Dan provided a valuable perspective shift. He reminded me of something fundamental: the beauty of academia, particularly as a student researcher, is that we have the luxury of exploring ideas free from immediate practical constraints, free from worrying about commercial viability, product-market fit, or appeasing investors and managers. And he’s right. This freedom allows us to explore alternative, imaginative ways of interacting with code, even when those explorations don’t neatly translate into immediate practicality.</p>
+
+<p>We were fortunate that the paper received recognition as a Best Paper. However, this acknowledgment doesn’t invalidate the skepticism or critical questions raised, it only highlights different values and approaches to research. Ultimately, the questions posed from the opposite side are still relevant and important, and they push us to think deeper and more rigorously.</p>
+
+<p>In the end, Code Shaping is about exploring alternative paradigms and different ways of expressing and interacting with code, especially recognizing that some ideas are hard to capture fully in words. That, perhaps, is where its true value lies.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[If you are looking at this, it means you are as gossipy as I am. Well, this is no hot tea to spill, but I want to talk more about the insider scoop of [[Code Shaping]] .]]></summary></entry><entry><title type="html">Map and Territory</title><link href="https://ryanyen2.github.io/blog/map-and-territory/" rel="alternate" type="text/html" title="Map and Territory" /><published>2025-03-02T15:00:00+00:00</published><updated>2025-03-02T15:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/map-and-territory</id><content type="html" xml:base="https://ryanyen2.github.io/blog/map-and-territory/"><![CDATA[<p>I had a fruitful master’s, something I’m proud of, but I didn’t expect it to become a burden. The issue isn’t about how others expecting me to produce more, it’s about how I’ve conditioned myself to recognize shortcuts yet struggle to resist taking them.</p>
+
+<p>A friend and I were discussing <a href="https://www.lesswrong.com/w/map-and-territory">Eliezer Yudkowsky’s <em>map and territory</em> metaphor</a>. We were saying that good research is about finding the right abstractions to articulate the territory in a useful map. And since research papers <em>are</em> essentially in the form of maps, if you’re skilled at drawing maps, you can publish a decent one without truly immersing yourself in the terrain. You don’t have to walk every path, just gather enough fragmented information to sketch something convincing.</p>
+
+<p>And that’s the trap. The intellectual temptation of staying at the map-making level, abstracting, synthesizing, shaping knowledge from a distance. It’s efficient, it produces results, and it aligns perfectly with how research is rewarded. But the most valuable insights don’t come from drawing the map; they come from struggling in the territory, where things are uncertain, chaotic, and deeply uncomfortable.</p>
+
+<p>So what about those papers that last longer and remain great? They don’t just outline a landscape; they carry the weight of having been there. You can feel it between the lines, the synthesis of hard-won failures and fleeting successes, the residue of deep exploration. The good researchers, I guess, aren’t tourists sketching maps from a distance. They are the ones who walk into the unknown, get lost, and only then carve out a path.</p>
+
+<p>That said, my prior work still holds up—so, you know, please check it out still lol <img src="/assets/images/icons/good-face.svg" alt="Good Face Icon" style="width: 24px; height: 24px; vertical-align: middle;" /></p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[I had a fruitful master’s, something I’m proud of, but I didn’t expect it to become a burden. The issue isn’t about how others expecting me to produce more, it’s about how I’ve conditioned myself to recognize shortcuts yet struggle to resist taking them.]]></summary></entry><entry><title type="html">Malleable Interaction Interface</title><link href="https://ryanyen2.github.io/blog/malleable-interaction-interface/" rel="alternate" type="text/html" title="Malleable Interaction Interface" /><published>2024-12-28T14:00:00+00:00</published><updated>2024-12-28T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/malleable-interaction-interface</id><content type="html" xml:base="https://ryanyen2.github.io/blog/malleable-interaction-interface/"><![CDATA[<h1 id="malleable-interaction-interface">Malleable Interaction Interface</h1>
+
+<p><strong>Authors</strong>: Ryan Yen</p>
+
+<p>Malleable software, a vision proposed by Philip Tchernavskij in his 2019 PhD thesis, refers to interfaces that allow users to freely manipulate and recombine interactive elements, contrasting with traditional apps that offer limited, predefined interaction methods. In essence, malleable software provides a flexible canvas where users can shape their digital environment to match their needs and thought processes.</p>
+
+<p>Building on this foundation, I would like to extend the concept to focus more deeply on the interaction between humans and these malleable interfaces. By considering the relationship between users and the system, we can examine how technology can adapt to human cognition rather than forcing humans to adapt to rigid technological constructs.</p>
+
+<h2 id="freedom-of-expression">Freedom of Expression</h2>
+
+<p>To better grasp this concept, let’s follow Alicia, a data scientist, as she explores a new dataset: Alicia begins by searching the web for visualization tools suited to her data. After researching, she chooses Vega-Lite, a declarative programming language for creating interactive visualizations. Alicia opens a code editor and prepares to type the Vega-Lite code manually.</p>
+
+<p>However, is Alicia confined to this single method? Not at all. She has multiple options for creating her visualization. She can write imperative code using D3.js, describe her desired plot to ChatGPT using natural language, use a low-code GUI interface like Tableau, or even sketch her visualization and convert it to code with Microsoft’s SketchToCode.</p>
+
+<p>To consider which approach is easier for Alicia to translate her thoughts into actions the system understands, we can evaluate the “directness” of each interaction based on the <strong>distance between the user’s intention</strong> (plot visualization) <strong>and the actual visual representation (code, image, sketches).</strong> We can arrange Alicia’s options on a spectrum of directness if she wants to articulate her thoughts about the bar chart in a visual format:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>D3.js → Vega-Lite → Visual Programming Language → GUI → Output-Directed Programming → Freeform Sketching
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>As we move from left to right on this spectrum, the distance between her thought and representation generally decreases, meaning the expression of ideas becomes more natural to her thought process.</p>
+
+<p>However, Alicia might not always think about the code in visual form. For example, if she wants to iterate through data, she might prefer a for loop or other linguistic equivalent. Hence, the ideal malleable interface would allow her to switch between these different modes of expression. This is the first and pivotal aspect of malleable interaction interfaces: the freedom they <strong>afford users to express their intentions flexibly across various levels of abstraction</strong>. Yet, this requires thoughtful design, as simply integrating all tools together and juxtaposing them with each other does not work effectively.</p>
+
+<h2 id="designing-for-code-properties-not-just-code">Designing for Code Properties, Not Just Code</h2>
+
+<p>Having explored the spectrum of representations available to Alicia, let’s investigate the malleable interaction interface from the perspective of code as an entity. Why use programming as an example context to discuss malleable interfaces? The key lies in the abstract and polymorphic nature of code itself.</p>
+
+<p>Unlike physical objects with fixed forms, code is inherently shapeshifting. It lacks a definitive visual representation, instead adapting to the substrate in which it exists. This flexibility allows code to manifest in various forms:</p>
+
+<ul>
+  <li>As syntactic language in a code editor</li>
+  <li>As visual diagrams in UML</li>
+  <li>As tangible output in the form of data visualizations or user interfaces</li>
+</ul>
+
+<p>This chameleon-like quality of code makes it a perfect subject for exploring malleable interface interactions. However, this polymorphic nature makes designing the substrate to afford the malleability of code quite challenging.</p>
+
+<p>This scenario illustrates a key principle in designing malleable interfaces: <strong>focus on the essential properties required to perform a task, rather than on a specific tool or form</strong>. In the context of code and programming interfaces, this means we should design for the properties of code - its logic, structure, and functionality - rather than constraining ourselves to think of code solely as text to be typed into an editor.</p>
+
+<h2 id="balancing-constraint-and-freedom">Balancing Constraint and Freedom</h2>
+
+<p>While I’ve emphasized the benefits of flexibility in adjusting or lowering the distance between the human thinking process and visual representations, it comes with a significant trade-off. In a fixed scenario, the distance between cognition and the lowest-level programming language remains unchanged regardless of the chosen representation. Therefore, the more freedom users are granted (closer to the human side), the more ambiguous it becomes for the system to understand (further from the system side) what the human thought is. The relationship between the visual representation and its underlying meaning becomes more arbitrary and indirect. Users might have to work harder to ensure their free-form inputs are interpreted correctly by the system.</p>
+
+<p>When a system offers a singular mode of expression, users learn how to adapt to it. For example, we are taught to “think like a programmer” in a CS101 crash course. In contrast, too much freedom can lead to frustration when attempting to pinpoint errors or perform simple tasks. Consider TLDraw’s make-real demo, which allows users to generate working HTML, JS, and CSS code from a drawn UI. While initially empowering, it can become cumbersome when users need to make minor adjustments, such as changing the color of a single widget iteratively.</p>
+
+<p>This balance between freedom and constraint is at the heart of designing effective malleable interfaces. The goal is to provide flexibility that matches users’ natural thought processes while still offering enough structure to make the interface predictable and efficient to use.</p>]]></content><author><name></name></author><category term="publications" /><summary type="html"><![CDATA[Malleable Interaction Interface]]></summary></entry></feed>
