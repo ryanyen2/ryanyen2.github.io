@@ -72,16 +72,16 @@ Hazel + Livelits is arguably the closest to a semi-formal paradigm. However, it 
 
 Conversely, we can preserve the hole in the informal representation and patch the formal spec onto it. Projects like Inkbase [^9] from [Ink & Switch](https://inkandswitch.com/) demonstrate how freehand drawings can accumulate tags, constraints, and relationships over time.
 
-<div style="display: flex; align-items: center; gap: 2px;">
+<!-- <div style="display: flex; align-items: center; gap: 2px;"> -->
 <figure id="figure5">
 <img src="/assets/images/semi-formal/inkbase.png" alt="Figure 5: Image from Inkbase showing the properties of an sketch object" style="width: 374px;" />
 <figcaption style="text-align: left; font-size: 0.8em; color: #666;"><strong>Figure 5:</strong> Image from Inkbase showing the properties of an sketch object.</figcaption>
 </figure>
-<video muted autoplay controls width="100%" height="400">
+<!-- <video muted controls width="100%" height="400">
     <source src="/assets/videos/inkbase-example.mp4" type="video/mp4">
-</video>
+</video> -->
 <!-- {% include video.html id="inkbase-example" title="Example from Inkbase where users are setting the stroke property to be red or green depending on the value of property 1" %} -->
-</div>
+<!-- </div> -->
 
 In **Inkbase**, the user starts with a blank canvas or sketches. They might treat a particular pen stroke as a "label" or "value," then link it to another. For example, they can draw a graph axis and data points, then connect those points to a mathematical relationship. Early on, the drawing is just a drawing. As the user adds formulas or links, it gains behavior—becoming a kind of program. This "**gradual enrichment**" avoids upfront commitments. One can start with loose, informal, unstructured content and add more structure, formality, and fidelity over time.
 

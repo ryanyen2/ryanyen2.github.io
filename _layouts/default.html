@@ -16,22 +16,62 @@
   {% endif %}
 </head>
 <body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">{{ site.title }}</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
   <div class="container">
     <div class="sidebar">
       <nav class="tree-nav">
         <ul>
           {% for item in site.data.navigation %}
             <li class="{% if item.children %}has-children{% endif %} {% if page.url contains item.link or page.categories contains item.title %}active{% endif %}">
-              <a href="{{ item.link | relative_url }}" {% if item.children and page.url == '/' %}href="#"{% endif %}>{{ item.title }}</a>
+              <a href="{{ item.link | relative_url }}" {% if item.children and page.url == '/' %}href="#"{% endif %}>
+                {% case item.title %}
+                  {% when " Home" %}
+                    <img src="{{ '/assets/images/icons/idea.svg' | relative_url }}" alt="Home" class="nav-icon">
+                  {% when "Publications" %}
+                    <img src="{{ '/assets/images/icons/writing.svg' | relative_url }}" alt="Publications" class="nav-icon">
+                  {% when "Blog" %}
+                    <img src="{{ '/assets/images/icons/pen.svg' | relative_url }}" alt="Blog" class="nav-icon">
+                  {% when "Readings" %}
+                    <img src="{{ '/assets/images/icons/reading.svg' | relative_url }}" alt="Readings" class="nav-icon">
+                  {% else %}
+                    <img src="{{ '/assets/images/icons/note-taking.svg' | relative_url }}" alt="Menu Item" class="nav-icon">
+                {% endcase %}
+                {{ item.title }}
+              </a>
               {% if item.children %}
                 <ul class="child-items">
                   {% for child in item.children %}
                     <li>
-                      <a href="{{ child.link | relative_url }}">{{ child.title }}</a>
+                      <a href="{{ child.link | relative_url }}">
+                        <!-- {% case item.title %}
+                          {% when "Publications" %}
+                            <img src="{{ '/assets/images/icons/news.svg' | relative_url }}" alt="Publication" class="nav-icon">
+                          {% when "Blog" %}
+                            <img src="{{ '/assets/images/icons/note-taking.svg' | relative_url }}" alt="Blog Post" class="nav-icon">
+                          {% when "Readings" %}
+                            <img src="{{ '/assets/images/icons/link.svg' | relative_url }}" alt="Reading" class="nav-icon">
+                          {% else %}
+                            <img src="{{ '/assets/images/icons/link.svg' | relative_url }}" alt="Sub-item" class="nav-icon">
+                        {% endcase %} -->
+                        {{ child.title }}
+                      </a>
                       {% if child.children %}
                         <ul class="grandchild-items">
                           {% for grandchild in child.children %}
-                            <li><a href="{{ grandchild.link | relative_url }}">{{ grandchild.title }}</a></li>
+                            <li>
+                              <a href="{{ grandchild.link | relative_url }}">
+                                <!-- <img src="{{ '/assets/images/icons/link.svg' | relative_url }}" alt="Sub-item" class="nav-icon"> -->
+                                {{ grandchild.title }}
+                              </a>
+                            </li>
                           {% endfor %}
                         </ul>
                       {% endif %}
