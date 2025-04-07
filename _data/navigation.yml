@@ -22,12 +22,12 @@
   children:
     # - title: "Semi-formal Programming"
     #   link: "/blog/semi-formal-programming"
+    - title: "Let Me Sink, Not Think"
+      link: "/blog/let-me-sink"
     - title: "The Untold Story of Code Shaping"
       link: "/blog/code-shaping"
     - title: "Map and Territory"
       link: "/blog/map-and-territory"
-    - title: "Malleable Interaction Interface"
-      link: "/blog/malleable-interaction-interface"
 
 - title: "Readings"
   link: "/readings/"

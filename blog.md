@@ -12,6 +12,9 @@ Welcome to my blog where I share thoughts on research, programming interfaces, a
 
 An exploration of the middle ground between formal programming languages and natural language, examining how new interfaces can bridge this gap. -->
 
+### <a href="/blog/let-me-sink" class="wiki-link"> <img src="/assets/images/icons/meeting-team-person.svg" alt="Meeting Team Person Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> Let Me Sink, Not Think</a>
+A reflection about the excitement of code shaping and what I am really aftering now.
+
 ### <a href="/blog/code-shaping" class="wiki-link"> <img src="/assets/images/icons/draw-pad.svg" alt="Draw Pad Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> The Untold Story of Code Shaping</a>
 *March 28, 2025*
 

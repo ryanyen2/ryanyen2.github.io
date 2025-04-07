@@ -2,8 +2,8 @@
 layout: post
 title: "Malleable Interaction Interface"
 date: 2024-12-28 09:00:00 -0500
-categories: publications
-breadcrumb: "Publications > Malleable Interaction Interface"
+categories: blog
+breadcrumb: "Blog > Malleable Interaction Interface"
 ---
 
 # Malleable Interaction Interface
