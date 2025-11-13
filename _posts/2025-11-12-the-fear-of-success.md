@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Fear of Success"
-date: 2025-11-13 09:00:00 -0500
+date: 2025-11-12 09:00:00 -0500
 categories: blog
 breadcrumb: "Blog > The Fear of Success"
 ---
@@ -20,7 +20,7 @@ You just simply cannot move forward. The legs refuse to carry us to the summit. 
 These questions spiral. It transforms into consuming doubt, pinning us to the ground with a weight that failure alone could never achieve. What if this path is wrong? What if the entire map is misguided? What if at some forgotten fork in the road, I made an irrevocable wrong turn? What if a better view lies hidden somewhere else on the mountain?
 
 
-The woods that once seemed so dangerous have become familiar. You return to them. You force yourself not to look back at that beautiful false summit. Once more, you begin again another round of prototypes, another draft, another spiral through the uncertain territory that has become both your prison and your refuge.
+The woods that once seemed so dangerous have become familiar. You return to them. You force yourself not to look back at that "false" summit. Once more, you begin again another round of prototypes, another draft, another spiral through the uncertain territory that has become both your prison and your refuge.
 
 
 *It turns out we fear success as much as we fear failure.* We have spent so long in exploration that the endless, uncertain search has become our natural state. We have lived in ambiguity for so long that its absence frightens us. We cannot release even a preliminary version of our work because to finish would mean the search has ended, the territory has been mapped, the journey is complete. To finish, we sense, is to accept that things are finite. Yet, we are not confident in defining what it means to be "finished," "ended," or "completed."
@@ -45,7 +45,7 @@ Sometimes sciense is like art that there is no finality. Claude Monet opened up 
 
 Only after you release once can people engage with your thinking. Some disagree thoughtfully. Some build on it. And suddenly, from this released place, you can see further than you ever could in the woods.
 The work that was stuck becomes part of something larger. You receive feedback you never could have invented alone. You discover you were wrong about what mattered, and that discovery leads somewhere new.
-And if you believe you are doing something beneficial to the field, opening up and inviting people into the territory is better than guarding it. Because frankly speaking, there will always be people smarter than us who can solve the problem more cleverly. Doesn't has to be us.
+And honestly, opening up and inviting people into the territory is arguably more beneficial to the community than guarding it, claiming it. Because frankly speaking, there will always be people smarter than us who can solve the problem more cleverly. Doesn't has to be us.
 
 I do hope the field, at least in HCI, can be more generous to incomplete work. Can acknowledge that the effort required to make something honest enough to share is real, and the courage to release it is precious. These incomplete works are not failures waiting to be fixed. They are invitations.
 So to us as researchers, release it confidently! Release it with honesty about what you understand and what you do not yet understand. Be proud to claim that as a success. 
