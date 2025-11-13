@@ -168,6 +168,16 @@ body.menu-open {
               opacity var(--tree-animation-duration) ease;
 }
 
+/* Disable transitions during initial page load to prevent unwanted animations */
+body.no-transitions .tree-nav .child-items,
+body.no-transitions .tree-nav .has-children.expanded > .child-items {
+  transition: none !important;
+}
+
+body.no-transitions .tree-nav .has-children > a::after {
+  transition: none !important;
+}
+
 /* .nav-indicator {
   width: var(--indicator-size);
   height: var(--indicator-size);

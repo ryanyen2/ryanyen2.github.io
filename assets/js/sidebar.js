@@ -1,3 +1,147 @@
+// Helper functions for link handling
+function hasAnchor(url) {
+  return url && url.includes('#') && !url.endsWith('#');
+}
+
+function isSamePage(url) {
+  if (!url) return false;
+  const currentPath = window.location.pathname;
+  const urlObj = new URL(url, window.location.origin);
+  return urlObj.pathname === currentPath;
+}
+
+// Global reference to updateNavIndicator (will be set in DOMContentLoaded)
+let updateNavIndicatorFn = null;
+
+// Set up wiki link handling with event delegation at module level
+// This ensures it works even when pages are restored from browser cache
+let wikiLinksInitialized = false;
+
+function enhanceWikiLinks() {
+  // Only set up once to avoid duplicate event listeners
+  if (wikiLinksInitialized) return;
+  wikiLinksInitialized = true;
+  
+  // Use event delegation on the document to handle clicks on wiki links
+  // This works even when the page is restored from browser cache
+  document.addEventListener('click', function(e) {
+    // Find the closest link element (could be the clicked element or its parent)
+    let link = e.target.closest('.wiki-link, a[href^="/"], a[href^="./"], a[href^="../"]');
+    
+    if (!link) return;
+    
+    const href = link.getAttribute('href');
+    if (!href) return;
+    
+    // Get the current content element (not a stale reference)
+    const content = document.querySelector('.content');
+    if (!content) return;
+    
+    // Check if it's an anchor link or same page navigation
+    if (hasAnchor(href)) {
+      if (isSamePage(href)) {
+        // It's an anchor on the same page, use smooth scrolling
+        e.preventDefault();
+        const targetId = href.substring(href.indexOf('#') + 1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        return;
+      }
+    }
+    
+    // Don't apply transition for external links or mail links
+    if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+      return;
+    }
+    
+    e.preventDefault();
+    
+    const targetUrl = href;
+    const linkText = link.getAttribute('data-target') || link.textContent.trim();
+    
+    // Animate content out
+    content.classList.add('fade-out');
+    
+    // Update the indicator position (if function exists)
+    if (updateNavIndicatorFn) {
+      updateNavIndicatorFn(linkText);
+    }
+    
+    // After animation, navigate to the new page
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, 300);
+  });
+}
+
+// Initialize wiki links immediately (works even before DOMContentLoaded)
+enhanceWikiLinks();
+
+// Current page tracking in navigation
+// Use a flag to prevent duplicate execution and track processed parents
+let isHighlighting = false;
+let lastHighlightedPath = null;
+
+function highlightCurrentPage() {
+  const currentPath = window.location.pathname;
+  
+  // Prevent duplicate execution for the same path
+  if (isHighlighting || lastHighlightedPath === currentPath) {
+    return;
+  }
+  
+  isHighlighting = true;
+  lastHighlightedPath = currentPath;
+  
+  const navLinks = document.querySelectorAll('.tree-nav a');
+  // Track which parents we've already expanded in this call to avoid duplicates
+  const expandedParents = new Set();
+  
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href');
+    
+    // Remove any existing current markers
+    link.classList.remove('current');
+    if (link.querySelector('.nav-indicator')) {
+      link.querySelector('.nav-indicator').remove();
+    }
+    
+    // Check if this link matches the current page
+    if (linkPath === currentPath || 
+        (currentPath.includes(linkPath) && linkPath !== '/' && linkPath !== '#')) {
+      
+      // Add current class
+      link.classList.add('current');
+      
+      // Add indicator dot
+      const indicator = document.createElement('span');
+      indicator.className = 'nav-indicator';
+      link.prepend(indicator);
+      
+      // Expand parent items if needed (only if not already expanded to avoid animation)
+      let parent = link.parentElement;
+      while (parent) {
+        if (parent.classList.contains('has-children')) {
+          // Only add expanded class if it's not already there and we haven't processed it
+          if (!parent.classList.contains('expanded') && !expandedParents.has(parent)) {
+            parent.classList.add('expanded');
+            expandedParents.add(parent);
+          }
+        }
+        parent = parent.parentElement;
+      }
+    }
+  });
+  
+  isHighlighting = false;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu functionality
   const hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -72,46 +216,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Current page tracking in navigation
-  function highlightCurrentPage() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.tree-nav a');
-    
-    navLinks.forEach(link => {
-      const linkPath = link.getAttribute('href');
-      
-      // Remove any existing current markers
-      link.classList.remove('current');
-      if (link.querySelector('.nav-indicator')) {
-        link.querySelector('.nav-indicator').remove();
-      }
-      
-      // Check if this link matches the current page
-      if (linkPath === currentPath || 
-          (currentPath.includes(linkPath) && linkPath !== '/' && linkPath !== '#')) {
-        
-        // Add current class
-        link.classList.add('current');
-        
-        // Add indicator dot
-        const indicator = document.createElement('span');
-        indicator.className = 'nav-indicator';
-        link.prepend(indicator);
-        
-        // Expand parent items if needed
-        let parent = link.parentElement;
-        while (parent) {
-          if (parent.classList.contains('has-children')) {
-            parent.classList.add('expanded');
-          }
-          parent = parent.parentElement;
-        }
-      }
-    });
-  }
+  // Disable transitions on initial load to prevent animation when expanding items
+  // Add a class to body that disables transitions
+  document.body.classList.add('no-transitions');
   
   // Call initially
   highlightCurrentPage();
+  
+  // Re-enable transitions after a short delay to allow initial state to be set
+  setTimeout(() => {
+    document.body.classList.remove('no-transitions');
+  }, 100);
   
   // Handle child and grandchild navigation
   const childItems = document.querySelectorAll('.tree-nav .child-items > li > a');
@@ -164,73 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Check if a URL has an anchor
-  function hasAnchor(url) {
-    return url && url.includes('#') && !url.endsWith('#');
-  }
   
-  // Check if we're navigating to a different page or just an anchor on the same page
-  function isSamePage(url) {
-    if (!url) return false;
-    
-    const currentPath = window.location.pathname;
-    const urlObj = new URL(url, window.location.origin);
-    
-    return urlObj.pathname === currentPath;
-  }
-  
-  // Enhance all wiki-style links with smooth transitions
-  function enhanceWikiLinks() {
-    const content = document.querySelector('.content');
-    
-    if (content) {
-      // Add click handler for smooth transitions to all wiki links
-      document.querySelectorAll('.wiki-link, a[href^="/"], a[href^="./"], a[href^="../"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          
-          // Check if it's an anchor link or same page navigation
-          if (hasAnchor(href)) {
-            if (isSamePage(href)) {
-              // It's an anchor on the same page, use smooth scrolling
-              e.preventDefault();
-              const targetId = href.substring(href.indexOf('#') + 1);
-              const targetElement = document.getElementById(targetId);
-              
-              if (targetElement) {
-                targetElement.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }
-              return;
-            }
-          }
-          
-          // Don't apply transition for external links or mail links
-          if (href && (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:'))) {
-            return;
-          }
-          
-          e.preventDefault();
-          
-          const targetUrl = href;
-          const linkText = this.getAttribute('data-target') || this.textContent.trim();
-          
-          // Animate content out
-          content.classList.add('fade-out');
-          
-          // Update the indicator position
-          updateNavIndicator(linkText);
-          
-          // After animation, navigate to the new page
-          setTimeout(() => {
-            window.location.href = targetUrl;
-          }, 300);
-        });
-      });
-    }
-  }
   
   // Fix for mobile links not working after going back to home page
   function fixMobileLinks() {
@@ -344,8 +393,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Initialize all features
-  enhanceWikiLinks();
+  // Store reference to updateNavIndicator for use in wiki link handler
+  updateNavIndicatorFn = updateNavIndicator;
+  
+  // Initialize all features (wiki links already initialized at module level)
   setupPageTransitions();
   fixMobileLinks();
+});
+
+// Handle page restoration from browser cache (back/forward navigation)
+// The pageshow event fires even when the page is loaded from cache
+window.addEventListener('pageshow', function(event) {
+  // Reset the highlighting flag when page is shown (new page or restored from cache)
+  // This allows highlightCurrentPage to run again for new pages
+  lastHighlightedPath = null;
+  
+  // If the page was restored from cache, re-initialize wiki links
+  // The event delegation approach should already work, but we ensure content is visible
+  if (event.persisted) {
+    // Page was restored from cache (bfcache)
+    const content = document.querySelector('.content');
+    if (content) {
+      // Remove any fade-out classes that might have been left
+      content.classList.remove('fade-out');
+      content.classList.add('fade-in');
+    }
+    
+    // Disable transitions temporarily when restoring from cache
+    document.body.classList.add('no-transitions');
+    
+    // Re-highlight current page in navigation
+    // Check if DOM is ready
+    if (document.readyState === 'loading') {
+      // DOMContentLoaded hasn't fired yet, it will handle highlighting
+      document.addEventListener('DOMContentLoaded', function() {
+        highlightCurrentPage();
+        setTimeout(() => {
+          document.body.classList.remove('no-transitions');
+        }, 100);
+      });
+    } else {
+      // DOM is already ready, call it directly
+      highlightCurrentPage();
+      setTimeout(() => {
+        document.body.classList.remove('no-transitions');
+      }, 100);
+    }
+  }
 }); 
