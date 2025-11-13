@@ -20,6 +20,8 @@
 - title: "Blog"
   link: "/blog/"
   children:
+    - title: "The Fear of Success"
+      link: "/blog/the-fear-of-success"
     - title: "Big Idea & Deep Work"
       link: "/blog/big-idea"
     - title: "Let Me Sink, Not Think"

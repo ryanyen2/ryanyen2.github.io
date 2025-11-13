@@ -12,6 +12,11 @@ Welcome to my blog where I share thoughts on research, programming interfaces, a
 
 An exploration of the middle ground between formal programming languages and natural language, examining how new interfaces can bridge this gap. -->
 
+### <a href="/blog/the-fear-of-success" class="wiki-link"> <img src="/assets/images/icons/present.svg" alt="Question Mark Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> The Fear of Success</a>
+*September 17, 2025*
+
+A reflection on the fear of success in research, and the courage to release incomplete work.
+
 ### <a href="/blog/big-idea" class="wiki-link"> <img src="/assets/images/icons/idea.svg" alt="Idea Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> Big Idea & Deep Work</a>
 A discussion with my research group about the nature of big ideas in research, the criteria for deep work, and whether we should even ask these questions.
 
