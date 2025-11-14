@@ -10,14 +10,18 @@ breadcrumb: "Blog > The Fear of Success"
 
 *A disclaimer: I have not yet succeeded, nor shipped my first version. This is a pep talk for myself and for those who feel and struggle the same.*
 
-I once explored the analogy that conducting research resembles drawing a map after traveling through unfamiliar territory [[map-and-territory]]. Initially, I believed the real challenge lay in the unpredictable journey itself, those strange detours, dead ends, and unknown marshes. Yet my understanding has shifted. The difficulty does not reside in the traveling. It lies, instead, in knowing precisely when to stop wandering and begin the cartography.
+I once wrote that research is like drawing a map after traveling through unfamiliar territory [[map-and-territory]]. At first, I thought the hard part was the journey itself: the strange detours, the dead ends, the swamps where you lose your footing. But I was wrong. The hard part is not the traveling. It is knowing when to stop exploring and start drawing the map.
+
 
 Unlike work with clear, concrete goals, like hitting a benchmark, proving a theorem, some projects are inherently ambiguous. They bend and transform as they progress. For such work, no guideposts exist to mark the endpoint. No established criteria define what the destination should look like. Will we discover a hidden lake in the forest? A mountain peak with a magnificent view? Perhaps an ancient tree standing alone in a valley? We cannot know. The only thing we can do is persist in exploring the terrain before us, solving each problem as it emerges, trusting that meaning will crystallize from movement.
 
 
-Eventually, you realize the months and years you have spent in these woods. Your work accumulates around you: scattered fragments of ideas, meeting notes, endless prototypes, half-finished manuscripts. Though the work feels perpetually unfinished, perpetually becoming, you continue working on it without hesitation. Because continuing is the only path where you need never fear making a wrong decision.
+Eventually, you realize the months and years you have spent in these woods. Your work accumulates around you: scattered fragments of ideas, meeting notes, endless prototypes, half-finished manuscripts. 
 
-Then one day, you finally reach a hilltop and glimpse a peak directly in your path. The joy of this moment should be transcendent. It should vindicate all the weariness and tears of those long, uncertain years.
+Then you notice how much time has passed. Months, maybe years, spent in these woods. Your work piles up around you: scattered notes, prototypes that almost worked, half-finished drafts. 
+Though the work feels perpetually unfinished, perpetually becoming, you continue working on it without hesitation, because as long as you keep moving, you never have to worry about choosing wrong.
+
+Then one day, you finally reach a hilltop and glimpse a peak directly in your path. The joy of this moment should be joyful. It should vindicate all the weariness and tears of those long, uncertain years.
 
 But then comes the peculiar paralysis.
 
@@ -26,13 +30,15 @@ Your body refuses. Your legs will not carry you to the summit.
 The first words you said are not "finally," not "at last," but "Is that it?"
 And suddenly you are not celebrating but interrogating. To persuade ourselves not to take those final steps, we doubt: Is this truly the peak? Is this genuinely the end goal I sought, or have I been seduced by proximity into mistaking convenience for destiny? Is this the final piece of the map, or just another fragment in an infinite puzzle?
 
-They transform into a consuming doubt that pins us to the ground with a weight that failure alone could never achieve. What if the entire map is wrong and misguided? What if, at some forgotten fork in the road, I made an irrevocable wrong turn? What if a better view lies hidden just beyond that ridge, and I will spend the rest of my career knowing I settled for less?
+The doubt grows heavy. Heavier than failure ever felt. What if the whole map is wrong? What if somewhere back there, I took a wrong turn I can never undo? What if there is a better view just over that next ridge, and I will spend the rest of my career knowing I settled for less?
+
 
 So you retreat. The woods that once seemed so dangerous have become familiar, almost comforting. You return to them with relief, forcing yourself not to look back at that "false" summit. Once more, you begin another round of prototypes, another draft, another spiral through the uncertain territory that has become both your prison and your refuge.
 
 
 **It turns out we fear success as much as we fear failure.** 
-We have spent so long in exploration that the endless, uncertain search has become our natural state. We have dwelt in ambiguity for so long that its absence frightens us. We cannot release even a preliminary version of our work because to finish would mean the search has ended, the territory has been mapped, the journey is complete. To finish, we sense, is to accept that things are finite. Yet we lack the confidence to define what it means to be "finished," "ended," or "completed."
+We have been searching for so long that the endless hunt has become who we are. We have lived in uncertainty for so long that certainty feels wrong. We cannot release even a preliminary version of our work because to finish would mean the search has ended, the territory has been mapped, the journey is complete. Finishing means accepting that things end. But we are not sure we know what "finished" even means.
+
 
 Perhaps, as [The Art of Finishing](https://www.bytedrum.com/posts/art-of-finishing/) describes, the real fear of success emerges from the fear of being seen; not just evaluated, but truly witnessed. And from being seen comes judgment, accountability, and the loss of infinite possibility.
 You can always imagine it being better, deeper, more significant in your mind. But the moment you release it, that protection vanishes. The work becomes fixed. Real. Open to the world's interpretation. Success in academia means your work will be read, discussed, potentially contested. And that is terrifying in a way failure never is, because failure stays hidden—a paper never published, an idea never exposed.
@@ -40,11 +46,11 @@ You can always imagine it being better, deeper, more significant in your mind. B
 
 
 Yet I would argue that even if we somehow transcended our fear of others' voices, the paralysis would persist. Because we are in love with this project. We want it to be in its most exquisite possible form. We know that tomorrow we will understand the problem with greater clarity, and by the next deadline we will have accumulated more wisdom to articulate our insights with deeper precision. 
-Paradoxically, the more we uncover, the more we comprehend the vastness of what we do not know, and the more uncertain we become about the true shape of the destination.
+Paradoxically, the more we uncover, the more we see how much we do not know, and the more uncertain we become about the true shape of the destination.
 
-For me, I have been thinking about semi-formal ideas with Josh and Arvind for over a year. The more papers I encounter in computational theory, program synthesis, and program analysis, the more terrified I become. What if these researchers can simply solve the problem effortlessly? What if the reason it takes me so long is merely that I am new to this area, or worse, simply not smart enough? 
+For me, I have been thinking about semi-formal ideas with Josh and Arvind for over a year. The more papers I encounter in computational theory, program synthesis, and program analysis, the more terrified I become. What if these researchers can simply solve the problem effortlessly? What if it takes me so long only because I am new to this area, or worse, because I am just not smart enough?
 
-The questions become corrosive. Is this truly a [[big-idea]], or have I convinced myself of its significance to justify the time already spent? At what forgotten fork in the road could I have chosen differently and glimpsed the true destination? We become so entangled in the infinite branching possibilities of the path that we forget a fundamental truth: sometimes the map itself, imperfect and incomplete though it may be, is the destination.
+The questions become corrosive. Is this truly a [[big-idea]], or have I convinced myself of its significance to justify the time already spent? At what forgotten fork in the road could I have chosen differently and glimpsed the true destination? We get so caught up in all the possible paths we forget something simple: *sometimes the map itself, rough and incomplete as it is, is the destination.*
 
 Sometimes the beginning is the answer to when we should begin.
 
@@ -59,7 +65,7 @@ Only after you release your work can people genuinely engage with your thinking.
 
 And honestly, inviting others into the territory is infinitely more generative for the community than guarding it or claiming exclusive ownership. There will always be people more brilliant than us who can solve the problem more elegantly, but they need to see the first draft to build upon it. The work does not need us to be perfect. It needs us to begin. 
 
-Yes, someone more brilliant might discover an easier route, but they would draw an entirely different map. Only you can mark where you stumbled and what that stumbling revealed, where you found your footing and what that taught you, where the path bent in ways no one could have foreseen. These marks makes the difference between knowing a path exists and knowing how it feels to walk it.
+Yes, someone more brilliant might discover an easier route, but they would draw an entirely different map. Only you can mark where you fell and what you learned from falling, where you found solid ground and what that taught you, where the path turned in ways no one expected. These marks are what makes the difference between knowing a path exists and knowing what it feels like to walk it.
 
 
 I genuinely hope the field, at least in HCI, can become more generous toward incomplete work. Can acknowledge that the effort required to make something honest enough to share is substantial, and the courage to release it is precious. These incomplete works are not failures awaiting correction. They are invitations.
