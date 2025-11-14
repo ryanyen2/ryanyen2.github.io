@@ -55,9 +55,8 @@ Sometimes the beginning is the answer to when we should begin.
 
 
 ### Reframing Success
-*Perhaps success is not reaching the ultimate destination but the map at this stage of understanding.* It is okay that the first release does not explain everything perfectly. It is okay to be honest about what it addresses and what remains unresolved. Because no matter how meticulously you polish that paper, one year later you will think: "How did I write that?" And that is not a failure of the past, but evidence of how much you’ve grown since that first release.
-
-Success does not come from finding a destination but the map we drew, the map that marks all the extraordinary scenes we have encountered: the place where two theories suddenly connected, the moment when a prototype revealed an unexpected behavior, the conversation that shifted our entire framing.
+*Perhaps success is not reaching the ultimate destination but the map at this stage of understanding.* 
+Success does not come from finding a destination but from every details we drew on the map. The map that marks all the extraordinary scenes we have encountered: the place where two theories suddenly connected, the moment when a prototype revealed an unexpected behavior, the conversation that shifted our entire framing.
 
 There will be other maps. Some cartographer might chart a more efficient route or render the landscape with greater precision. But they would draw an entirely different map, because only you can mark where you fell and what you learned from falling, where you found solid ground and what that taught you, where the path turned in ways no one expected.
 
@@ -66,9 +65,11 @@ Your confusion was necessary. Your false starts taught you something no direct p
 And because of these experiences, sometimes when you look at existing papers and think "they already solved my problem." Yet you see it because you have been thinking about this problem deeply, from your unique vantage point. A researcher from another background, looking at the same papers, will see entirely different implications than someone from HCI. You have to trust that the process leading you to this synthesis is a contribution that can only be made by you.
 
 
+
 ### Confidently Release the First Version
 Sometimes science is like art in that there is no finality. Claude Monet painted his water lilies obsessively for the last thirty years of his life. There are more than 250 canvases capturing the same pond from different angles, in different light, at different seasons. Each painting could have been refined further, touched up in color and technique, endlessly perfected. But Monet released them anyway, not as perfect representations, but as records of particular moments of seeing. Even the imperfections, even what he might have considered mistakes, remain beautiful. They opened the space of impressionist painting, allowing Renoir, Degas, Morisot, and Pissarro to flourish within that field.
 
+It is okay that the first release does not explain everything perfectly. It is okay to be honest about what it addresses and what remains unresolved. Because no matter how meticulously you polish that paper, one year later you will think: "How did I write that?" And that is not a failure of the past, but evidence of how much you’ve grown since that first release.
 
 Only after you release your work can people genuinely engage with your thinking. Some will disagree thoughtfully. Some will build upon it. And suddenly, from this released position, you can see further than you ever could within the woods. The work that was trapped becomes part of something larger. You receive feedback you never could have generated alone. You discover you were mistaken about what truly mattered, and that discovery leads somewhere entirely new.
 
