@@ -21,7 +21,7 @@ Eventually, you realize the months and years you have spent in these woods. Your
 Then you notice how much time has passed. Months, maybe years, spent in these woods. Your work piles up around you: scattered notes, prototypes that almost worked, half-finished drafts. 
 Though the work feels perpetually unfinished, perpetually becoming, you continue working on it without hesitation, because as long as you keep moving, you never have to worry about choosing wrong.
 
-Then one day, you finally reach a hilltop and glimpse a peak directly in your path. The joy of this moment should be joyful. It should vindicate all the weariness and tears of those long, uncertain years.
+Then one day, you finally reach a hilltop and glimpse a peak directly in your path. The joy of this moment should be substantial. It should vindicate all the weariness and tears of those long, uncertain years.
 
 But then comes the peculiar paralysis.
 
