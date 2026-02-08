@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Untold Story of Code Shaping | Ryan Yen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/publications.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  
+</head>
+<body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">Ryan Yen</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <nav class="tree-nav">
+        <ul>
+          
+            <li class=" active">
+              <a href="/" >
+                
+                    <img src="/assets/images/icons/note-taking.svg" alt="Menu Item" class="nav-icon">
+                
+                Home
+              </a>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/publications/" >
+                
+                    <img src="/assets/images/icons/writing.svg" alt="Publications" class="nav-icon">
+                  
+                Publications
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/publications/semi-formal-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Semi-formal Programming
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coladder">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoLadder
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coprompt">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoPrompt
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/memolet">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Memolet
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/search-or-gen">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        To Search or To Gen
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children active">
+              <a href="/blog/" >
+                
+                    <img src="/assets/images/icons/pen.svg" alt="Blog" class="nav-icon">
+                  
+                Blog
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/blog/the-language-we-forgot-we-could-speak">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Language We Forgot We Could Speak
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/the-fear-of-success">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Fear of Success
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/big-idea">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Big Idea & Deep Work
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/let-me-sink">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Let Me Sink, Not Think
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Untold Story of Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/map-and-territory">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Map and Territory
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/readings/" >
+                
+                    <img src="/assets/images/icons/reading.svg" alt="Readings" class="nav-icon">
+                  
+                Readings
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/readings/reification-polymorphism-reuse">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Reification, Polymorphism and Reuse
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/demonstrational-interfaces">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Demonstrational Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/cognitive-engineering">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Cognitive Engineering
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/designing-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Designing Interaction, not Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/instrumental-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Instrumental Interaction
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/direct-manipulation">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Direct Manipulation Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/thinking-with-external-representations">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Thinking with External Representations
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/ultra-lightweight-constraints">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Ultra-Lightweight Constraints
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/what-is-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        What Is Interaction?
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/usability-analysis-visual-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Usability Analysis of Visual Programming Environments
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      </nav>
+
+      <div class="breadcrumb">
+        
+          <div class="breadcrumb-path">Blog > Code Shaping</div>
+        
+      </div>
+    </div>
+    
+    <div class="content">
+      <main>
+        
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    "HTML-CSS": { 
+      availableFonts: ["TeX"],
+      scale: 100,
+      linebreaks: { automatic: true }
+    },
+    SVG: { 
+      linebreaks: { automatic: true } 
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script> 
+
+
+
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">The Untold Story of Code Shaping</h1>
+    <p class="post-meta">Mar 27, 2025</p>
+  </header>
+
+  <div class="post-content">
+    <p>If you are looking at this, it means you are as gossipy as I am. Well, this is no hot tea to spill, but I want to talk more about the insider scoop of <a href="/publications/code-shaping/" class="wiki-link" data-target="Code Shaping">Code Shaping</a> <img src="/assets/images/icons/draw-pad.svg" alt="Draw Pad Icon" style="width: 24px; height: 24px; vertical-align: top;" />.</p>
+
+<h3 id="code-shaping-is-not-a-system-paper">Code Shaping is Not a System Paper</h3>
+
+<p>We deliberately framed <strong>Code Shaping</strong> as a paradigm rather than presenting it purely as a “system” paper. The primary reason behind this choice is our focus: we’re less concerned about the technical and engineering specifics (like runtime optimization or integration with existing IDEs) and more invested in exploring how users interact conceptually with this new paradigm.</p>
+
+<p>That doesn’t mean we disregard engineering entirely. Yet, the most challenging and interesting part, and the core focus of our exploration, lies in navigating the conceptual interplay between canvas, AI, and code itself.</p>
+
+<p>This conceptual focus is also why we intentionally avoided the typical system-paper “template”: formative study → build a system → evaluate → outperform baseline → Hooray (I’ve tried this before, and personally, I think it does not make any sense). Instead, we adopted an iterative approach, one without a predefined endpoint. With each iteration, we encountered both successes and failures. If you find the time to look into the paper, please pay special attention to the results sections across these iterations, they embody the true heart of our exploration.</p>
+
+<h3 id="no-future-work">(No) Future Work?</h3>
+
+<p>I’m genuinely grateful that this paper has resonated so widely (some also made it into Instagram reel and went viral!). Many have asked me: “What’s next?” The honest, albeit brief, answer is: <strong>I don’t yet see an approach that we are confident enough to move forward.</strong></p>
+
+<p>Perhaps my brain isn’t big enough, or maybe I haven’t thought deeply enough. But every time I attempt the next iteration or prototype, I find myself stuck between expressivity of sketch and the rigidity of code. While Code Shaping opens intriguing possibilities and could significantly enhance “vibe coding,” problems arise when trying to give users more control than merely relying on AI model performance.</p>
+
+<p>When we start patching formal structures to sketches, such as assigning explicit properties to sketches to help AI interpret them (akin to <a href="https://www.inkandswitch.com/inkbase/">Ink&amp;Switch’s Inkbase</a>), we inadvertently constrain the natural expressivity of users. Suddenly, users aren’t freely externalizing their thoughts; they’re conforming their expressions to match the predefined system properties. In doing so, we risk losing the spontaneous, intuitive nature that makes stylus-based interactions appealing.</p>
+
+<p>This tension became vividly clear in our adoption of command brush in the second iteration, which was essentially a failure. Users didn’t want special brushes or predefined constraints that help the AI “understand.” Instead, they wanted freedom of expression, even at the risk of ambiguity and misunderstanding by the AI.</p>
+
+<blockquote>
+  <p><img src="/assets/images/icons/idea.svg" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> If we constrain the system too much, the interaction no longer serves the user’s genuine intentions, it serves the developer’s preconceived understanding.</p>
+</blockquote>
+
+<p>That’s why now I’m approaching to this problem with a different angle, which we explored in <a href="/publications/semi-formal-programming/" class="wiki-link" data-target="Semi-Formal Programming">Semi-Formal Programming</a>.</p>
+
+<h3 id="i-almost-gave-up">I Almost Gave Up</h3>
+
+<p>The emotional rollercoaster is familiar territory for researchers. Throughout this project, I often questioned myself… is this work genuinely interesting? Is it practically useful? Is it generative enough to spark new ideas or provoke thought?</p>
+
+<p>A significant internal conflict emerged from feedback conversations. One particularly powerful and valid criticism was: “But we don’t code on tablets.” And it’s true, this practical reality kept nudging at me, pressing me to think about how we could make this approach more directly useful and integrate it seamlessly into everyday workflows.</p>
+
+<p>However, a conversation with Dan provided a valuable perspective shift. He reminded me of something fundamental: the beauty of academia, particularly as a student researcher, is that we have the luxury of exploring ideas free from immediate practical constraints, free from worrying about commercial viability, product-market fit, or appeasing investors and managers. And he’s right. This freedom allows us to explore alternative, imaginative ways of interacting with code, even when those explorations don’t neatly translate into immediate practicality.</p>
+
+<p>We were fortunate that the paper received recognition as a Best Paper. However, this acknowledgment doesn’t invalidate the skepticism or critical questions raised, it only highlights different values and approaches to research. Ultimately, the questions posed from the opposite side are still relevant and important, and they push us to think deeper and more rigorously.</p>
+
+<p>In the end, Code Shaping is about exploring alternative paradigms and different ways of expressing and interacting with code, especially recognizing that some ideas are hard to capture fully in words. That, perhaps, is where its true value lies.</p>
+
+  </div>
+
+  
+  
+  
+  <script src="https://giscus.app/client.js"
+    data-repo="ryanyen2/ryanyen2.github.io"
+    data-repo-id="R_kgDOI9Xwbw"
+    data-category="General"
+    data-category-id="DIC_kwDOI9Xwb84CohW2"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <div class="comments">
+    <h2>Comments</h2>
+    <!-- giscus comment system -->
+<script src="https://giscus.app/client.js"
+        data-repo="ryanyen2/ryanyen2.github.io"
+        data-repo-id="R_kgDOI9Xwbw"
+        data-category="General"
+        data-category-id="DIC_kwDOI9Xwb84CohW2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script> 
+  </div>
+  
+</article>
+
+<script>
+  // Add language attribute to code blocks for styling
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      // Find the language class (usually the second class after 'highlight')
+      const classes = block.className.split(' ');
+      if (classes.length > 1) {
+        const lang = classes[1].replace('language-', '');
+        block.setAttribute('data-lang', lang);
+      }
+    });
+    
+    // Fix figure references
+    const figures = document.querySelectorAll('figure[id]');
+    const links = document.querySelectorAll('a[href^="#figure"]');
+    
+    // Create a map of figure IDs
+    const figureMap = {};
+    figures.forEach(figure => {
+      figureMap[figure.id] = true;
+    });
+    
+    // Check if links point to valid figures
+    links.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!figureMap[targetId]) {
+        console.warn(`Reference to non-existent figure: ${targetId}`);
+      }
+    });
+  });
+</script> 
+      </main>
+    </div>
+  </div>
+  
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/video-enhancer.js"></script>
+</body>
+</html> 
