@@ -9,8 +9,7 @@ breadcrumb: "Blog > The Language We Forgot We Could Speak"
 **Author**: Ryan Yen
 
 
-**Preface**
-
+### **Preface**
 We often take for granted that the progress of technology is driven purely by technical advances, forgetting that it is equally a social and cultural product. The way we have thought about programming languages for seventy years, as formal, rigid, machine-oriented, is not an inevitability but a habit, one shaped by the constraints of earlier machines that we carried forward long after those constraints began to soften. 
 
 This piece stands from the perspective of a future roughly twenty years out, written as a memoir of sorts, a reflection on an essay I wrote during my PhD and the semiformal programming research I was betting my career on at the time. It traces what changed, what held up, the cultural shifts that I envisioned in how people relate to computation, the genuine challenges of collaboration and standardization, the regulatory concerns that emerged when interpretation layers sat between human intent and machine execution, and the quiet hope that if we follow certain principles, the future might still bend toward something good.
@@ -20,6 +19,8 @@ Rather than targeting a single industry sector, the piece focuses on domain scie
 Honestly, it is a deeply cathartic thing to write a piece like this <img src='/assets/images/icons/good-face.svg' alt='Work with Cat Icon' style='width: 24px; height: 24px; vertical-align: top;'> to sit inside the future I once only envisioned and find that the bet paid off more or less as I'd hoped. If that were the whole story, it would be comfortable. But comfort isn't the whole story. As thrilling as it is to see this future taking shape, I am equally worried by it, the technical debt these systems create, the potential for misuse, the fragility of an interpretation layer that could silently drift, and the lingering possibility that the vision hasn't fully arrived and maybe never will. But that's the beauty of the future, no one owns it, no one gets to be certain about it, and writing toward it is always an act of faith as much as prediction.
 
 ---
+
+### **Part I: The Reef**
 
 I'd been tracking thermal stress on a reef in Fiji, and the satellite baseline was drifting again.
 A recurring problem.
@@ -46,6 +47,8 @@ Better tools don't change what the tools are pointed at. But that's a different 
 
 ---
 
+### **Part II: Prophecy, Revisited**
+
 That night, I pulled up an old article I'd written. An article submitted it to the MIT Envisioning the Future of Computing Prize back in 2026.
 Reading it now, I laughed a few times. The prose was slightly overwrought. Some of the claims I made about the future were too bold. But overall, it held up. 
 
@@ -58,9 +61,7 @@ The idea that a person's own notation, their own squiggly diagrams and half-form
 
 ---
 
-But the vision wasn't even new.
-
-I think it's just as Grace Hopper once said. "Humans are allergic to change." We love to say, "We've always done it this way."
+But the vision wasn't even new. We're just not living in that world yet. And the reason... I think Grace Hopper said it best: 'Humans are allergic to change. We love to say, "We've always done it this way."'
 
 In 1966, Jean Sammet published "The Use of English as a Programming Language" in *Communications of the ACM* (Sammet, 1966). She was imagining a future where machines could understand human language directly. Not translate it into something rigid, but understand it.
 
@@ -82,6 +83,8 @@ Going further back, before programming languages existed at all, the word "compu
 When ENIAC arrived, six of those women became its first programmers. But the machine couldn't do what they had done. It couldn't infer, couldn't tolerate shortcuts. Every operation had to be stated. So we adapted. We learned to be more rigid. And we stayed rigid for seventy years.
 
 ---
+
+### **Part III: The Bottleneck Moves**
 
 When I wrote my essay in 2026, large language models had just shown that you could describe what you wanted in plain English and the model would generate code.
 
@@ -107,6 +110,8 @@ The pattern was consistent. The bottleneck didn't disappear. It moved.
 
 ---
 
+### **Part IV: Notation as Program**
+
 What semiformal programming proposed was different in a specific way. The notation itself was the program, not input to a code generator. And instead of describing what you wanted in natural language and receiving back generated code, you worked directly in your domain's notation. 
 
 Where you had certainty, you wrote precise formal code. Where you were still exploring, you sketched, annotated, or wrote in your domain's shorthand. The interpretation layer inferred the rest, but critically, it rendered its inferences back in the same notation you'd used.
@@ -121,6 +126,8 @@ The system learned my notation over time, assigning computational semantics to m
 Once a sketched curve meant something, reusing that pattern produced the same behavior. The program became a living document where some parts were precise and some parts were sketches, and both executed.
 
 ---
+
+### **Part V: The Vernaculars**
 
 This idea was genuinely hard to sell at the beginning.
 The models weren't stable enough. They drifted, they hallucinated. The same sketch might get interpreted differently across different models. 
@@ -152,6 +159,9 @@ It was that scientists and practitioners, people whose primary expertise was in 
 
 ---
 
+
+### **Part VI: The Challenges**
+
 But I need to be honest about what went wrong.
 
 In my 2026 essay, I worried about collaboration. If everyone writes in their own notation, how does anyone share work? Python meant the same thing to everyone who wrote Python. My squiggly sketches don't necessarily mean the same thing as my colleague's in Fiji.
@@ -175,6 +185,7 @@ That said, the convergence is uneven, and I suspect it always will be.
 Some fields developed tight conventions quickly. Others remain fragmented. Different domains have different tolerance for ambiguity. Each found its own level of formality. Where failure is catastrophic, more formal. Where flexibility helps more than rigidity, more informal.
 
 ---
+### **Part VII: There will be Code**
 
 So where does this leave us?
 
@@ -184,7 +195,7 @@ Something in between.
 
 But "something in between" is exactly where the hard design questions live. Semiformal systems are powerful because they are flexible. They are dangerous for the same reason. The interpretive layer that makes a radiologist's shorthand executable is the same layer that can silently drift when a model updates, inferring a subtly different meaning from the same annotation.
 
-This is why formal languages are not going away. 
+This is why formal languages are not going away (Martin, 2009). 
 The most important development wasn't about notation at all. It was about verification. Teams learned, sometimes the hard way, to write formal test specifications alongside their semiformal programs. Even if the program itself is sketchy and interpretive, the tests are precise. The interpretation layer can drift, can be nondeterministic, can update with new model versions. But the tests catch it.
 
 Regulation focused on the right place. 
@@ -195,6 +206,8 @@ For seventy years, the bottleneck on what humanity could build with computers wa
 That is the highest net positive transformation AI has offered. Not replacing human thinking but making it executable. Not generating code on behalf of people, but eliminating code as the mandatory intermediary between intention and action.
 
 ---
+
+### **Part VIII: The Last Compiler**
 
 I want to end with a prediction, because I made one twenty years ago and the tradition feels important, even if I'll be embarrassed by it later.
 
@@ -213,7 +226,7 @@ Well, I guess being wrong in the short term and right in the long term looks exa
 
 ---
 
-**References**
+### References
 
 Booch, G., Rumbaugh, J., & Jacobson, I. (1999). *The Unified Modeling Language User Guide*. Addison-Wesley.
 
@@ -230,6 +243,8 @@ Karpathy, A. (2025, February 2). "There's a new kind of coding I call 'vibe codi
 Kery, M. B., & Myers, B. A. (2017, October). Exploring exploratory programming. In 2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) (pp. 25-29). IEEE.
 
 Light, J. (1999). When computers were women. *Technology and Culture, 40*(3), 455-483.
+
+Martin, R. C. (2009). Clean code: a handbook of agile software craftsmanship. Pearson Education.
 
 Nguyen, S., et al. (2024). How beginning programmers and Code LLMs (mis)read each other. *CHI '24*.
 
