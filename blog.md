@@ -12,6 +12,9 @@ Welcome to my blog where I share thoughts on research, programming interfaces, a
 
 An exploration of the middle ground between formal programming languages and natural language, examining how new interfaces can bridge this gap. -->
 
+### <a href="/blog/the-language-we-forgot-we-could-speak" class="wiki-link"> <img src="/assets/images/icons/collab-file.svg" alt="Language Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> The Language We Forgot We Could Speak</a>
+*February 08, 2026*
+
 ### <a href="/blog/the-fear-of-success" class="wiki-link"> <img src="/assets/images/icons/present.svg" alt="Question Mark Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;"> The Fear of Success</a>
 *November 12, 2025*
 

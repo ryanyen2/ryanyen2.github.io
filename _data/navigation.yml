@@ -20,6 +20,8 @@
 - title: "Blog"
   link: "/blog/"
   children:
+    - title: "The Language We Forgot We Could Speak"
+      link: "/blog/the-language-we-forgot-we-could-speak"
     - title: "The Fear of Success"
       link: "/blog/the-fear-of-success"
     - title: "Big Idea & Deep Work"
