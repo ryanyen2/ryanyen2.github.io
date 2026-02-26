@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://ryanyen2.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ryanyen2.github.io/" rel="alternate" type="text/html" /><updated>2026-02-26T13:19:46+00:00</updated><id>https://ryanyen2.github.io/feed.xml</id><title type="html">Ryan Yen</title><subtitle>Personal Website for Ryan Yen</subtitle><entry><title type="html">The Language We Forgot We Could Speak</title><link href="https://ryanyen2.github.io/blog/the-language-we-forgot-we-could-speak/" rel="alternate" type="text/html" title="The Language We Forgot We Could Speak" /><published>2026-02-08T14:00:00+00:00</published><updated>2026-02-08T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/the-language-we-forgot-we-could-speak</id><content type="html" xml:base="https://ryanyen2.github.io/blog/the-language-we-forgot-we-could-speak/"><![CDATA[<p><strong>Author</strong>: Ryan Yen</p>
+
+<p>Before “computer” meant a machine, it meant a person.</p>
+
+<p>In 1945, approximately 100 women worked as “human computers” at the University of Pennsylvania, calculating artillery firing tables for the U.S. Army (Light, 1999). Each ballistics trajectory required hours of hand calculation using mechanical desktop calculators. The women worked in teams, passing intermediate results down rows of desks like an assembly line of arithmetic.</p>
+
+<p>These women stood between scientists and machine. A physicist would hand them an equation, some beautiful, ambiguous thing full of implicit assumptions and contextual shortcuts. The “computer” would translate this into steps.</p>
+
+<p>When ENIAC arrived in 1945, something interesting happened. The Army didn’t fire the human computers but selected six women to program the machine.</p>
+
+<p>But “program” is almost the wrong word. 
+There was no programming language.</p>
+
+<p>The ENIAC programmers had to physically rewire the machine for each calculation, setting thousands of switches and plugging cables into patch panels, but soon after, punched media allowed programs to be prepared separately and loaded in. Programs were entered using punched cards or paper tape, strips of paper with holes punched in patterns to represent instructions.</p>
+<figure class="float-right">
+  <img src="/assets/images/future/punchcard.png" alt="Punched cards arranged in a program deck." />
+  <figcaption>Data and instructions were once stored on <a href="https://en.wikipedia.org/wiki/Punched_card">punched cards</a>, which were kept arranged in program decks.</figcaption>
+</figure>
+
+<p>These “computers” were still doing the same job their predecessors had done: translating intention into mechanism. The only difference was that now the mechanism was electronic instead of mental.</p>
+
+<p>This arrangement—humans as the flexible interpreters between messy intent and rigid machinery, lasted for about a decade. 
+Then something changed. 
+Not all at once, but gradually, so gradually that nobody noticed what was being lost.</p>
+
+<h2 id="part-ii-the-cultural-shift">Part II: The Cultural Shift</h2>
+
+<p>It started with a reasonable question: why should humans do the translation at all?</p>
+
+<p>Grace Hopper had an answer. In 1952, working at Remington Rand, she created the A-0 System, generally considered the first compiler. Her colleagues were skeptical. “Nobody believed that [we] had a running compiler and nobody would touch it,” she later recalled. The idea seemed absurd, that you could write instructions in something closer to mathematical notation, and a program would translate them into machine code.</p>
+
+<p>FORTRAN followed in 1957, developed by John Backus’s team at IBM. And with FORTRAN came a transformation that’s easy to miss from our vantage point today. Programmers weren’t just translators anymore. They became authors, writing in languages bound by strict, unforgiving rules. A missing semicolon would break everything. A misplaced word rendered the whole thing meaningless.</p>
+
+<p>This trade-off, surrendering the flexibility of natural communication for the precision of formal notation, wasn’t inevitable. It was a choice, one that came to define programming for seventy years. A language had to be unambiguous, complete, verifiable. A program had to mean exactly the same thing to everyone who read it.</p>
+
+<p>Variation was error. Flexibility was weakness.</p>
+
+<p>There were rebels though. In 1966, Jean Sammet published “The Use of English as a Programming Language” (Sammet, 1966), imagining machines that might learn human language.</p>
+
+<p>Thirteen years later, Edsger Dijkstra wrote “On the Foolishness of ‘Natural Language Programming’” (Dijkstra, 1979). His argument was precise. Natural language is ambiguous. Computers need unambiguous instructions, the details that natural language could not provide. Considering English as a programming language wasn’t just technically hard. It was a category error.</p>
+
+<p>With the machines that existed in 1979, he was right. Those machines were rigid, literal, unforgiving. They couldn’t infer. They couldn’t fill gaps. Formal languages weren’t a preference; they were a necessity. And we still use formal languages today because they provide the precise details about requirements that we need.</p>
+
+<p>But Sammet wasn’t wrong either. She was early.</p>
+
+<p>For seventy years after, “programming language” meant a language for computers, not for humans. We kept climbing the ladder of abstraction, from machine code to assembly to FORTRAN to Python, each rung promising to be more readable, more intuitive. But each rung introduced its own concepts, its own rules, its own ways of breaking. The more “natural” it tries to be, the more deceptive it becomes, as it is still formal and rigid.</p>
+
+<p>And as Dijkstra predicted,</p>
+
+<blockquote>
+  <p>From one gut feeling I derive much consolation: I suspect that machines to be programmed in our native tongues […] are as damned difficult to make as they would be to use. (Dijkstra, 1979)</p>
+</blockquote>
+
+<h2 id="part-iii-the-dream-deferred">Part III: The Dream Deferred</h2>
+
+<p>Then, all at once, something shifted.</p>
+
+<p>Large language models arrived with a strange new capability. You could describe what you wanted in plain English, and they would generate code. LLMs suddenly became the bridge between natural language and working programs.</p>
+
+<p>The headlines went wild:</p>
+
+<p>“No Code Required.”</p>
+
+<p>“The End of Programming.”</p>
+
+<p>“AI Will Replace Developers.”</p>
+
+<p>But something odd happened. The instructions you gave the model weren’t part of the program. You were talking to a separate machine, asking it to generate formal code on your behalf. The dream of natural language programming was about writing programs in natural language. This was different. This was writing natural language instructions to a translator that would then write the formal code for you.</p>
+
+<p>But because natural language isn’t the program itself, programmers still need to read, learn, and understand the formal code that gets generated. Here’s the pattern I’ve seen play out:</p>
+
+<p>A manager wants an application.</p>
+
+<p>A programmer, Alicia, describes it in English.</p>
+
+<p>The LLM produces code.</p>
+
+<p>But the code doesn’t quite work, there’s a bug, an edge case the prompt didn’t specify.</p>
+
+<p>She needs to debug it.</p>
+
+<p>But to debug it, she needs to understand it.</p>
+
+<p>And to understand it, she needs to learn… programming.</p>
+
+<p>The thing she thought she’d bypassed.</p>
+
+<p>The LLM moved the barrier, but it didn’t remove it. In some ways it made things worse, because now you need to understand not just programming, but what the LLM did, which is far less transparent than code you wrote yourself.</p>
+
+<p>So here we are, two years into the LLM era, and most people still can’t program.</p>
+
+<p>The formal bottleneck remains.</p>
+
+<h2 id="part-iv-the-possibility-we-overlooked">Part IV: The Possibility We Overlooked</h2>
+
+<p>But what if we’re asking the wrong question?</p>
+
+<p>The LLM sits outside the program, translating natural language into formal code. But what if the natural language could <em>be</em> part of the program itself? What if the LLM wasn’t a separate translator, but an interpreter woven into execution, reading informal specifications alongside formal logic, making sense of both as the program runs?</p>
+
+<p>We struggle to imagine this because seventy years of compiler-thinking has trained us to believe programs must be completely formalized before they execute. But that’s a historical accident, not a law of nature.</p>
+
+<p>Think back to the human computers. They didn’t all use the same notation. A physicist’s calculator developed shorthand for physics equations. A statistician’s calculator developed patterns for statistical work. Each created their own language suited to their domain. The machine didn’t care, because the human interpreter could handle the variation.</p>
+
+<p>When we built automatic compilers, we lost this flexibility. A compiler understands one language, spoken perfectly. Everyone must speak the same way.</p>
+
+<p>But an LLM isn’t a compiler in the old sense. It’s something stranger and more flexible. It can understand multiple notations. It can infer intention across contexts. It can hold both formal and informal representations simultaneously.</p>
+
+<p>This opens a different possibility: users don’t need to learn “the language.” They express themselves in whatever notation makes sense, of course formal code where precision matters, natural language where intent is enough, equations, sketches, examples, whatever…</p>
+
+<p>and the system interprets it during execution.</p>
+
+<p>We call this way of program, [[Semi-Formal Programming]].</p>
+
+<p>The crucial difference from prompting is that these expressions <em>are</em> the program. They’re not prompts to an AI sitting outside. They’re not completely formal code to a compiler. They’re the program itself, written in whatever notation feels natural, mixing formality and informality freely.</p>
+
+<p>The system assigns semantics to each piece. Once a notation has semantics, reusing it produces the same behavior. The program becomes a living document where some parts are precise and some parts are sketches, and both execute.</p>
+
+<p>Let’s see what semiformal program might look like in practice:</p>
+
+<hr />
+
+<p>Consider a marine biologist modelling coral bleaching. Today her work lives in three places: equations in a paper, temperature data in a spreadsheet, Python scripts she half-understands.</p>
+
+<p>In a semiformal system, she writes in her domain’s notation:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>thermal_stress[t] = Σ(SST[t] - MMM) for days where SST &gt; MMM + 1°C
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>that notation gets parsed and assigned a specific computational meaning. <code class="language-html highlighter-rouge">thermal_stress</code> is an accumulator with a conditional filter, <code class="language-html highlighter-rouge">MMM</code> is Maximum Monthly Mean, a climatological baseline that needs a data source.</p>
+
+<p>Each piece has semantics she can inspect. She clicks <code class="language-html highlighter-rouge">MMM</code> and sees where it comes from, what it’s bound to, whether she wants to override it with local measurements. When she changes the bleaching threshold from 4 to 6 DHW, the system traces dependencies and recomputes only what’s affected.</p>
+
+<p>Her notations are the program.</p>
+
+<hr />
+
+<p>The same principle applies across domains.</p>
+
+<p><img src="/assets/images/future/cirquit-scenario.png" alt="Circuit scenario: sketch-based quantum circuit notation. Illustration generated by NanoBanana from Google Gemini." /></p>
+
+<p>A quantum computing researcher is sketching a circuit. She doesn’t write Qiskit or Cirq. She draws: a horizontal line for a qubit, a box with “H” for a Hadamard gate, a vertical connection with a control dot for a CNOT.</p>
+
+<p>She draws a small subcircuit and writes <code class="language-html highlighter-rouge">C =</code> next to it. That becomes a definition.</p>
+
+<p>Later, when she draws a box labeled “C,” the system recognizes the subcircuit she defined, with its semantics intact and expandable to the same gates on the same qubit topology.</p>
+
+<p>She adds an ellipsis with a superscript <em>n</em> to indicate repetition across qubits. It’s informal shorthand, the kind physicists scribble on whiteboards, but the system parses it:</p>
+
+<blockquote>
+  <p>this pattern repeats with parameter <em>n</em>, inferred from context.</p>
+</blockquote>
+
+<p>When she modifies the circuit, she doesn’t edit generated code but erases a gate and draws a different one. The implementation updates to match and propagate changes downstream.</p>
+
+<p>Her sketches are the program.</p>
+
+<hr />
+
+<p>These two examples show the core idea of semiformal programming that the gap between human expression and machine execution isn’t bridged by compilation, but by interpretation.</p>
+
+<p>The biologist’s equation and the physicist’s sketch aren’t converted into Python or Qiskit, they remain as written, in their native notations. The system doesn’t ask them to formalize everything upfront. Instead, it assigns computational meaning to whatever they write, in whatever form they write it, and executes that meaning directly. The notation <em>is</em> the program, and the program adapts to the user’s language, keeps iterating reactively, and remains a living artifact.</p>
+
+<h2 id="part-v-the-hard-questions">Part V: The Hard Questions</h2>
+
+<p>While these envisioned scenarios get the best of both worlds, they also share the worst of both worlds.</p>
+
+<p>Traditional software has bugs, but the bugs are deterministic. Run the same input twice, get the same wrong output twice. Debug by tracing execution, find the line that’s wrong, fix it. Semiformal systems don’t work this way. The same input might produce different outputs based on subtle context variations. The interpretation layer might “drift” as the underlying models update. The behavior you tested last month might not be the behavior you get today.</p>
+
+<p>For low-stakes applications, casual data analysis, personal organization, creative exploration, this is probably fine. We tolerate uncertainty in lots of tools we use daily.</p>
+
+<p>For high-stakes applications, the places where software failures harm people or crash markets, this is a serious barrier.</p>
+
+<p>Regulation should be focused on the right place: the artifact that a domain expert edits is not the same artifact that executes on the machine, and the interpretation layer between them is where risk concentrates. Medical device software requires formal verification beneath any semiformal interface. Aviation systems still use rigid languages for flight-critical code. Financial systems enforce deterministic test suites that run on every model update.</p>
+
+<p>This is why formal languages are not going away (Martin, 2009). The most important development wasn’t about notation at all. It was about verification. Teams learned, sometimes the hard way, to write formal test specifications alongside their semiformal programs. Even if the program itself is sketchy and interpretive, the tests are precise. The interpretation layer can drift, can be nondeterministic, can update with new model versions. But the tests catch it.</p>
+
+<p>The formal verification layer beneath the semiformal interface is always required to guarantee safety properties regardless of how the interpretation layer behaves. Either way, the path to adoption in safety-critical domains will be long, and it probably should be.</p>
+
+<p>The collaboration problem might be even thornier. I’ve been describing semiformal programming as liberating, as freeing individuals to express computation in their own terms. But “your own terms” and “terms we can share” are in tension.</p>
+
+<p>Traditional programming languages were designed for shared understanding. A Java program means the same thing to everyone who reads it. The syntax is fixed. The semantics are specified. Two programmers can collaborate on code without ever meeting, because the language itself enforces common ground.</p>
+
+<p>Semiformal systems could fragment this. If my physics model uses my idiosyncratic notation and your physics model uses yours, how do we combine them? What if my program offended you? How do we even have a meaningful conversation about whether our models are consistent?</p>
+
+<p>We have a hypothesis about how this might resolve.
+Sociolinguistics had already studied exactly this kind of convergence. When people share a goal, they naturally adjust their communication styles toward each other. Not because anyone mandates it, but because mutual understanding requires it (Giles et al., 2023). When groups engage in shared activity over time, they develop common vocabulary and negotiated conventions that emerge from use rather than from top-down standardization (Wenger, 1998). Members converge not to lose individuality but to enable communication (Eckert &amp; McConnell-Ginet, 1992).</p>
+
+<p>I suspected something like folksonomy would happen (Trant, 2009), the way users on early social platforms organically converged on shared hashtags without anyone dictating which tags to use. A community would gravitate toward common marks simply because shared marks are more useful than private ones.</p>
+
+<p>I hope that gradually, domain by domain, shared patterns will crystallize. Marine biologists working on thermal stress developed shared conventions for expressing bleaching thresholds. It happened the way any community develops shared slang: through use, repetition, and the slow pressure of needing to be understood.</p>
+
+<p>Corporations can publish what amounted to “semiformal language protocols,” internal style guides that defined which notations carried which computational semantics within their organization.</p>
+
+<h2 id="part-vi-semiformal-software-and-execution">Part VI: Semiformal Software and Execution</h2>
+
+<p>I find this future exciting and terrifying in equal measure.</p>
+
+<p>We could be looking at another seventy years of work to make this reliable, secure, and genuinely pleasant to use. The entire ecosystem would have to shift. It’s no longer just the compiler designer asking “how do I build a language people can use?” but also the tool designer asking “how do I build an environment where people can program semiformally?”
+That’s a different problem—harder in some ways, as it requires time to understand how to better support the user experience, and it is not tangible.</p>
+
+<p>But it’s the problem that follows from taking seriously the idea that programming should be expression, not conformance. If the user’s notation is the program, then the user is always, in some sense, a language designer.</p>
+
+<p>And I hope that can also bring us to malleable software.</p>
+
+<p>Where we build software that is malleable and highly customizable. Applications built with semiformal code wouldn’t be frozen artifacts but would leave intentional room for interpretation. Data processing libraries would not have to preassume how users’ data should be formatted; visualization libraries would not have to decide layout from common heuristics but could infer from actual user data; the search box could support semantic search by concept, not just keyword; the table could have grouping and sorting based on the user’s data structure rather than alphabetical order…</p>
+
+<p>I’m also imagining something like semiformal execution.</p>
+
+<p>Not compilation from informal to formal to machine code, but direct, continuous interpretation of the semiformal artifact itself. The debug console might have a mixture of code errors and LLM reasoning, where the reasoning steps are editable and can steer back the model.</p>
+
+<h2 id="epilogue-the-language-we-never-stopped-speaking">Epilogue: The Language We Never Stopped Speaking</h2>
+
+<p>The human computers of 1945 knew something we’ve forgotten: that the point was never the notation. It was the thinking. The notation was just a way to make thinking executable. We taught humans to speak like machines because we had no choice. The machines were rigid, literal, unforgiving. They couldn’t meet us halfway.</p>
+
+<p>That constraint is lifting. Not completely, not overnight, but meaningfully. The question now isn’t whether machines can interpret human intent with some flexibility. They already can. The question is whether we’re willing to build on that, to do the hard work of combining informal expression with formal guarantees, even when the path isn’t clear.</p>
+
+<p>The real obstacle is cultural, not technical.</p>
+
+<p>Grace Hopper had a clock on her wall that ran counterclockwise. “Humans are allergic to change,” she said. “They love to say, ‘We’ve always done it this way.’ I try to fight that.” The allergy she diagnosed hasn’t gone away. If anything, seventy years of programming tradition has made it chronic.</p>
+
+<p>Maybe</p>
+
+<p>Maybe it’s time to see what happens when we get to speak our own languages.</p>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<p>Dijkstra, E. W. (1979). On the foolishness of “natural language programming.” <em>EWD667</em>.</p>
+
+<p>Eckert, P., &amp; McConnell-Ginet, S. (1992). Think practically and look locally: Language and gender as community-based practice. <em>Annual Review of Anthropology, 21</em>, 461-490.</p>
+
+<p>Giles, H., Edwards, A. L., &amp; Walther, J. B. (2023). Communication accommodation theory: Past accomplishments, current trends, and future prospects. <em>Language &amp; Communication, 93</em>, 3-12.</p>
+
+<p>Light, J. (1999). When computers were women. <em>Technology and Culture, 40</em>(3), 455-483.</p>
+
+<p>Martin, R. C. (2009). <em>Clean Code: A Handbook of Agile Software Craftsmanship</em>. Pearson Education.</p>
+
+<p>Sammet, J. E. (1966). The use of English as a programming language. <em>Communications of the ACM, 9</em>(3), 228-230.</p>
+
+<p>Trant, J. (2009). Studying social tagging and folksonomy: A review and framework. <em>Journal of Digital Information, 10</em>(1).</p>
+
+<p>Wenger, É. (1998). <em>Communities of Practice: Learning, Meaning, and Identity</em>. Cambridge University Press.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Author: Ryan Yen]]></summary></entry><entry><title type="html">The Fear of Success</title><link href="https://ryanyen2.github.io/blog/the-fear-of-success/" rel="alternate" type="text/html" title="The Fear of Success" /><published>2025-11-12T14:00:00+00:00</published><updated>2025-11-12T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/the-fear-of-success</id><content type="html" xml:base="https://ryanyen2.github.io/blog/the-fear-of-success/"><![CDATA[<p><strong>Author</strong>: Ryan Yen</p>
+
+<p>I once wrote that research is like drawing a map after traveling through unfamiliar territory [[map-and-territory]]. At first, I thought the hard part was the journey itself: the strange detours, the dead ends, the swamps where you lose your footing. But I was wrong. The hard part is not the traveling. It is knowing when to stop exploring and start drawing the map.</p>
+
+<p>Unlike work with clear, concrete goals, like hitting a benchmark, proving a theorem, some projects are inherently ambiguous. They bend and transform as they progress. For such work, no guideposts exist to mark the endpoint. No established criteria define what the <em>destination</em> should look like: Will it be a framework? An algorithm? A theory? A working library? We cannot know what form the contribution will take.
+Nor can we know what <em>success</em> will look like once we arrive. Will the work get published? Will it resonate with others? Will researchers from different fields find it useful, or will it sit unread? Will it shift how people think, or disappear into the archive? Just as a traveler cannot know whether they will discover a hidden lake in the forest or a mountain peak with a magnificent view, we cannot know.
+The only thing we can do is persist in exploring the terrain before us, solving each problem as it emerges, trusting that meaning will crystallize from movement.</p>
+
+<p>Eventually, you realize the months and years you have spent in these woods. Your work accumulates around you: scattered fragments of ideas, meeting notes, endless prototypes, half-finished manuscripts. Though the work feels perpetually unfinished, perpetually becoming, you continue working on it without hesitation, because keep moviing is the only option that you never have to fear of regretting your choices.</p>
+
+<p>Then one day, you finally reach a hilltop and glimpse a peak directly in your path. The joy of this moment should be substantial. It should vindicate all the weariness and tears of those long, uncertain years.</p>
+
+<p>But then comes the peculiar paralysis.</p>
+
+<p>Your body refuses. Your legs will not carry you to the summit.</p>
+
+<p>The first words you said are not “finally,” not “at last,” but “Is that it?”
+And suddenly you are not celebrating but interrogating. To persuade ourselves not to take those final steps, we doubt: Is this truly the peak? Is this genuinely the end goal I sought, or have I been seduced by proximity into mistaking convenience for destiny? Is this the final piece of the map, or just another fragment in an infinite puzzle?</p>
+
+<p>The doubt grows heavy. Heavier than failure ever felt. What if the whole map I published was wrong? What if somewhere back there, I took a wrong turn I can never undo? What if there is a better view just over that next ridge, and I will spend the rest of my career knowing I settled for less?</p>
+
+<p>So you retreat. The woods that once seemed so dangerous have become familiar, almost comforting. You return to them with relief, forcing yourself not to look back at that “false” summit. Once more, you begin another round of prototypes, another draft, another spiral through the uncertain territory that has become both your prison and your refuge.</p>
+
+<p><strong>It turns out we fear success as much as we fear failure.</strong> 
+We have been searching for so long that the endless hunt has become who we are. We have lived in uncertainty for so long that certainty feels wrong. We cannot release even a preliminary version of our work because to finish would mean the search has ended, the territory has been mapped, the journey is complete. Finishing means accepting that things end. But we are not sure we know what “finished” even means.</p>
+
+<p>Perhaps, as <a href="https://www.bytedrum.com/posts/art-of-finishing/">The Art of Finishing</a> describes, the real fear of success emerges from the fear of being seen; not just evaluated, but truly witnessed. And from being seen comes judgment, accountability, and the loss of infinite possibility.
+You can always imagine it being better, deeper, more significant in your mind. But the moment you release it, that protection vanishes. The work becomes fixed. Real. Open to the world’s interpretation. Success in academia means your work will be read, discussed, potentially contested. And that is terrifying in a way failure never is, because failure stays hidden—a paper never published, an idea never exposed.</p>
+
+<p>Yet I would argue that even if we somehow transcended our fear of others’ voices, the paralysis would persist. Because we are in love with this project. We want it to be in its most exquisite possible form. We know that tomorrow we will understand the problem with greater clarity, and by the next deadline we will have accumulated more wisdom to articulate our insights with deeper precision. 
+Paradoxically, the more we uncover, the more we see how much we do not know, and the more uncertain we become about the true shape of the destination.</p>
+
+<!-- For me, I have been thinking about semi-formal ideas with Josh and Arvind for over a year. The more papers I encounter in computational theory, program synthesis, and program analysis, the more terrified I become. What if these researchers can simply solve the problem effortlessly? What if it takes me so long only because I am new to this area, or worse, because I am just not smart enough? -->
+
+<p>The questions become corrosive. Is this truly a [[big-idea]], or have I convinced myself of its significance to justify the time already spent? At what forgotten fork in the road could I have chosen differently and glimpsed the true destination? We get so caught up in all the possible paths we forget something simple: <em>sometimes the map itself, rough and incomplete as it is, is the destination.</em></p>
+
+<p>Sometimes the beginning is the answer to when we should begin.</p>
+
+<h3 id="reframing-success">Reframing Success</h3>
+<p><em>Perhaps success is not reaching the ultimate destination but the map at this stage of understanding.</em> 
+Success does not come from finding a destination but from every details we drew on the map. The map that marks all the extraordinary scenes we have encountered: the place where two theories suddenly connected, the moment when a prototype revealed an unexpected behavior, the conversation that shifted our entire framing.</p>
+
+<p>There will be other maps. Some cartographer might chart a more efficient route or render the landscape with greater precision. But they would draw an entirely different map, because only you can mark where you fell and what you learned from falling, where you found solid ground and what that taught you, where the path turned in ways no one expected.</p>
+
+<p>Your confusion was necessary. Your false starts taught you something no direct path could have. The process that led you here is unrepeatable, and that might make it valuable.</p>
+
+<p>And because of these experiences, sometimes when you look at existing papers and think “they already solved my problem.” Yet you see it because you have been thinking about this problem deeply, from your unique vantage point. A researcher from another background, looking at the same papers, will see entirely different implications than someone from HCI. You have to trust that the process leading you to this synthesis is a contribution that can only be made by you.</p>
+
+<h3 id="confidently-release-the-first-version">Confidently Release the First Version</h3>
+<p>Sometimes science is like art in that there is no finality. Claude Monet painted his water lilies obsessively for the last thirty years of his life. There are more than 250 canvases capturing the same pond from different angles, in different light, at different seasons. Each painting could have been refined further, touched up in color and technique, endlessly perfected. But Monet released them anyway, not as perfect representations, but as records of particular moments of seeing. Even the imperfections, even what he might have considered mistakes, remain beautiful. They opened the space of impressionist painting, allowing Renoir, Degas, Morisot, and Pissarro to flourish within that field.</p>
+
+<p>It is okay that the first release does not explain everything perfectly. It is okay to be honest about what it addresses and what remains unresolved. Because no matter how meticulously you polish that paper, one year later you will think: “How did I write that?” And that is not a failure of the past, but evidence of how much you’ve grown since that first release.</p>
+
+<p>Only after you release your work can people genuinely engage with your thinking. Some will disagree thoughtfully. Some will build upon it. And suddenly, from this released position, you can see further than you ever could within the woods. The work that was trapped becomes part of something larger. You receive feedback you never could have generated alone. You discover you were mistaken about what truly mattered, and that discovery leads somewhere entirely new.</p>
+
+<!-- And honestly, inviting others into the territory is infinitely more generative for the community than guarding it or claiming exclusive ownership. Yes, someone more brilliant might discover an easier route. Someone might point out that you missed an obvious landmark. But the work does not need you to be perfect. It needs you to begin. It needs you to share the map. -->
+
+<p>I genuinely hope the field, at least in HCI, can become more generous toward incomplete work. Can acknowledge that the effort required to make something honest enough to share is substantial, and the courage to release it is precious. These incomplete works are not failures awaiting correction. They are invitations.</p>
+
+<p>So to us as researchers: release it confidently! Release it with honesty about what you comprehend and what you do not yet understand. Be proud to claim that as a success.
+Not the success of a finished artifact, but the success of something that moves forward. The success of adding your map to the collective atlas, however rough its edges.</p>
+
+<p>The summit will still be there tomorrow. But so will the path ahead.</p>
+
+<p><em>A disclaimer: I have not yet succeeded, nor shipped my first version. This is a pep talk for myself and for those who feel and struggle the same.</em></p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Author: Ryan Yen]]></summary></entry><entry><title type="html">Big Idea &amp;amp; Deep Work</title><link href="https://ryanyen2.github.io/blog/big-idea/" rel="alternate" type="text/html" title="Big Idea &amp;amp; Deep Work" /><published>2025-06-01T14:00:00+00:00</published><updated>2025-06-01T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/big-idea</id><content type="html" xml:base="https://ryanyen2.github.io/blog/big-idea/"><![CDATA[<h1 id="i-am-working-on-a-big-idea-am-i">I am Working on a Big Idea, am I?</h1>
+
+<p>There was an interesting discussion in our group recently about whether we might be deceiving ourselves into thinking we’re doing more than we actually are.</p>
+
+<blockquote>
+  <p>“We like to talk about how we’re different from other researchers because […] we think more deeply—and I’m worried this is starting to lead us to think we know better than others.”</p>
+</blockquote>
+
+<p>This really resonated with me. Lately, when I explain why I haven’t published any papers since coming to MIT, I always say something like, <em>“Oh, because I’m working on a big idea—[[Semi-Formal Programming]].”</em> But then it made me wonder: how do we define a <em>big</em> idea? What counts as <em>deep</em> research? And more critically—does that mean other people are doing <em>small</em> ideas or <em>shallow</em> research?</p>
+
+<p>I recently came across a Paul Graham’s blog post about <a href="https://paulgraham.com/greatwork.html"><em>How to Do Great Work</em></a>, where he talks about some key characteristics behind doing meaningful work. He points out that while we can’t precisely define what great work is, there are common patterns in <strong>how people approach it</strong>: like focusing on novel problems rather than just novel solutions, or being willing to spend an “unreasonable amount of time on a problem”. That said, not all problems require that kind of time, so there’s no single formula. There are many ways to do great work, and ultimately, it comes down to the trade-offs we’re willing to make. We all want to do great work, but it might means that we need to take the risk of, say, missing two paper deadlines a year or not being able to go to UIST25, which is in Korea… :(</p>
+
+<p>I think a “big idea” isn’t a binary thing, it’s a high dimension vector space where people make different value trade-offs to approach to. And since statistically we can’t really predict which work will get the most citations or win a Nobel Prize, maybe it’s not even worth trying to aim for that. What <em>is</em> worth doing is just focusing on the work we care about, being responsible for it (publish only when it’s ready), and staying aware of the trade-offs we’re making.</p>
+
+<p>So next time someone asks me what I’m working on, I’ll probably say:</p>
+<blockquote>
+  <p>“I’m working on an idea that I think just needs more time to think things through. <img src="/assets/images/icons/work-with-cat.svg" alt="Work with Cat Icon" style="width: 24px; height: 24px; vertical-align: top;" />”</p>
+</blockquote>
+
+<p>But honestly, I’m just having too much travel :) Sorry about that, Arvind.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[I am Working on a Big Idea, am I?]]></summary></entry><entry><title type="html">Let Me Sink, Not Think</title><link href="https://ryanyen2.github.io/blog/let-me-sink/" rel="alternate" type="text/html" title="Let Me Sink, Not Think" /><published>2025-04-06T14:00:00+00:00</published><updated>2025-04-06T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/let-me-sink</id><content type="html" xml:base="https://ryanyen2.github.io/blog/let-me-sink/"><![CDATA[<h1 id="let-me-sink-not-think">Let Me Sink, Not Think</h1>
+
+<p>It’s honestly such a blessing that [[Code Shaping]] <img src="/assets/images/icons/draw-pad.svg" alt="Draw Pad Icon" style="width: 24px; height: 24px; vertical-align: top;" /> has become more widespread. I’ve been lucky to have so many incredible people (investors, startup founders, and brilliant industry teams) reach out. I genuinely love chatting with them; they’re inspiring engineers, sharp thinkers, and incredibly accomplished in their own fields.</p>
+
+<p>That said, I’ve also been feeling a little… swept up in the excitement. There’s been this windy indecision in me about whether I should lean further into code shaping and build something around it. It’s tempting. Really tempting.</p>
+
+<p>But I went home, took a pause, did a bit of meditation… and I think, deep down, I realized it’s just not the right time. Right now, I’m working on something I’m genuinely excited about, and I feel incredibly grateful to be building it with Arvind, Josh, and the team. We’re having a great time, we believe in what we’re making, and we’re excited to see it come to life in the near future.</p>
+
+<p>I think part of my hesitation comes from this lingering feeling that I’d be “wasting” such a great opportunity, or say passing up the chance to collaborate with amazing people or join a startup that might even rescue me from being broke! But I’ve already gained so much. I’ve had thoughtful conversations, made meaningful connections, and seen real interest in what I’m doing. Isn’t that already kind of amazing?</p>
+
+<p>At the end of the day, I know I’m on the path that feels right to me right now. I’m keep learning and working on something that truly excites me. And when the day comes that we release it—please reach out again <img src="/assets/images/icons/good-face.svg" alt="Good Face Icon" style="width: 24px; height: 24px; vertical-align: top;" />.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Let Me Sink, Not Think]]></summary></entry><entry><title type="html">The Untold Story of Code Shaping</title><link href="https://ryanyen2.github.io/blog/code-shaping/" rel="alternate" type="text/html" title="The Untold Story of Code Shaping" /><published>2025-03-27T15:00:00+00:00</published><updated>2025-03-27T15:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/code-shaping</id><content type="html" xml:base="https://ryanyen2.github.io/blog/code-shaping/"><![CDATA[<p>If you are looking at this, it means you are as gossipy as I am. Well, this is no hot tea to spill, but I want to talk more about the insider scoop of [[Code Shaping]] <img src="/assets/images/icons/draw-pad.svg" alt="Draw Pad Icon" style="width: 24px; height: 24px; vertical-align: top;" />.</p>
+
+<h3 id="code-shaping-is-not-a-system-paper">Code Shaping is Not a System Paper</h3>
+
+<p>We deliberately framed <strong>Code Shaping</strong> as a paradigm rather than presenting it purely as a “system” paper. The primary reason behind this choice is our focus: we’re less concerned about the technical and engineering specifics (like runtime optimization or integration with existing IDEs) and more invested in exploring how users interact conceptually with this new paradigm.</p>
+
+<p>That doesn’t mean we disregard engineering entirely. Yet, the most challenging and interesting part, and the core focus of our exploration, lies in navigating the conceptual interplay between canvas, AI, and code itself.</p>
+
+<p>This conceptual focus is also why we intentionally avoided the typical system-paper “template”: formative study → build a system → evaluate → outperform baseline → Hooray (I’ve tried this before, and personally, I think it does not make any sense). Instead, we adopted an iterative approach, one without a predefined endpoint. With each iteration, we encountered both successes and failures. If you find the time to look into the paper, please pay special attention to the results sections across these iterations, they embody the true heart of our exploration.</p>
+
+<h3 id="no-future-work">(No) Future Work?</h3>
+
+<p>I’m genuinely grateful that this paper has resonated so widely (some also made it into Instagram reel and went viral!). Many have asked me: “What’s next?” The honest, albeit brief, answer is: <strong>I don’t yet see an approach that we are confident enough to move forward.</strong></p>
+
+<p>Perhaps my brain isn’t big enough, or maybe I haven’t thought deeply enough. But every time I attempt the next iteration or prototype, I find myself stuck between expressivity of sketch and the rigidity of code. While Code Shaping opens intriguing possibilities and could significantly enhance “vibe coding,” problems arise when trying to give users more control than merely relying on AI model performance.</p>
+
+<p>When we start patching formal structures to sketches, such as assigning explicit properties to sketches to help AI interpret them (akin to <a href="https://www.inkandswitch.com/inkbase/">Ink&amp;Switch’s Inkbase</a>), we inadvertently constrain the natural expressivity of users. Suddenly, users aren’t freely externalizing their thoughts; they’re conforming their expressions to match the predefined system properties. In doing so, we risk losing the spontaneous, intuitive nature that makes stylus-based interactions appealing.</p>
+
+<p>This tension became vividly clear in our adoption of command brush in the second iteration, which was essentially a failure. Users didn’t want special brushes or predefined constraints that help the AI “understand.” Instead, they wanted freedom of expression, even at the risk of ambiguity and misunderstanding by the AI.</p>
+
+<blockquote>
+  <p><img src="/assets/images/icons/idea.svg" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> If we constrain the system too much, the interaction no longer serves the user’s genuine intentions, it serves the developer’s preconceived understanding.</p>
+</blockquote>
+
+<p>That’s why now I’m approaching to this problem with a different angle, which we explored in [[Semi-Formal Programming]].</p>
+
+<h3 id="i-almost-gave-up">I Almost Gave Up</h3>
+
+<p>The emotional rollercoaster is familiar territory for researchers. Throughout this project, I often questioned myself… is this work genuinely interesting? Is it practically useful? Is it generative enough to spark new ideas or provoke thought?</p>
+
+<p>A significant internal conflict emerged from feedback conversations. One particularly powerful and valid criticism was: “But we don’t code on tablets.” And it’s true, this practical reality kept nudging at me, pressing me to think about how we could make this approach more directly useful and integrate it seamlessly into everyday workflows.</p>
+
+<p>However, a conversation with Dan provided a valuable perspective shift. He reminded me of something fundamental: the beauty of academia, particularly as a student researcher, is that we have the luxury of exploring ideas free from immediate practical constraints, free from worrying about commercial viability, product-market fit, or appeasing investors and managers. And he’s right. This freedom allows us to explore alternative, imaginative ways of interacting with code, even when those explorations don’t neatly translate into immediate practicality.</p>
+
+<p>We were fortunate that the paper received recognition as a Best Paper. However, this acknowledgment doesn’t invalidate the skepticism or critical questions raised, it only highlights different values and approaches to research. Ultimately, the questions posed from the opposite side are still relevant and important, and they push us to think deeper and more rigorously.</p>
+
+<p>In the end, Code Shaping is about exploring alternative paradigms and different ways of expressing and interacting with code, especially recognizing that some ideas are hard to capture fully in words. That, perhaps, is where its true value lies.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[If you are looking at this, it means you are as gossipy as I am. Well, this is no hot tea to spill, but I want to talk more about the insider scoop of [[Code Shaping]] .]]></summary></entry><entry><title type="html">Map and Territory</title><link href="https://ryanyen2.github.io/blog/map-and-territory/" rel="alternate" type="text/html" title="Map and Territory" /><published>2025-03-02T15:00:00+00:00</published><updated>2025-03-02T15:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/map-and-territory</id><content type="html" xml:base="https://ryanyen2.github.io/blog/map-and-territory/"><![CDATA[<p>I had a fruitful master’s, something I’m proud of, but I didn’t expect it to become a burden. The issue isn’t about how others expecting me to produce more, it’s about how I’ve conditioned myself to recognize shortcuts yet struggle to resist taking them.</p>
+
+<p>A friend and I were discussing <a href="https://www.lesswrong.com/w/map-and-territory">Eliezer Yudkowsky’s <em>map and territory</em> metaphor</a>. We were saying that good research is about finding the right abstractions to articulate the territory in a useful map. And since research papers <em>are</em> essentially in the form of maps, if you’re skilled at drawing maps, you can publish a decent one without truly immersing yourself in the terrain. You don’t have to walk every path, just gather enough fragmented information to sketch something convincing.</p>
+
+<p>And that’s the trap. The intellectual temptation of staying at the map-making level, abstracting, synthesizing, shaping knowledge from a distance. It’s efficient, it produces results, and it aligns perfectly with how research is rewarded. But the most valuable insights don’t come from drawing the map; they come from struggling in the territory, where things are uncertain, chaotic, and deeply uncomfortable.</p>
+
+<p>So what about those papers that last longer and remain great? They don’t just outline a landscape; they carry the weight of having been there. You can feel it between the lines, the synthesis of hard-won failures and fleeting successes, the residue of deep exploration. The good researchers, I guess, aren’t tourists sketching maps from a distance. They are the ones who walk into the unknown, get lost, and only then carve out a path.</p>
+
+<p>That said, my prior work still holds up—so, you know, please check it out still lol <img src="/assets/images/icons/good-face.svg" alt="Good Face Icon" style="width: 24px; height: 24px; vertical-align: middle;" /></p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[I had a fruitful master’s, something I’m proud of, but I didn’t expect it to become a burden. The issue isn’t about how others expecting me to produce more, it’s about how I’ve conditioned myself to recognize shortcuts yet struggle to resist taking them.]]></summary></entry><entry><title type="html">Malleable Interaction Interface</title><link href="https://ryanyen2.github.io/blog/malleable-interaction-interface/" rel="alternate" type="text/html" title="Malleable Interaction Interface" /><published>2024-12-28T14:00:00+00:00</published><updated>2024-12-28T14:00:00+00:00</updated><id>https://ryanyen2.github.io/blog/malleable-interaction-interface</id><content type="html" xml:base="https://ryanyen2.github.io/blog/malleable-interaction-interface/"><![CDATA[<h1 id="malleable-interaction-interface">Malleable Interaction Interface</h1>
+
+<p><strong>Authors</strong>: Ryan Yen</p>
+
+<p>Malleable software, a vision proposed by Philip Tchernavskij in his 2019 PhD thesis, refers to interfaces that allow users to freely manipulate and recombine interactive elements, contrasting with traditional apps that offer limited, predefined interaction methods. In essence, malleable software provides a flexible canvas where users can shape their digital environment to match their needs and thought processes.</p>
+
+<p>Building on this foundation, I would like to extend the concept to focus more deeply on the interaction between humans and these malleable interfaces. By considering the relationship between users and the system, we can examine how technology can adapt to human cognition rather than forcing humans to adapt to rigid technological constructs.</p>
+
+<h2 id="freedom-of-expression">Freedom of Expression</h2>
+
+<p>To better grasp this concept, let’s follow Alicia, a data scientist, as she explores a new dataset: Alicia begins by searching the web for visualization tools suited to her data. After researching, she chooses Vega-Lite, a declarative programming language for creating interactive visualizations. Alicia opens a code editor and prepares to type the Vega-Lite code manually.</p>
+
+<p>However, is Alicia confined to this single method? Not at all. She has multiple options for creating her visualization. She can write imperative code using D3.js, describe her desired plot to ChatGPT using natural language, use a low-code GUI interface like Tableau, or even sketch her visualization and convert it to code with Microsoft’s SketchToCode.</p>
+
+<p>To consider which approach is easier for Alicia to translate her thoughts into actions the system understands, we can evaluate the “directness” of each interaction based on the <strong>distance between the user’s intention</strong> (plot visualization) <strong>and the actual visual representation (code, image, sketches).</strong> We can arrange Alicia’s options on a spectrum of directness if she wants to articulate her thoughts about the bar chart in a visual format:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>D3.js → Vega-Lite → Visual Programming Language → GUI → Output-Directed Programming → Freeform Sketching
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>As we move from left to right on this spectrum, the distance between her thought and representation generally decreases, meaning the expression of ideas becomes more natural to her thought process.</p>
+
+<p>However, Alicia might not always think about the code in visual form. For example, if she wants to iterate through data, she might prefer a for loop or other linguistic equivalent. Hence, the ideal malleable interface would allow her to switch between these different modes of expression. This is the first and pivotal aspect of malleable interaction interfaces: the freedom they <strong>afford users to express their intentions flexibly across various levels of abstraction</strong>. Yet, this requires thoughtful design, as simply integrating all tools together and juxtaposing them with each other does not work effectively.</p>
+
+<h2 id="designing-for-code-properties-not-just-code">Designing for Code Properties, Not Just Code</h2>
+
+<p>Having explored the spectrum of representations available to Alicia, let’s investigate the malleable interaction interface from the perspective of code as an entity. Why use programming as an example context to discuss malleable interfaces? The key lies in the abstract and polymorphic nature of code itself.</p>
+
+<p>Unlike physical objects with fixed forms, code is inherently shapeshifting. It lacks a definitive visual representation, instead adapting to the substrate in which it exists. This flexibility allows code to manifest in various forms:</p>
+
+<ul>
+  <li>As syntactic language in a code editor</li>
+  <li>As visual diagrams in UML</li>
+  <li>As tangible output in the form of data visualizations or user interfaces</li>
+</ul>
+
+<p>This chameleon-like quality of code makes it a perfect subject for exploring malleable interface interactions. However, this polymorphic nature makes designing the substrate to afford the malleability of code quite challenging.</p>
+
+<p>This scenario illustrates a key principle in designing malleable interfaces: <strong>focus on the essential properties required to perform a task, rather than on a specific tool or form</strong>. In the context of code and programming interfaces, this means we should design for the properties of code - its logic, structure, and functionality - rather than constraining ourselves to think of code solely as text to be typed into an editor.</p>
+
+<h2 id="balancing-constraint-and-freedom">Balancing Constraint and Freedom</h2>
+
+<p>While I’ve emphasized the benefits of flexibility in adjusting or lowering the distance between the human thinking process and visual representations, it comes with a significant trade-off. In a fixed scenario, the distance between cognition and the lowest-level programming language remains unchanged regardless of the chosen representation. Therefore, the more freedom users are granted (closer to the human side), the more ambiguous it becomes for the system to understand (further from the system side) what the human thought is. The relationship between the visual representation and its underlying meaning becomes more arbitrary and indirect. Users might have to work harder to ensure their free-form inputs are interpreted correctly by the system.</p>
+
+<p>When a system offers a singular mode of expression, users learn how to adapt to it. For example, we are taught to “think like a programmer” in a CS101 crash course. In contrast, too much freedom can lead to frustration when attempting to pinpoint errors or perform simple tasks. Consider TLDraw’s make-real demo, which allows users to generate working HTML, JS, and CSS code from a drawn UI. While initially empowering, it can become cumbersome when users need to make minor adjustments, such as changing the color of a single widget iteratively.</p>
+
+<p>This balance between freedom and constraint is at the heart of designing effective malleable interfaces. The goal is to provide flexibility that matches users’ natural thought processes while still offering enough structure to make the interface predictable and efficient to use.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Malleable Interaction Interface]]></summary></entry></feed>

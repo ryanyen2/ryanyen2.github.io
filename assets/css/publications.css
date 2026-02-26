@@ -1,0 +1,89 @@
+/* Publications Styling */
+
+.publication-meta {
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.publication-meta .conference {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--highlight-brown);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.publication-meta .authors {
+  margin-bottom: 1rem;
+}
+
+.author-self {
+  font-weight: bold;
+  color: var(--text-warm-black);
+}
+
+.equal-contribution {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-gray);
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.publication-links {
+  margin-top: 1rem;
+}
+
+.publication-links a {
+  margin-right: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--highlight-brown);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.publication-links a:hover {
+  color: var(--highlight-yellow);
+}
+
+.publication-links a.unavailable {
+  color: var(--text-gray);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.publication-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.publication-image img {
+  max-width: 100%;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.keyword {
+  display: inline-block;
+  background-color: rgba(247, 229, 157, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: var(--text-warm-black);
+}
+
+.keyword.research-line {
+  background-color: rgba(134, 188, 168, 0.3);
+}
+
+.keyword.contribution {
+  background-color: rgba(195, 141, 158, 0.3);
+} 

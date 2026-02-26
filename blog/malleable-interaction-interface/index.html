@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malleable Interaction Interface | Ryan Yen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/publications.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  
+</head>
+<body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">Ryan Yen</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <nav class="tree-nav">
+        <ul>
+          
+            <li class=" active">
+              <a href="/" >
+                
+                    <img src="/assets/images/icons/note-taking.svg" alt="Menu Item" class="nav-icon">
+                
+                Home
+              </a>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/publications/" >
+                
+                    <img src="/assets/images/icons/writing.svg" alt="Publications" class="nav-icon">
+                  
+                Publications
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/publications/semi-formal-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Semi-formal Programming
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coladder">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoLadder
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coprompt">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoPrompt
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/memolet">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Memolet
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/search-or-gen">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        To Search or To Gen
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children active">
+              <a href="/blog/" >
+                
+                    <img src="/assets/images/icons/pen.svg" alt="Blog" class="nav-icon">
+                  
+                Blog
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/blog/the-language-we-forgot-we-could-speak">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Language We Forgot We Could Speak
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/the-fear-of-success">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Fear of Success
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/big-idea">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Big Idea & Deep Work
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/let-me-sink">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Let Me Sink, Not Think
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Untold Story of Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/map-and-territory">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Map and Territory
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/readings/" >
+                
+                    <img src="/assets/images/icons/reading.svg" alt="Readings" class="nav-icon">
+                  
+                Readings
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/readings/reification-polymorphism-reuse">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Reification, Polymorphism and Reuse
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/demonstrational-interfaces">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Demonstrational Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/cognitive-engineering">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Cognitive Engineering
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/designing-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Designing Interaction, not Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/instrumental-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Instrumental Interaction
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/direct-manipulation">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Direct Manipulation Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/thinking-with-external-representations">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Thinking with External Representations
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/ultra-lightweight-constraints">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Ultra-Lightweight Constraints
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/what-is-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        What Is Interaction?
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/usability-analysis-visual-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Usability Analysis of Visual Programming Environments
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      </nav>
+
+      <div class="breadcrumb">
+        
+          <div class="breadcrumb-path">Blog > Malleable Interaction Interface</div>
+        
+      </div>
+    </div>
+    
+    <div class="content">
+      <main>
+        
+
+
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Malleable Interaction Interface</h1>
+    <p class="post-meta">Dec 28, 2024</p>
+  </header>
+
+  <div class="post-content">
+    <h1 id="malleable-interaction-interface">Malleable Interaction Interface</h1>
+
+<p><strong>Authors</strong>: Ryan Yen</p>
+
+<p>Malleable software, a vision proposed by Philip Tchernavskij in his 2019 PhD thesis, refers to interfaces that allow users to freely manipulate and recombine interactive elements, contrasting with traditional apps that offer limited, predefined interaction methods. In essence, malleable software provides a flexible canvas where users can shape their digital environment to match their needs and thought processes.</p>
+
+<p>Building on this foundation, I would like to extend the concept to focus more deeply on the interaction between humans and these malleable interfaces. By considering the relationship between users and the system, we can examine how technology can adapt to human cognition rather than forcing humans to adapt to rigid technological constructs.</p>
+
+<h2 id="freedom-of-expression">Freedom of Expression</h2>
+
+<p>To better grasp this concept, let’s follow Alicia, a data scientist, as she explores a new dataset: Alicia begins by searching the web for visualization tools suited to her data. After researching, she chooses Vega-Lite, a declarative programming language for creating interactive visualizations. Alicia opens a code editor and prepares to type the Vega-Lite code manually.</p>
+
+<p>However, is Alicia confined to this single method? Not at all. She has multiple options for creating her visualization. She can write imperative code using D3.js, describe her desired plot to ChatGPT using natural language, use a low-code GUI interface like Tableau, or even sketch her visualization and convert it to code with Microsoft’s SketchToCode.</p>
+
+<p>To consider which approach is easier for Alicia to translate her thoughts into actions the system understands, we can evaluate the “directness” of each interaction based on the <strong>distance between the user’s intention</strong> (plot visualization) <strong>and the actual visual representation (code, image, sketches).</strong> We can arrange Alicia’s options on a spectrum of directness if she wants to articulate her thoughts about the bar chart in a visual format:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>D3.js → Vega-Lite → Visual Programming Language → GUI → Output-Directed Programming → Freeform Sketching
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>As we move from left to right on this spectrum, the distance between her thought and representation generally decreases, meaning the expression of ideas becomes more natural to her thought process.</p>
+
+<p>However, Alicia might not always think about the code in visual form. For example, if she wants to iterate through data, she might prefer a for loop or other linguistic equivalent. Hence, the ideal malleable interface would allow her to switch between these different modes of expression. This is the first and pivotal aspect of malleable interaction interfaces: the freedom they <strong>afford users to express their intentions flexibly across various levels of abstraction</strong>. Yet, this requires thoughtful design, as simply integrating all tools together and juxtaposing them with each other does not work effectively.</p>
+
+<h2 id="designing-for-code-properties-not-just-code">Designing for Code Properties, Not Just Code</h2>
+
+<p>Having explored the spectrum of representations available to Alicia, let’s investigate the malleable interaction interface from the perspective of code as an entity. Why use programming as an example context to discuss malleable interfaces? The key lies in the abstract and polymorphic nature of code itself.</p>
+
+<p>Unlike physical objects with fixed forms, code is inherently shapeshifting. It lacks a definitive visual representation, instead adapting to the substrate in which it exists. This flexibility allows code to manifest in various forms:</p>
+
+<ul>
+  <li>As syntactic language in a code editor</li>
+  <li>As visual diagrams in UML</li>
+  <li>As tangible output in the form of data visualizations or user interfaces</li>
+</ul>
+
+<p>This chameleon-like quality of code makes it a perfect subject for exploring malleable interface interactions. However, this polymorphic nature makes designing the substrate to afford the malleability of code quite challenging.</p>
+
+<p>This scenario illustrates a key principle in designing malleable interfaces: <strong>focus on the essential properties required to perform a task, rather than on a specific tool or form</strong>. In the context of code and programming interfaces, this means we should design for the properties of code - its logic, structure, and functionality - rather than constraining ourselves to think of code solely as text to be typed into an editor.</p>
+
+<h2 id="balancing-constraint-and-freedom">Balancing Constraint and Freedom</h2>
+
+<p>While I’ve emphasized the benefits of flexibility in adjusting or lowering the distance between the human thinking process and visual representations, it comes with a significant trade-off. In a fixed scenario, the distance between cognition and the lowest-level programming language remains unchanged regardless of the chosen representation. Therefore, the more freedom users are granted (closer to the human side), the more ambiguous it becomes for the system to understand (further from the system side) what the human thought is. The relationship between the visual representation and its underlying meaning becomes more arbitrary and indirect. Users might have to work harder to ensure their free-form inputs are interpreted correctly by the system.</p>
+
+<p>When a system offers a singular mode of expression, users learn how to adapt to it. For example, we are taught to “think like a programmer” in a CS101 crash course. In contrast, too much freedom can lead to frustration when attempting to pinpoint errors or perform simple tasks. Consider TLDraw’s make-real demo, which allows users to generate working HTML, JS, and CSS code from a drawn UI. While initially empowering, it can become cumbersome when users need to make minor adjustments, such as changing the color of a single widget iteratively.</p>
+
+<p>This balance between freedom and constraint is at the heart of designing effective malleable interfaces. The goal is to provide flexibility that matches users’ natural thought processes while still offering enough structure to make the interface predictable and efficient to use.</p>
+
+  </div>
+
+  
+  
+  
+  <script src="https://giscus.app/client.js"
+    data-repo="ryanyen2/ryanyen2.github.io"
+    data-repo-id="R_kgDOI9Xwbw"
+    data-category="General"
+    data-category-id="DIC_kwDOI9Xwb84CohW2"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <div class="comments">
+    <h2>Comments</h2>
+    <!-- giscus comment system -->
+<script src="https://giscus.app/client.js"
+        data-repo="ryanyen2/ryanyen2.github.io"
+        data-repo-id="R_kgDOI9Xwbw"
+        data-category="General"
+        data-category-id="DIC_kwDOI9Xwb84CohW2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script> 
+  </div>
+  
+</article>
+
+<script>
+  // Add language attribute to code blocks for styling
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      // Find the language class (usually the second class after 'highlight')
+      const classes = block.className.split(' ');
+      if (classes.length > 1) {
+        const lang = classes[1].replace('language-', '');
+        block.setAttribute('data-lang', lang);
+      }
+    });
+    
+    // Fix figure references
+    const figures = document.querySelectorAll('figure[id]');
+    const links = document.querySelectorAll('a[href^="#figure"]');
+    
+    // Create a map of figure IDs
+    const figureMap = {};
+    figures.forEach(figure => {
+      figureMap[figure.id] = true;
+    });
+    
+    // Check if links point to valid figures
+    links.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!figureMap[targetId]) {
+        console.warn(`Reference to non-existent figure: ${targetId}`);
+      }
+    });
+  });
+</script> 
+      </main>
+    </div>
+  </div>
+  
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/video-enhancer.js"></script>
+</body>
+</html> 

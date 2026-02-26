@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semi-Formal Programming | Ryan Yen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/publications.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  
+</head>
+<body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">Ryan Yen</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <nav class="tree-nav">
+        <ul>
+          
+            <li class=" active">
+              <a href="/" >
+                
+                    <img src="/assets/images/icons/note-taking.svg" alt="Menu Item" class="nav-icon">
+                
+                Home
+              </a>
+              
+            </li>
+          
+            <li class="has-children active">
+              <a href="/publications/" >
+                
+                    <img src="/assets/images/icons/writing.svg" alt="Publications" class="nav-icon">
+                  
+                Publications
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/publications/semi-formal-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Semi-formal Programming
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coladder">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoLadder
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coprompt">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoPrompt
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/memolet">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Memolet
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/search-or-gen">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        To Search or To Gen
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/blog/" >
+                
+                    <img src="/assets/images/icons/pen.svg" alt="Blog" class="nav-icon">
+                  
+                Blog
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/blog/the-language-we-forgot-we-could-speak">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Language We Forgot We Could Speak
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/the-fear-of-success">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Fear of Success
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/big-idea">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Big Idea & Deep Work
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/let-me-sink">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Let Me Sink, Not Think
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Untold Story of Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/map-and-territory">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Map and Territory
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/readings/" >
+                
+                    <img src="/assets/images/icons/reading.svg" alt="Readings" class="nav-icon">
+                  
+                Readings
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/readings/reification-polymorphism-reuse">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Reification, Polymorphism and Reuse
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/demonstrational-interfaces">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Demonstrational Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/cognitive-engineering">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Cognitive Engineering
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/designing-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Designing Interaction, not Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/instrumental-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Instrumental Interaction
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/direct-manipulation">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Direct Manipulation Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/thinking-with-external-representations">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Thinking with External Representations
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/ultra-lightweight-constraints">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Ultra-Lightweight Constraints
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/what-is-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        What Is Interaction?
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/usability-analysis-visual-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Usability Analysis of Visual Programming Environments
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      </nav>
+
+      <div class="breadcrumb">
+        
+      </div>
+    </div>
+    
+    <div class="content">
+      <main>
+        
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    "HTML-CSS": { 
+      availableFonts: ["TeX"],
+      scale: 100,
+      linebreaks: { automatic: true }
+    },
+    SVG: { 
+      linebreaks: { automatic: true } 
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script> 
+
+
+
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Semi-Formal Programming</h1>
+    <p class="post-meta">Feb 26, 2026</p>
+  </header>
+
+  <div class="post-content">
+    <!-- > <img src="/assets/images/icons/warning-triangle.svg" alt="Warning Triangle Icon" style="width: 24px; height: 24px; vertical-align: middle;">
+This is a shared work and collaborative thought submitted to the [CHI 2025 Tools for Thought Workshop](https://ai-tools-for-thought.github.io/workshop/), with [Josh Pollock](https://joshmpollock.com/), [Caroline Berger](https://carolineberger.github.io/), and [Arvind Satyanarayan](https://arvindsatya.com/), the full article is available [at the MIT VIS Lab Website](https://vis.csail.mit.edu/pubs/). -->
+
+<div class="publication-meta">
+  <p class="conference">CHI 2025 Tools for Thought Workshop</p>
+  <p class="authors">
+    <span class="author-self">Ryan Yen</span>, 
+    <a href="https://joshmpollock.com/" target="_blank">Josh Pollock</a>,
+    <a href="https://carolineberger.github.io/" target="_blank">Caroline Berger</a>,
+    <a href="https://arvindsatya.com/" target="_blank">Arvind Satyanarayan</a>
+  </p>
+  <div class="publication-links">
+    <a href="/assets/papers/semi-formal-programming.pdf" target="_blank">[<img src="/assets/images/icons/bookmark-doc.svg" alt="Bookmark Document Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> pdf]</a>
+    <a href="https://vis.csail.mit.edu/pubs/semi-formal-programming/" target="_blank">[<img src="/assets/images/icons/writing.svg" alt="Writing Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> Full Article]</a>
+    <a href="https://youtu.be/RGHMT0jJSMA" target="_blank">[<img src="/assets/images/icons/movie-clapboard.svg" alt="Movie Clapboard Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> video]</a>
+  </div>
+</div>
+
+<p>Programming is beautiful in its formalisms. Typed variables, function signatures, and compile-time checks create a world of certainty, where logic flows predictably, and errors are caught before they ever touch runtime.</p>
+
+<p>But the paradox is that <em>programming is never just writing code</em>. Before code takes shape, there’s a messy process of thinking, exploring, and designing, which often happening outside the text editor <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. We sketch ideas on whiteboards, draft flowcharts, browse GitHub issues, and watch YouTube tutorials. We rely on <em>informal representations,</em> which is imperfect, partial, and transient, to figure things out. This interplay between <em>formal code</em> and <em>informal representations</em> becomes especially stark in exploratory workflows, like <em>exploratory programming</em> or <em>exploratory data analysis</em>, where questions evolve as fast as answers. Yet, existing tools often treat these two worlds as separate: you can either <strong>formalize informal representations</strong> (through rigid transformations) or <strong>embed informal artifacts into code;</strong> but only in predefined and limited ways.</p>
+
+<blockquote>
+  <p><img src="/assets/images/icons/idea.svg" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle;" /> What if our tools didn’t force this split between formal and informal? What if they embraced the gray area between thought and code—a <strong>semi-formal paradigm</strong>.</p>
+</blockquote>
+
+<p>One way to describe what we are visioning is an <strong>alternative path to the</strong> <strong>semi-formal paradigm,</strong> a middle ground that blends the rigor of code with the flexibility of evolving representations. Think of a computational notebook where LaTeX equations, code snippets, sketches, and visualizations coexist, interconnected, but not locked into formality until there’re being used.</p>
+
+<h2 id="prior-attempts">Prior Attempts</h2>
+
+<p>Researchers have explored multiple pathways to navigate the space between informal representations and formal code, each reflecting different philosophies on how to blend fluid thinking with computational precision. Broadly, these approaches fall into three strategies:</p>
+
+<ul>
+  <li><strong>Bringing Informal to Formal</strong> <a href="#figure1">Figure 1A</a>: This approach focuses on translating informal representations—like GUI, visualization, or examples—into formal specifications. Program synthesis often plays a central role here, where the system infers code from partial inputs or high-level intents. Tools use <em>programming-by-demonstration</em> fall into this category.</li>
+  <li><strong>Preserving “Holes” for Informal</strong> <a href="#figure1">Figure 1B</a>: Rather than immediately translating informal ideas into formal code, this strategy embraces <em>partial specification</em>. Extended type systems, gradual typing, or live programming environments often use this approach, allowing code to run even when parts are missing or undefined.</li>
+  <li><strong>Patching Formal Specs onto Informal Content</strong> <a href="#figure1">Figure 1C</a>: Instead of forcing informal ideas into code or leaving gaps, this approach overlays formal structures onto existing informal content. Think of tools that let you annotate diagrams with logic, embed executable code into markdown documents, or link spreadsheet cells to complex formulas.</li>
+</ul>
+
+<figure id="figure1" style="margin: 20px;">
+  <img src="/assets/images/semi-formal/semiformal_approaches.png" alt="Figure 1: Approaches Toward a Semi-Formal Paradigm" style="width: 100%; height: auto;" />
+  <figcaption style="text-align: center; font-size: 0.8em; color: #666;"><strong>Figure 1:</strong> Approaches Toward a Semi-Formal Paradigm</figcaption>
+</figure>
+
+<h3 id="bringing-informal-to-formal">Bringing Informal to Formal</h3>
+
+<p>Many researchers have attempted to formalize the unstructured representations. Systems like <strong>Sketch-n-Sketch</strong> <a href="#figure2">(Figure 2)</a> demonstrate how <em>output-directed programming</em> can let users tweak a rendered view to manipulate the underlying code <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>. Likewise, programming by example (PBE) captures input-output instances to generate or refine formal code <sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>.
+<!-- iframe in 2/3 and image in 1/3 --></p>
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+<iframe width="374" height="210" src="https://www.youtube.com/embed/ilwdnnAT2F0" title="Sketch-n-Sketch: Output-Directed Programming for SVG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<figure id="figure2">
+<img src="/assets/images/semi-formal/sketch-n-sketch.png" alt="Figure 2: Output-directed programming workflow describe in the paper. (A) Program $e$ evaluates to value $v$ of type SVG. (B) Graphical widgets for manipulating the output value, intermediate values, and the program. (C) Programmer selects from toolbox and draws on canvas, or manipulates existing shapes and selects a tool. (D) One or more candidate programs are produced; the programmer previews the changes and then chooses one." style="width: 100%; max-width: 374px; height: auto;" />
+<figcaption style="text-align: left; font-size: 0.8em; color: #666;"><strong>Figure 2:</strong> Output-directed programming workflow described.</figcaption>
+</figure>
+</div>
+
+<p>Yet fully capturing their complete semantics remains almost impossible, even within well-defined domains. While Sketch-n-Sketch allows direct manipulation of graphical elements and reflects those changes in the source code, it often defaults to <em>literal updates</em>—hard-coding values from specific edits rather than abstracting patterns or maintaining parameterization.</p>
+
+<p>Many direct-manipulation approaches impose <em>premature structure,</em> leaving tool developers guessing how users might later utilize these artifacts and often resulting in rigid systems that limit flexibility. On the other hand, if tools specify too little, they fail to capture the semantics users need. These predefined semantics often lack an understanding of domain-specific conventions or broader context, making it difficult to adjust logic based on changing user intent <sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup>. Designers can either commit too early and restrict future possibilities or create tools that remain too vague to be truly useful <sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>.</p>
+
+<h3 id="preserving-___-for-informal">Preserving ___ for Informal</h3>
+
+<p>Another approach, which I personally find clever, is introducing the concept of a <em>hole</em> into the programming language <sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">7</a></sup>. <strong>Hazel</strong> introduces typed holes—deliberate “gaps” in the code that allow the program to stay well-formed even when parts are missing. In Hazel, you can write an incomplete expression (a hole) that has a type, and the environment still typechecks and runs the program up to that hole. Building on this, <strong>Live Literals (Livelits)</strong> extends Hazel by letting certain holes be filled via live GUIs <sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">8</a></sup>. For example, a color-valued hole can be linked to a color picker widget: instead of typing an RGB value, the programmer picks a color visually, and that chosen value is inserted into the code.</p>
+
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+<figure id="figure3">
+<img src="/assets/images/semi-formal/livelit.png" alt="Figure 3: Livelit example" style="width: 100%; max-width: 374px; height: auto;" />
+<figcaption style="text-align: left; font-size: 0.8em; color: #666;"><strong>Figure 3:</strong> Livelit example.</figcaption>
+</figure>
+<figure id="figure4">
+<img src="/assets/images/semi-formal/livelit-example.png" alt="Figure 4: The example of using Livelits showed in Figure 1 of the paper" style="width: 100%; max-width: 374px; height: auto;" />
+<figcaption style="text-align: left; font-size: 0.8em; color: #666;"><strong>Figure 4:</strong> The example of using Livelits showed in Figure 1 of the paper.</figcaption>
+</figure>
+</div>
+
+<p>Hazel + Livelits is arguably the closest to a semi-formal paradigm. However, it might not <em>fully</em> satisfy a user’s semi-formal vision if that includes starting from something like a hand-drawn sketch or a wireframe UI. As in approach (Figure 1A), these GUIs preserve a set of predefined attributes linked to the code, risking premature commitment if the user’s needs later change.</p>
+
+<h3 id="patching-formal-spec-to-informal-representation">Patching Formal Spec to Informal Representation</h3>
+
+<p>Conversely, we can preserve the hole in the informal representation and patch the formal spec onto it. Projects like Inkbase <sup id="fnref:9"><a href="#fn:9" class="footnote" rel="footnote" role="doc-noteref">9</a></sup> from <a href="https://inkandswitch.com/">Ink &amp; Switch</a> demonstrate how freehand drawings can accumulate tags, constraints, and relationships over time.</p>
+
+<!-- <div style="display: flex; align-items: center; gap: 2px;"> -->
+<figure id="figure5">
+<img src="/assets/images/semi-formal/inkbase.png" alt="Figure 5: Image from Inkbase showing the properties of an sketch object" style="width: 374px;" />
+<figcaption style="text-align: left; font-size: 0.8em; color: #666;"><strong>Figure 5:</strong> Image from Inkbase showing the properties of an sketch object.</figcaption>
+</figure>
+<!-- <video muted controls width="100%" height="400">
+    <source src="/assets/videos/inkbase-example.mp4" type="video/mp4">
+</video> -->
+<!-- 
+  <div class="video-container">
+    <video
+      id="video-inkbase-example"
+      width="100%"
+      height="400"
+      preload="metadata"
+      muted controls
+      title="Example from Inkbase where users are setting the stroke property to be red or green depending on the value of property 1"
+    >
+      <source src="/assets/videos/inkbase-example.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lazy loading behavior to videos
+  const videos = document.querySelectorAll('.video-container video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        // Only load the video when it's in viewport
+        if (!video.getAttribute('data-loaded')) {
+          video.load();
+          video.setAttribute('data-loaded', 'true');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>  -->
+<!-- </div> -->
+
+<p>In <strong>Inkbase</strong>, the user starts with a blank canvas or sketches. They might treat a particular pen stroke as a “label” or “value,” then link it to another. For example, they can draw a graph axis and data points, then connect those points to a mathematical relationship. Early on, the drawing is just a drawing. As the user adds formulas or links, it gains behavior—becoming a kind of program. This “<strong>gradual enrichment</strong>” avoids upfront commitments. One can start with loose, informal, unstructured content and add more structure, formality, and fidelity over time.</p>
+
+<p>However, without a general-purpose mechanism to infer meaning on the fly, Inkbase demands manual labeling and linking. Also, the computation or program logic “lives” in the patches without fully capturing the informal representation. While it allows users to add custom properties ad hoc, the properties themselves are often predefined, such as width or height, limiting flexibility if the user’s intent goes beyond what the tool developer anticipated.</p>
+
+<h2 id="to-formalize-or-not-to-that-is-not-the-question">To Formalize or Not To, That is Not the Question</h2>
+
+<p>The three approaches above reflect a broader challenge in bridging informal and formal representations. The core tension isn’t merely about toggling between two states, it’s about <strong>how systems reason user intent</strong> without falling into the traps of over-constraining or under-specifying. The challenge is nuanced: users often operate in a fluid space where ideas are half-formed, evolving, or ambiguous, yet our tools demand clarity far too early.</p>
+
+<p>Take <em>Inkbase</em> as an example, a powerful demonstration of how representation-centric systems can foster incremental structuring. It thrives on the idea that users can shape meaning over time. But even here, the cracks show: managing unknown or partially known attributes often requires constant manual input. Without richer placeholders or dynamic inference mechanisms (say, from a large language model), the user bears the cognitive load of transitioning informal artifacts into structured data.</p>
+
+<figure id="figure6" style="margin-bottom: 2.4rem;">
+<img src="/assets/images/semi-formal/spectrum.png" alt="Figure 6: A broken spectrum between the formal and informal worlds" style="width: 100%; height: auto;" />
+<figcaption style="text-align: center; font-size: 0.8em; color: #666;"><strong>Figure 6:</strong> A broken spectrum between the formal and informal worlds.</figcaption>
+</figure>
+
+<p>Our key assumption of the issue is that we tend to treat <em>formal</em> and <em>informal</em> as opposing ends of a binary. But they’re not. They should have coexisted on a <strong>spectrum</strong> (Figure 6), acknowledging that we can’t force one to become the other, and be comfortable stay in a semi-formal space.</p>
+
+<h2 id="a-fourth-direction-embracing-the-semi-formal-land">A Fourth Direction: Embracing the Semi-Formal Land</h2>
+
+<p>Building on the three strategies discussed earlier, we propose a fourth path (Figure 1D): one that doesn’t aim to resolve ambiguity immediately but works with it, letting meaning emerge contextually over time. This approach hinges on three principles:</p>
+
+<ul>
+  <li>
+    <p><strong>Gradually Enrich Informal Representations</strong>:
+  Instead of hard transitions from sketch to code, informal elements can be incrementally structured. Think of diagrams where relationships become data models over time or freeform notes that evolve into computational graphs.</p>
+  </li>
+  <li>
+    <p><strong>Loosen Strictly Typed Programs</strong>:
+  Rather than treating types as rigid contracts from the outset, let them flex. Programs can embrace semi-formal constructs—placeholders, fuzzy types, or undefined slots—that gradually solidify as the system gathers more context.</p>
+  </li>
+  <li>
+    <p><strong>Reason About Semi-Formal Representations in Context</strong>:
+  This is where GenAI can play a transformative role. By dynamically interpreting <em>fuzzy attributes</em>—values that aren’t fully specified—systems can delay hard decisions until they’re necessary. By allowing AI-driven or just-in-time resolution, systems can gracefully handle evolving or uncertain data.</p>
+  </li>
+</ul>
+
+<h2 id="examples-of-semi-formal-paradigm">Examples of Semi-Formal Paradigm</h2>
+
+<h3 id="budget-calculation">Budget Calculation</h3>
+
+<p>Consider a trip planning scenario where you have well-defined budget formulas alongside unstructured artifacts like photos. Traditional tools often formalize everything prematurely, defining how to parse a receipt image. But if you travel to a new country with unfamiliar receipt formats, you may end up manually entering details that existing tools can’t parse.</p>
+
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+<figure id="figure7a">
+<img src="/assets/images/semi-formal/receipt-usa.png" alt="Figure 7 (a): A receipt from a Chinese restaurant in the United States" style="width: 100%; max-width: 374px; height: auto;" />
+<figcaption style="text-align: center; font-size: 0.8em; color: #666;"><strong>Figure 7 (a):</strong> A receipt from a Chinese restaurant in the USA</figcaption>
+</figure>
+<figure id="figure7b">
+<img src="/assets/images/semi-formal/receipt-taiwan.png" alt="Figure 7 (b): A receipt from a convenience store in Taiwan, which has different attributes, in a different language, and using a different year-counting system then CE" style="width: 100%; max-width: 374px; height: auto;" />
+<figcaption style="text-align: center; font-size: 0.8em; color: #666;"><strong>Figure 7 (b):</strong> A receipt from a convenience store in Taiwan, which has different attributes, in a different language, and using a different year-counting system then CE.</figcaption>
+</figure>
+</div>
+<p>By contrast, you can capture ephemeral data (like sketches or images) in a freeform way, then iteratively add annotations for computation when needed. Meanwhile, your formal code can handle unknown attributes, calling on AI or user input if necessary. A workflow might be:</p>
+
+<ol>
+  <li><strong>Capture Receipts</strong>: You snap photos of each receipt. Initially, these are purely informal images.</li>
+  <li><strong>Gradually Add Metadata:</strong> Later, you or an automated tool tags each photo with attributes such as <span class="inline-code">date</span>. The images now have partial structure.</li>
+  <li>
+    <p><strong>Reference Dynamic Attributes in Code:</strong> In a semi-formal environment, you could write:</p>
+
+    <div class="language-tsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre> <span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="p">@</span><span class="nd">photos_taken</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">img</span> <span class="o">=&gt;</span> <span class="p">{</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">img</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">date</span> <span class="o">&gt;=</span> <span class="dl">'</span><span class="s1">12-Mar-2020</span><span class="dl">'</span><span class="p">)</span> <span class="nx">total</span> <span class="o">+=</span> <span class="nx">img</span><span class="p">.</span><span class="nx">total_expense</span><span class="p">;</span>
+ <span class="p">});</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Here, <span class="inline-code">@photos_taken</span> might already know some metadata (like <span class="inline-code">metadata.date</span>) but can also defer other attributes (<span class="inline-code">total_expense</span>) until they’re provided.</p>
+  </li>
+  <li><strong>Executing Semi-Formal Code:</strong> If a particular <span class="inline-code">date</span> is stored as “March 12, 2020,” a strict environment might throw an error. A semi-formal setup defers the resolution until needed, possibly querying an LLM to parse it into <span class="inline-code">‘2020-03-12’</span>. Similar deferral applies if <span class="inline-code">total_expense</span> is missing or in a different currency; the program flags only the problematic parts rather than failing entirely.</li>
+</ol>
+
+<h3 id="another-example-brand-analysis">Another Example: Brand Analysis</h3>
+
+<p>Imagine you’re a data analyst at a fashion company who needs to understand how your brand’s pricing and aesthetics compare to competitors. Instead of waiting for perfectly formatted data, you operate in a semi-formal environment that allows you to iterate quickly.</p>
+
+<p><strong>[WEB PAGE] Integrating Live Data via Web Scraping</strong></p>
+
+<p>You gather competitor pricing by pasting a URL into your workspace and tagging it for extraction:</p>
+
+<div class="language-tsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">data</span> <span class="o">=</span> <span class="p">@</span><span class="nd">link</span><span class="p">.</span><span class="nx">product_data</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Your environment’s AI tries to parse product names, prices, and ratings from raw HTML. If it finds mismatches (e.g., a different layout or currency), it adjusts accordingly based on your current constraints.</p>
+
+<!-- <video muted autoplay controls width="100%" height="400">
+    <source src="/assets/videos/workshop_demo_1.mp4" type="video/mp4">
+</video> -->
+
+<!-- 
+  <div class="video-container">
+    <video
+      id="video-workshop_demo_1"
+      width="100%"
+      height="400"
+      preload="metadata"
+      muted controls
+      title="Demo of extracting products information from the website"
+    >
+      <source src="/assets/videos/workshop_demo_1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lazy loading behavior to videos
+  const videos = document.querySelectorAll('.video-container video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        // Only load the video when it's in viewport
+        if (!video.getAttribute('data-loaded')) {
+          video.load();
+          video.setAttribute('data-loaded', 'true');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>  -->
+<iframe width="931" height="564" src="https://www.youtube.com/embed/EQWEYXsSzIA" title="workshop demo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p><strong>[IMAGE] Extracting Color Palettes from Product Images</strong>
+Next, you want to compare your brand’s prices side by side with competitors’. You reuse an existing color palette from a previously made visualization:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">boxplot</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">boxplot</span><span class="p">([</span><span class="n">df_own</span><span class="p">[</span><span class="s">'price'</span><span class="p">],</span> <span class="n">df_competitor</span><span class="p">[</span><span class="s">'price'</span><span class="p">]],</span> <span class="n">patch_artist</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">patch</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">boxplot</span><span class="p">[</span><span class="s">'boxes'</span><span class="p">],</span> <span class="p">[</span><span class="o">@</span><span class="n">image</span><span class="p">.</span><span class="n">color_palette</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">@</span><span class="n">image</span><span class="p">.</span><span class="n">color_palette</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]):</span>
+  <span class="n">patch</span><span class="p">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Now, your pricing analysis is color-coded: <span class="inline-code">@image.color_palette[0]</span> for your brand, and <span class="inline-code">@image.color_palette[-1]</span> for competitors.</p>
+
+<!-- <video muted autoplay controls width="100%" height="400">
+    <source src="/assets/videos/workshop_demo_2.mp4" type="video/mp4">
+</video> -->
+<!-- 
+  <div class="video-container">
+    <video
+      id="video-workshop_demo_2"
+      width="100%"
+      height="400"
+      preload="metadata"
+      muted controls
+      title="Demo of extracting color palette from external images"
+    >
+      <source src="/assets/videos/workshop_demo_2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lazy loading behavior to videos
+  const videos = document.querySelectorAll('.video-container video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        // Only load the video when it's in viewport
+        if (!video.getAttribute('data-loaded')) {
+          video.load();
+          video.setAttribute('data-loaded', 'true');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>  -->
+<iframe width="931" height="564" src="https://www.youtube.com/embed/Ep30vJPqG2U" title="workshop demo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p><strong>[$\LaTeX$] Crafting Analytical Functions with LaTeX Annotations</strong></p>
+
+<p>To tie together the pricing and aesthetic data, you decide to compute an Aesthetic-Price Score (APS)—a matrix used by the company that reflects how a product’s visual impact relates to its cost. Rather than writing fully formal code, you begin with an informal LaTeX snippet:</p>
+
+<p>$\mathrm{APS} = \frac{\mathrm{VisualImpact} \times \sin(\mathrm{BrandConsistency}) + e^{\,\mathrm{Trendiness}}}{\ln(\mathrm{Price} + 1)}$</p>
+
+<p>You then reuse this LaTeX expression as code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">score</span> <span class="o">=</span> <span class="n">APS</span><span class="p">(</span><span class="n">visual_impact</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">brand_consistency</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span> <span class="n">trendiness</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">price</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<!-- <video muted autoplay controls width="100%" height="400">
+    <source src="/assets/videos/workshop_demo_3.mp4" type="video/mp4">
+</video> -->
+<iframe width="931" height="564" src="https://www.youtube.com/embed/ClVXkLhdFwY" title="workshop demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p>In this example, we combine informal representations—such as a web page, an image, and a LaTeX formula—and enrich them with attributes while allowing some to remain fuzzy or dynamic, like <span class="inline-code">.products</span>. The exact data format of these dynamic attributes isn’t determined until runtime (in this case, it infers the column name based on <span class="inline-code">df_own</span>). This approach demonstrates how semi-formal representations, like <span class="inline-code">url</span> (informal) combined with <span class="inline-code">.products</span> (formal), can be integrated into formal code syntax.</p>
+
+<p>Oh, and of course, Ryan brand’s APS outperforms the competitor.</p>
+
+<h2 id="future-direction">Future Direction</h2>
+
+<h3 id="formalizing-user-interaction-or-user-pattern">Formalizing User Interaction or User Pattern</h3>
+
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+
+<p>
+In a prototype combining Marimo and tldraw made by Jan-Hendrik Müller, you can dynamically change a Matplotlib color via a mouse action. Currently, a developer-coded <span class="inline-code">ReactiveColorPicker()</span> drives this. A future semi-formal system might instead extract these attribute definitions <i>from user behavior</i>, enabling new interactions on the fly. For example, writing <span class="inline-code">@receipt.calculate_sum()</span> could parse a receipt image and sum its total. If it works well, the same logic can be reused with <span class="inline-code">@stock.calculate_sum()</span> or <span class="inline-code">@shopping_cart.calculate_sum()</span>, gradually evolving into a more formal abstraction.
+
+In <a href="https://tomasp.net/blog/2025/adventure-calculus/">Adventure Calculus</a>, he discusses ways to capture repeated <i>interaction</i> or <i>logic</i> patterns more formally. Early on, a user might copy-paste similar snippets multiple times. Eventually, they can abstract these snippets into a function, template, or formal spec. This suggests a path where <i>casual repetition</i> naturally evolves into <i>systematic reusability</i>.
+</p>
+
+<iframe width="622" height="407" src="https://www.youtube.com/embed/-R9QoGZciek" title="pvUFD1jg 2SIbKZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="the-problem-of-iteration-humanai-collaboration">The Problem of Iteration (Human–AI Collaboration)</h3>
+
+<p>Embedding LLMs or AI models in a semi-formal system creates an <em>iterative</em> workflow:</p>
+
+<ol>
+  <li><strong>Extraction Stage</strong>: The AI identifies or parses an informal artifact, such as bounding boxes in an image or snippets of text.</li>
+  <li><strong>Transformation Stage</strong>: The AI or user refines these outputs into structured code or data, generating a JSON schema, typed fields, or hooking them into existing APIs.</li>
+</ol>
+
+<p>At each step, the system may need clarifications or updated instructions. However, instead of a purely turn-based chat, we can embed constraints directly in the semi-formal spec. For instance:</p>
+
+<div class="language-tsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="p">@</span><span class="nd">link</span><span class="p">.</span><span class="nx">products</span><span class="p">(</span><span class="kd">type</span><span class="o">=</span><span class="nx">pd</span><span class="p">.</span><span class="nx">DataFrame</span><span class="p">,</span> <span class="nx">columns</span><span class="o">=</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">price</span><span class="dl">'</span><span class="p">])</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Here, the AI understands that the output should map to a pandas DataFrame with specific columns. If the user adjusts the source data or tweaks the extraction logic, the AI retains these constraints—allowing refinements without starting from scratch. This minimizes the risk of the AI “overturning” prior work and reduces the back-and-forth common in chat-based interfaces.</p>
+
+<h3 id="concretizing-the-semi-formal-specification">Concretizing the Semi-Formal Specification</h3>
+
+<p>A semi-formal system doesn’t eliminate typed code—it augments it. Most of the code remains conventional (typed parameters, familiar data structures), but <strong>fragments can stay under-specified</strong>, leaving placeholders or prompts that the system resolves at runtime. Consider:</p>
+
+<div class="language-tsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="c1">// Example: Mixing structured args with freeform prompts</span>
+<span class="kd">function</span> <span class="nx">list</span><span class="p">(</span><span class="kr">number</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">category</span><span class="p">:</span> <span class="kr">string</span><span class="p">):</span> <span class="kr">string</span><span class="p">[]</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">prompt</span><span class="p">(</span>
+    <span class="s2">`List </span><span class="p">${</span><span class="kr">number</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">category</span><span class="p">}</span><span class="s2">. Respond as a JSON array.`</span>
+  <span class="p">).</span><span class="nx">parse</span><span class="p">(</span><span class="nx">List</span><span class="p">);</span> <span class="c1">// AI-based parsing</span>
+<span class="p">}</span>
+
+<span class="c1">// Using it: "3-5" is vague, "Beatles" is an open domain</span>
+<span class="kd">const</span> <span class="nx">members</span> <span class="o">=</span> <span class="nx">list</span><span class="p">(</span><span class="dl">'</span><span class="s1">3-5</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Beatles</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// Potential Output: ['John', 'Paul', 'George', 'Ringo']</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Here, “3-5” is deliberately ambiguous, and “Beatles” is an open domain. The precise meaning is deferred to the prompt interpretation. Should we decide later that “3-5” means a strict numerical range, we can change only the prompt logic rather than rewriting the entire codebase.</p>
+
+<p>This is the essence of semi-formalism: <strong>defer precision until it’s needed</strong>. Unknowns aren’t errors; they’re placeholders. The system runs what it can, flags what it can’t, and waits for user input or AI-driven resolution. Over time, these placeholders get filled—either manually or via inference—until the code solidifies into a fully formal version.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Programming shouldn’t demand total formality from the start, nor should it abandon structure altogether. The <strong>semi-formal paradigm</strong> blends the reliability of typed code with the fluidity of informal artifacts, allowing users to <strong>think through code</strong> as much as they <strong>code their thinking</strong>. This approach values both typed functions with flexible placeholders and informal representations evolve into code objects.</p>
+
+<p>GenAI plays a key role here, not as a black-box oracle but as a collaborator that infers context, suggests refinements, and helps users manage evolving structures. Systems can dynamically resolve fuzzy data, ambiguous prompts, and casual sketches—only enforcing precision when it truly matters.</p>
+
+<p>This vision aligns with the broader goals of the <a href="https://ai-tools-for-thought.github.io/workshop/"><strong>CHI25 “Tools for Thought” workshop</strong></a>, exploring how Generative AI reshapes human cognition and workflows. By focusing on semi-formal programming, we highlight how AI can augment creativity, support exploratory workflows, and maintain transparency—ensuring that users remain in control.</p>
+
+<p>Ultimately, the semi-formal paradigm isn’t about eliminating complexity; it’s about <strong>embracing the complexity of thought,</strong> designing tools that flex with it, rather than forcing it into rigid molds. In doing so, we can create programming environments that better mirror how we actually think: sometimes messy, often iterative, and always evolving.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>Lastly, I am deeply grateful to <strong>Josh Pollock</strong> and <strong>Arvind Satyanarayan</strong> for their thoughtful mentorship and guidance, and to <strong>Caroline Berger</strong> for her invaluable involvement in our discussions. Their collective input helped shape the ideas and prototypes presented here.</p>
+
+<h2 id="full-demo">Full Demo</h2>
+
+<div class="video-container">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/RGHMT0jJSMA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Full demo walking through the second example about brand analysis" loading="lazy"></iframe>
+  </div>
+
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add lazy loading behavior to videos
+  const videos = document.querySelectorAll('.video-container video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        // Only load the video when it's in viewport
+        if (!video.getAttribute('data-loaded')) {
+          video.load();
+          video.setAttribute('data-loaded', 'true');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>
+
+<!-- <video muted autoplay controls width="100%" height="400">
+    <source src="/assets/videos/RGHMT0jJSMA.mp4" type="video/mp4">
+</video> -->
+
+<h2 id="references">References</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>J. Walny, S. Carpendale, N. Henry Riche, G. Venolia and P. Fawcett, “Visual Thinking In Action: Visualizations As Used On Whiteboards,” in <em>IEEE Transactions on Visualization and Computer Graphics</em>, vol. 17, no. 12, pp. 2508-2517, Dec. 2011, doi: 10.1109/TVCG.2011.251. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Mauro Cherubini, Gina Venolia, Rob DeLine, and Amy J. Ko. 2007. Let’s go to the whiteboard: how and why software developers use drawings. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ‘07). Association for Computing Machinery, New York, NY, USA, 557–566. https://doi.org/10.1145/1240624.1240714 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Hempel, B., Lubin, J., &amp; Chugh, R. (2019, October). Sketch-n-sketch: Output-directed programming for svg. In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (pp. 281-292). <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Cypher, A., &amp; Halbert, D. C. (Eds.). (1993). <em>Watch what I do: programming by demonstration</em>. MIT press. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>Shipman, F. M., &amp; Marshall, C. C. (1999). Formality considered harmful: Experiences, emerging themes, and directions on the use of formal representations in interactive systems. Computer Supported Cooperative Work (CSCW), 8, 333-352. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>Avigad, J. (2024). The design of mathematical language. In Handbook of the History and Philosophy of Mathematical Practice (pp. 3151-3189). Cham: Springer International Publishing. <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>Omar, C., Voysey, I., Hilton, M., Aldrich, J., &amp; Hammer, M. A. (2017). Hazelnut: a bidirectionally typed structure editor calculus. ACM SIGPLAN Notices, 52(1), 86-99. <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p>Omar, C., Moon, D., Blinn, A., Voysey, I., Collins, N., &amp; Chugh, R. (2021, June). Filling typed holes with live GUIs. In Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation (pp. 511-525). <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+      <p>Lindenbaum, J., Kaliski, S., &amp; Horowitz, J. (2022, November). Inkbase: Programmable ink. Ink &amp; Switch. https://www.inkandswitch.com/inkbase <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  
+  <div class="backlinks">
+    <h2>Mentioned in</h2>
+    <ul>
+      
+      <li>
+        <a href="/blog/code-shaping/" class="backlink">The Untold Story of Code Shaping</a>
+      </li>
+      
+      <li>
+        <a href="/blog/code-shaping/" class="backlink">The Untold Story of Code Shaping</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+  
+  
+  <script src="https://giscus.app/client.js"
+    data-repo="ryanyen2/ryanyen2.github.io"
+    data-repo-id="R_kgDOI9Xwbw"
+    data-category="General"
+    data-category-id="DIC_kwDOI9Xwb84CohW2"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <div class="comments">
+    <h2>Comments</h2>
+    <!-- giscus comment system -->
+<script src="https://giscus.app/client.js"
+        data-repo="ryanyen2/ryanyen2.github.io"
+        data-repo-id="R_kgDOI9Xwbw"
+        data-category="General"
+        data-category-id="DIC_kwDOI9Xwb84CohW2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script> 
+  </div>
+  
+</article>
+
+<script>
+  // Add language attribute to code blocks for styling
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      // Find the language class (usually the second class after 'highlight')
+      const classes = block.className.split(' ');
+      if (classes.length > 1) {
+        const lang = classes[1].replace('language-', '');
+        block.setAttribute('data-lang', lang);
+      }
+    });
+    
+    // Fix figure references
+    const figures = document.querySelectorAll('figure[id]');
+    const links = document.querySelectorAll('a[href^="#figure"]');
+    
+    // Create a map of figure IDs
+    const figureMap = {};
+    figures.forEach(figure => {
+      figureMap[figure.id] = true;
+    });
+    
+    // Check if links point to valid figures
+    links.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!figureMap[targetId]) {
+        console.warn(`Reference to non-existent figure: ${targetId}`);
+      }
+    });
+  });
+</script> 
+      </main>
+    </div>
+  </div>
+  
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/video-enhancer.js"></script>
+</body>
+</html> 
