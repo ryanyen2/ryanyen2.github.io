@@ -326,7 +326,7 @@ a[href^="#"] {
 /* Post styling */
 .post-content p {
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .post-content blockquote {
   background-color: rgba(247, 229, 157, 0);
@@ -360,6 +360,26 @@ a[href^="#"] {
 .post-content img {
   width: 100%;
   height: auto;
+}
+
+/* Float figure (e.g. punchcard) so text wraps on desktop; stacked on mobile */
+.post-content figure.float-right {
+  float: right;
+  max-width: 320px;
+  margin: 0 0 1em 1.5em;
+  clear: right;
+}
+
+.post-content figure.float-right img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content figure.float-right figcaption {
+  font-size: 0.85em;
+  color: var(--text-muted, #666);
+  margin-top: 0.35em;
+  line-height: 1.4;
 }
 
 .post-title {
@@ -630,6 +650,15 @@ footer {
   figure img {
     width: 100%;
     height: auto;
+  }
+
+  /* On mobile, float-right figures stack and don't dominate */
+  .post-content figure.float-right {
+    float: none;
+    max-width: min(100%, 280px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
   }
 
   figcaption {

@@ -8,252 +8,241 @@ breadcrumb: "Blog > The Language We Forgot We Could Speak"
 
 **Author**: Ryan Yen
 
+Before "computer" meant a machine, it meant a person.
 
-### **Preface**
-We often take for granted that the progress of technology is driven purely by technical advances, forgetting that it is equally a social and cultural product. The way we have thought about programming languages for seventy years, as formal, rigid, machine-oriented, is not an inevitability but a habit, one shaped by the constraints of earlier machines that we carried forward long after those constraints began to soften. 
+In 1945, approximately 100 women worked as "human computers" at the University of Pennsylvania, calculating artillery firing tables for the U.S. Army (Light, 1999). Each ballistics trajectory required hours of hand calculation using mechanical desktop calculators. The women worked in teams, passing intermediate results down rows of desks like an assembly line of arithmetic.
 
-This piece stands from the perspective of a future roughly twenty years out, written as a memoir of sorts, a reflection on an essay I wrote during my PhD and the semiformal programming research I was betting my career on at the time. It traces what changed, what held up, the cultural shifts that I envisioned in how people relate to computation, the genuine challenges of collaboration and standardization, the regulatory concerns that emerged when interpretation layers sat between human intent and machine execution, and the quiet hope that if we follow certain principles, the future might still bend toward something good.
+These women stood between scientists and machine. A physicist would hand them an equation, some beautiful, ambiguous thing full of implicit assumptions and contextual shortcuts. The “computer” would translate this into steps. 
 
-Rather than targeting a single industry sector, the piece focuses on domain scientists and experts that cuts across sectors, marine biologists, radiologists, urban planners, epidemiologists, whose work is fundamentally computational but whose thinking lives in their own domain artifacts, including equations, clinical shorthand, sketched diagrams, spatial models. These are people who have always needed computation but have been forced to abandon their own notation to access it. 
+When ENIAC arrived in 1945, something interesting happened. The Army didn't fire the human computers but selected six women to program the machine. 
 
-Honestly, it is a deeply cathartic thing to write a piece like this <img src='/assets/images/icons/good-face.svg' alt='Work with Cat Icon' style='width: 24px; height: 24px; vertical-align: top;'> to sit inside the future I once only envisioned and find that the bet paid off more or less as I'd hoped. If that were the whole story, it would be comfortable. But comfort isn't the whole story. As thrilling as it is to see this future taking shape, I am equally worried by it, the technical debt these systems create, the potential for misuse, the fragility of an interpretation layer that could silently drift, and the lingering possibility that the vision hasn't fully arrived and maybe never will. But that's the beauty of the future, no one owns it, no one gets to be certain about it, and writing toward it is always an act of faith as much as prediction.
+But "program" is almost the wrong word. 
+There was no programming language. 
 
----
+The ENIAC programmers had to physically rewire the machine for each calculation, setting thousands of switches and plugging cables into patch panels, but soon after, punched media allowed programs to be prepared separately and loaded in. Programs were entered using punched cards or paper tape, strips of paper with holes punched in patterns to represent instructions. 
+<figure class="float-right">
+  <img src="/assets/images/future/punchcard.png" alt="Punched cards arranged in a program deck." />
+  <figcaption>Data and instructions were once stored on <a href="https://en.wikipedia.org/wiki/Punched_card">punched cards</a>, which were kept arranged in program decks.</figcaption>
+</figure>
 
-### **Part I: The Reef**
+These “computers” were still doing the same job their predecessors had done: translating intention into mechanism. The only difference was that now the mechanism was electronic instead of mental.
 
-I'd been tracking thermal stress on a reef in Fiji, and the satellite baseline was drifting again.
-A recurring problem.
-On my screen, the bleaching projection pipeline was laid out the way I'd built it. Formal Python at the base for the data pipelines and computation. But the surface layer, the part I actually worked with daily, was a mix of handwritten formulas and visual annotations.
+This arrangement—humans as the flexible interpreters between messy intent and rigid machinery, lasted for about a decade. 
+Then something changed. 
+Not all at once, but gradually, so gradually that nobody noticed what was being lost.
 
-The temperature threshold lived in that surface layer as a simple assignment, a formal variable set to a hand-drawn number. When I picked up my stylus and drew a strikethrough over the old value, replacing 30.5 to 31.2, I was editing the program itself. 
+## Part II: The Cultural Shift
 
-That number fed into the formal Python beneath it, the part that computed raw thermal stress from the satellite data. The computation ran. The numbers changed. And then the sketched visualization underneath updated in response, the curve shifting to reflect the new stress values.
+It started with a reasonable question: why should humans do the translation at all?
 
-<img src="/assets/images/semi-formal/semiformal_example.svg" alt="Example of Semiformal Programming Interface" style="width: 50%; height: auto; margin: 20px 0;">
+Grace Hopper had an answer. In 1952, working at Remington Rand, she created the A-0 System, generally considered the first compiler. Her colleagues were skeptical. "Nobody believed that [we] had a running compiler and nobody would touch it," she later recalled. The idea seemed absurd, that you could write instructions in something closer to mathematical notation, and a program would translate them into machine code.
 
-But the system didn't just recompute. It inferred.
+FORTRAN followed in 1957, developed by John Backus's team at IBM. And with FORTRAN came a transformation that's easy to miss from our vantage point today. Programmers weren't just translators anymore. They became authors, writing in languages bound by strict, unforgiving rules. A missing semicolon would break everything. A misplaced word rendered the whole thing meaningless.
 
-That threshold fed into a weighted stress calculation I'd sketched weeks ago, a hand-drawn function combining raw stress with a duration factor. When the formal layer finished computing new stress values, the system looked at my sketched function and proposed an adjustment. A thin annotation appeared alongside the original, rendered in the same hand-drawn style. 
+This trade-off, surrendering the flexibility of natural communication for the precision of formal notation, wasn't inevitable. It was a choice, one that came to define programming for seventy years. A language had to be unambiguous, complete, verifiable. A program had to mean exactly the same thing to everyone who read it. 
 
-A shifted curve with a dotted extension where it had extrapolated my intent downstream.
-The inference was visible, in my notation, in the same space where I'd made the edit.
-If the system had misread my intent, I would have seen that too. 
-The curve bending wrong, numbers drifting unexpectedly. And I would have refined the sketch to correct it, the conversation happening entirely in the visual language I'd established. The conversation between me and the machine happens entirely in my notation. 
-While most of my application is still Python. The data pipelines, the infrastructure, the execution layer. The parts I actually think about and tweak daily live in a layer of math notation and sketches.
+Variation was error. Flexibility was weakness.
 
-The reef is still dying, by the way.
-Better tools don't change what the tools are pointed at. But that's a different essay.
+There were rebels though. In 1966, Jean Sammet published "The Use of English as a Programming Language" (Sammet, 1966), imagining machines that might learn human language. 
 
----
+Thirteen years later, Edsger Dijkstra wrote "On the Foolishness of 'Natural Language Programming'" (Dijkstra, 1979). His argument was precise. Natural language is ambiguous. Computers need unambiguous instructions, the details that natural language could not provide. Considering English as a programming language wasn't just technically hard. It was a category error.
 
-### **Part II: Prophecy, Revisited**
+With the machines that existed in 1979, he was right. Those machines were rigid, literal, unforgiving. They couldn't infer. They couldn't fill gaps. Formal languages weren't a preference; they were a necessity. And we still use formal languages today because they provide the precise details about requirements that we need.
 
-That night, I pulled up an old article I'd written. An article submitted it to the MIT Envisioning the Future of Computing Prize back in 2026.
-Reading it now, I laughed a few times. The prose was slightly overwrought. Some of the claims I made about the future were too bold. But overall, it held up. 
+But Sammet wasn't wrong either. She was early.
 
-That was the time when I was doing my research on semiformal programming with my lab, building systems that let people mix natural language with formal code, sketches with functions, imprecise intent with precise execution. The article's central argument was simple, at least in retrospect. 
+For seventy years after, "programming language" meant a language for computers, not for humans. We kept climbing the ladder of abstraction, from machine code to assembly to FORTRAN to Python, each rung promising to be more readable, more intuitive. But each rung introduced its own concepts, its own rules, its own ways of breaking. The more “natural” it tries to be, the more deceptive it becomes, as it is still formal and rigid. 
 
-> Instead of writing natural language prompts to generate code from an LLM, what if we treated the informal artifacts themselves as the program? The sketches, the shorthand, the equations. Not input to a translator, but the thing that runs. Staying in the program, at the user's own level of abstraction, available to keep tweaking without ever dropping into code.
-> 
-
-The idea that a person's own notation, their own squiggly diagrams and half-formed equations, could *be* the program itself was not obvious to anyone at the time. Every programming language in existence was a formally defined mathematical object. Rigid syntax, unambiguous semantics. We wrote in the machine's terms.
-
----
-
-But the vision wasn't even new. We're just not living in that world yet. And the reason... I think Grace Hopper said it best: 'Humans are allergic to change. We love to say, "We've always done it this way."'
-
-In 1966, Jean Sammet published "The Use of English as a Programming Language" in *Communications of the ACM* (Sammet, 1966). She was imagining a future where machines could understand human language directly. Not translate it into something rigid, but understand it.
-
-She knew the machines of 1966 couldn't do this. But she could see where things were headed.
-
-Thirteen years later, Edsger Dijkstra wrote "On the Foolishness of 'Natural Language Programming'" (Dijkstra, 1979). His argument was precise. Natural language is ambiguous. Computers need unambiguous instructions, the details that natural language could not provide. Considering English as a programming language wasn't just technically hard. It was a category error. 
+And as Dijkstra predicted, 
 
 > From one gut feeling I derive much consolation: I suspect that machines to be programmed in our native tongues […] are as damned difficult to make as they would be to use. (Dijkstra, 1979)
-> 
 
-With the machines that existed in 1979, he was right. Those machines were rigid, literal, unforgiving. They couldn't infer. They couldn't fill gaps. Formal languages weren't a preference. They were a necessity. And until now, we still use formal language as it provides details about requirements that we needed.
+## Part III: The Dream Deferred
 
-But Sammet wasn't wrong either. She was early. 
+Then, all at once, something shifted.
 
-For seventy years after, "programming language" meant a language for computers, not for humans. We kept climbing the ladder of abstraction, from machine code to assembly to FORTRAN to Python, each rung promising to be more readable, more intuitive. But each rung introduced its own concepts, its own rules, its own ways of breaking. The fundamental demand never changed. Translate your thinking into the machine's terms before it will listen.
+Large language models arrived with a strange new capability. You could describe what you wanted in plain English, and they would generate code. LLMs suddenly became the bridge between natural language and working programs. 
 
-Going further back, before programming languages existed at all, the word "computer" meant a person. In 1945, about a hundred women worked as human computers at the University of Pennsylvania, calculating artillery trajectories (Light, 1999). A physicist would hand them an equation, some beautiful ambiguous thing full of implicit assumptions and contextual shortcuts. The human computers would expand it, fill in the gaps, interpret the shorthand. They were flexible interpreters between messy intent and precise execution.
+The headlines went wild: 
 
-When ENIAC arrived, six of those women became its first programmers. But the machine couldn't do what they had done. It couldn't infer, couldn't tolerate shortcuts. Every operation had to be stated. So we adapted. We learned to be more rigid. And we stayed rigid for seventy years.
+"No Code Required." 
 
----
+"The End of Programming." 
 
-### **Part III: The Bottleneck Moves**
+"AI Will Replace Developers.”
 
-When I wrote my essay in 2026, large language models had just shown that you could describe what you wanted in plain English and the model would generate code.
+But something odd happened. The instructions you gave the model weren't part of the program. You were talking to a separate machine, asking it to generate formal code on your behalf. The dream of natural language programming was about writing programs in natural language. This was different. This was writing natural language instructions to a translator that would then write the formal code for you.
 
-The headlines were ecstatic. "The End of Programming." "No Code Required." By 2025, Andrej Karpathy had coined "vibe coding" to describe this practice of fully giving in to the vibes, letting the LLM generate all the code while the human provides goals and feedback in natural language (Karpathy, 2025).
+But because natural language isn't the program itself, programmers still need to read, learn, and understand the formal code that gets generated. Here's the pattern I've seen play out:
 
-But a funny thing happened in the two years that followed.
+A manager wants an application. 
 
-Most people still couldn't code.
+A programmer, Alicia, describes it in English. 
 
-Natural language prompts produced code in an entirely separate form from the input. A person described what they wanted in a sentence. The model responded with an artifact written in a different language, governed by different rules, expressing details the person never specified. 
+The LLM produces code. 
 
-And as the models improved, the gap widened. 
+But the code doesn't quite work, there's a bug, an edge case the prompt didn't specify. 
 
-A single line of English could generate an entire codebase. The model was filling in hundreds of decisions the user hadn't consciously made. Variable names, data structures, error handling strategies, architectural choices.
+She needs to debug it. 
 
-Scientists and domain experts thought they finally wouldn't have to code. But they still had to evaluate whether those inferred decisions matched their actual intent. And there was no mechanism to do that, because their intent had never been expressed at that level of detail. In most cases, when we're first building tools or exploring data, we genuinely don't have clear thoughts on many of those decisions yet (Kery, 2017).
+But to debug it, she needs to understand it. 
 
-The evidence for this problem was already accumulating. 
+And to understand it, she needs to learn... programming. 
 
-Non-experts trying to steer LLMs through prompts explored prompt designs opportunistically, not systematically, and struggled in ways echoing earlier end-user programming systems (Zamfirescu-Pereira et al., 2023). Beginning programmers and Code LLMs tended to misread each other, and if students who already had basic programming skills struggled, then the full natural language-to-code task must be very challenging indeed for true novices (Nguyen et al., 2024). Scientists using Code LLMs were typically confident they could catch errors, but user logs revealed several instances where unintended behaviors were introduced that could have scientific ramifications (Drosos et al., 2025).
+The thing she thought she'd bypassed.
 
-The pattern was consistent. The bottleneck didn't disappear. It moved.
+The LLM moved the barrier, but it didn't remove it. In some ways it made things worse, because now you need to understand not just programming, but what the LLM did, which is far less transparent than code you wrote yourself.
 
----
+So here we are, two years into the LLM era, and most people still can't program. 
 
-### **Part IV: Notation as Program**
+The formal bottleneck remains.
 
-What semiformal programming proposed was different in a specific way. The notation itself was the program, not input to a code generator. And instead of describing what you wanted in natural language and receiving back generated code, you worked directly in your domain's notation. 
+## Part IV: The Possibility We Overlooked
 
-Where you had certainty, you wrote precise formal code. Where you were still exploring, you sketched, annotated, or wrote in your domain's shorthand. The interpretation layer inferred the rest, but critically, it rendered its inferences back in the same notation you'd used.
+But what if we're asking the wrong question?
 
-Return to the reef scenario. When I changed that temperature threshold value, I wasn't prompting an LLM to regenerate my thermal stress pipeline. I was editing a value that was already part of the program. The formal Python computed new stress values. The sketched visualization updated reactively. 
+The LLM sits outside the program, translating natural language into formal code. But what if the natural language could *be* part of the program itself? What if the LLM wasn't a separate translator, but an interpreter woven into execution, reading informal specifications alongside formal logic, making sense of both as the program runs?
 
-And when the system inferred that my downstream weighting function should adjust, it showed me that inference as a sketched curve, rendered in the same hand-drawn style I'd established. Not as generated Python code I'd need to review and accept. As a visual proposal I could immediately evaluate because it was in my language.
+We struggle to imagine this because seventy years of compiler-thinking has trained us to believe programs must be completely formalized before they execute. But that's a historical accident, not a law of nature.
 
-This solved the vibe coding problem that even hundreds of decisions that a code generator makes implicitly, I was making explicitly, but only at the level of detail I cared about. No context switch to generated code. No wondering whether variable names or error handling matched my intent, because those details never surfaced to the layer I was working in.
+Think back to the human computers. They didn't all use the same notation. A physicist's calculator developed shorthand for physics equations. A statistician's calculator developed patterns for statistical work. Each created their own language suited to their domain. The machine didn't care, because the human interpreter could handle the variation.
 
-The system learned my notation over time, assigning computational semantics to my marks.
-Once a sketched curve meant something, reusing that pattern produced the same behavior. The program became a living document where some parts were precise and some parts were sketches, and both executed.
+When we built automatic compilers, we lost this flexibility. A compiler understands one language, spoken perfectly. Everyone must speak the same way.
 
----
+But an LLM isn't a compiler in the old sense. It's something stranger and more flexible. It can understand multiple notations. It can infer intention across contexts. It can hold both formal and informal representations simultaneously.
 
-### **Part V: The Vernaculars**
+This opens a different possibility: users don't need to learn "the language." They express themselves in whatever notation makes sense, of course formal code where precision matters, natural language where intent is enough, equations, sketches, examples, whatever…
 
-This idea was genuinely hard to sell at the beginning.
-The models weren't stable enough. They drifted, they hallucinated. The same sketch might get interpreted differently across different models. 
+and the system interprets it during execution.
 
-But the idea really took off around 2031, when the interpretation layer got reliable enough that practitioners started quietly incorporating semiformal elements into real workflows. At first it was about speed. Less boilerplate, faster iteration, more time thinking about the actual problem.
+We call this way of program, \[\[Semi-Formal Programming\]\].
 
-But then something else happened. 
-People started building software that was malleable and highly customizable. Applications that weren't frozen artifacts but living documents you could converse with in your own terms, without ever touching "source code." My reef application isn't a fixed program I wrote once. It's a layered thing. Python underneath for what needs to be rock solid. My sketches and math on the surface for what I'm always adjusting. And the interpretation layer in between, doing the work that human computers did in 1945.
+The crucial difference from prompting is that these expressions *are* the program. They're not prompts to an AI sitting outside. They're not completely formal code to a compiler. They're the program itself, written in whatever notation feels natural, mixing formality and informality freely. 
 
-And once that pattern proved itself, it spread.
-What it enabled was that scientists and domain experts across fields could work computationally without first translating their expertise into a programmer's vocabulary. Each domain found its own version of the same principle: stay in your notation, let the machine meet you there.
+The system assigns semantics to each piece. Once a notation has semantics, reusing it produces the same behavior. The program becomes a living document where some parts are precise and some parts are sketches, and both execute.
 
-Healthcare was one of the earliest adopters outside of research. 
-Consider how a radiologist works with a diagnostic imaging pipeline today. She opens a chest X-ray in her clinical workspace. The underlying classifier is formal, a convolutional neural network with precisely defined architecture. 
-
-But the test sets annotation system is semiformal. 
-She circles a region of interest on the image with her stylus, draws an arrow to the margin, and writes in her clinical shorthand: *GGO, peripheral, R lower*. The system interprets the annotation as a labeled bounding box with tissue classification. It renders its interpretation back onto the same image: a shaded overlay on the region it believes she indicated, with a label showing the inferred classification and confidence score. 
-
-If the boundary is wrong, she adjusts it. If the classification is off, she crosses out the label and writes the correction. The conversation is entirely visual, entirely on the image itself, in the vocabulary she already uses in her clinical notes.
-
-When bias audits revealed that diagnostic models performed unevenly across demographic groups, the same semiformal principle applied. 
-Clinicians could open what amounted to a semiformal spreadsheet, part formal data schema, part annotated clinical judgment. A column might contain structured patient data; the adjacent cell might hold a handwritten note: *underrepresented, rural Indigenous communities, n < 30, weight ×2*. The system inferred a rebalancing strategy from the annotation and showed the proposed adjustment as a highlighted redistribution in the same spreadsheet view, a modified weight column the clinician could review and edit directly. 
-
-The machine learning pipeline underneath remained formal and auditable. 
-But the decisions about what "fair" meant in this clinical context were expressed by the people who understood fairness in that domain, in their own terms, without needing to understand the pipeline itself.
-
-The common thread across domains that adopting semiformal programming workflow wasn't the specific notation. 
-It was that scientists and practitioners, people whose primary expertise was in medicine or urban systems or marine ecology rather than in software engineering, could direct computational processes in the language of their own discipline. A radiologist's clinical shorthand, an urban planner's 3d modelling, a marine biologist's written LaTex formula: each became their domain-specific program.
+Let's see what semiformal program might look like in practice:
 
 ---
 
+Consider a marine biologist modelling coral bleaching. Today her work lives in three places: equations in a paper, temperature data in a spreadsheet, Python scripts she half-understands.
 
-### **Part VI: The Challenges**
+In a semiformal system, she writes in her domain's notation:
 
-But I need to be honest about what went wrong.
+```
+thermal_stress[t] = Σ(SST[t] - MMM) for days where SST > MMM + 1°C
+```
 
-In my 2026 essay, I worried about collaboration. If everyone writes in their own notation, how does anyone share work? Python meant the same thing to everyone who wrote Python. My squiggly sketches don't necessarily mean the same thing as my colleague's in Fiji.
+that notation gets parsed and assigned a specific computational meaning. `thermal_stress` is an accumulator with a conditional filter, `MMM` is Maximum Monthly Mean, a climatological baseline that needs a data source.
 
-I had a hypothesis about how this might resolve. 
+Each piece has semantics she can inspect. She clicks `MMM` and sees where it comes from, what it's bound to, whether she wants to override it with local measurements. When she changes the bleaching threshold from 4 to 6 DHW, the system traces dependencies and recomputes only what's affected.
+
+Her notations are the program.
+
+---
+
+The same principle applies across domains. 
+
+![Circuit scenario: sketch-based quantum circuit notation. Illustration generated by NanoBanana from Google Gemini.](/assets/images/future/cirquit-scenario.png)
+
+A quantum computing researcher is sketching a circuit. She doesn't write Qiskit or Cirq. She draws: a horizontal line for a qubit, a box with "H" for a Hadamard gate, a vertical connection with a control dot for a CNOT. 
+
+She draws a small subcircuit and writes `C =` next to it. That becomes a definition. 
+
+Later, when she draws a box labeled "C," the system recognizes the subcircuit she defined, with its semantics intact and expandable to the same gates on the same qubit topology.
+
+She adds an ellipsis with a superscript *n* to indicate repetition across qubits. It's informal shorthand, the kind physicists scribble on whiteboards, but the system parses it: 
+
+> this pattern repeats with parameter *n*, inferred from context.
+
+When she modifies the circuit, she doesn't edit generated code but erases a gate and draws a different one. The implementation updates to match and propagate changes downstream.
+
+Her sketches are the program.
+
+---
+
+These two examples show the core idea of semiformal programming that the gap between human expression and machine execution isn't bridged by compilation, but by interpretation. 
+
+The biologist's equation and the physicist's sketch aren't converted into Python or Qiskit, they remain as written, in their native notations. The system doesn't ask them to formalize everything upfront. Instead, it assigns computational meaning to whatever they write, in whatever form they write it, and executes that meaning directly. The notation *is* the program, and the program adapts to the user's language, keeps iterating reactively, and remains a living artifact.
+
+## Part V: The Hard Questions
+
+While these envisioned scenarios get the best of both worlds, they also share the worst of both worlds.
+
+Traditional software has bugs, but the bugs are deterministic. Run the same input twice, get the same wrong output twice. Debug by tracing execution, find the line that's wrong, fix it. Semiformal systems don't work this way. The same input might produce different outputs based on subtle context variations. The interpretation layer might "drift" as the underlying models update. The behavior you tested last month might not be the behavior you get today.
+
+For low-stakes applications, casual data analysis, personal organization, creative exploration, this is probably fine. We tolerate uncertainty in lots of tools we use daily.
+
+For high-stakes applications, the places where software failures harm people or crash markets, this is a serious barrier. 
+
+Regulation should be focused on the right place: the artifact that a domain expert edits is not the same artifact that executes on the machine, and the interpretation layer between them is where risk concentrates. Medical device software requires formal verification beneath any semiformal interface. Aviation systems still use rigid languages for flight-critical code. Financial systems enforce deterministic test suites that run on every model update.
+
+This is why formal languages are not going away (Martin, 2009). The most important development wasn't about notation at all. It was about verification. Teams learned, sometimes the hard way, to write formal test specifications alongside their semiformal programs. Even if the program itself is sketchy and interpretive, the tests are precise. The interpretation layer can drift, can be nondeterministic, can update with new model versions. But the tests catch it.
+
+The formal verification layer beneath the semiformal interface is always required to guarantee safety properties regardless of how the interpretation layer behaves. Either way, the path to adoption in safety-critical domains will be long, and it probably should be.
+
+The collaboration problem might be even thornier. I've been describing semiformal programming as liberating, as freeing individuals to express computation in their own terms. But "your own terms" and "terms we can share" are in tension.
+
+Traditional programming languages were designed for shared understanding. A Java program means the same thing to everyone who reads it. The syntax is fixed. The semantics are specified. Two programmers can collaborate on code without ever meeting, because the language itself enforces common ground.
+
+Semiformal systems could fragment this. If my physics model uses my idiosyncratic notation and your physics model uses yours, how do we combine them? What if my program offended you? How do we even have a meaningful conversation about whether our models are consistent?
+
+We have a hypothesis about how this might resolve.
 Sociolinguistics had already studied exactly this kind of convergence. When people share a goal, they naturally adjust their communication styles toward each other. Not because anyone mandates it, but because mutual understanding requires it (Giles et al., 2023). When groups engage in shared activity over time, they develop common vocabulary and negotiated conventions that emerge from use rather than from top-down standardization (Wenger, 1998). Members converge not to lose individuality but to enable communication (Eckert & McConnell-Ginet, 1992).
 
 I suspected something like folksonomy would happen (Trant, 2009), the way users on early social platforms organically converged on shared hashtags without anyone dictating which tags to use. A community would gravitate toward common marks simply because shared marks are more useful than private ones.
 
-While this is largely what played out, in the early days of widespread adoption, there were genuine disasters. 
-Research teams couldn't merge their models because their notations were mutually unintelligible. Companies tried to onboard new engineers and found that the "codebase" was a personal artifact only its creator could read. For a while, it looked like semiformal programming might fragment the field worse than it helped.
+I hope that gradually, domain by domain, shared patterns will crystallize. Marine biologists working on thermal stress developed shared conventions for expressing bleaching thresholds. It happened the way any community develops shared slang: through use, repetition, and the slow pressure of needing to be understood.
 
-But gradually, domain by domain, shared patterns began to crystallize. 
-Marine biologists working on thermal stress developed shared conventions for expressing bleaching thresholds. It happened the way any community develops shared slang: through use, repetition, and the slow pressure of needing to be understood. 
+Corporations can publish what amounted to "semiformal language protocols," internal style guides that defined which notations carried which computational semantics within their organization.
 
-Corporations began publishing what amounted to "semiformal language protocols," internal style guides that defined which notations carried which computational semantics within their organization. 
+## Part VI: Semiformal Software and Execution
 
-It was not unlike how circuit diagram symbols converged to international standards over decades of engineering practice, or how musical notation evolved from idiosyncratic marks to a system musicians worldwide can read, or how UML emerged because the software engineering community had too many competing visual notations and needed common ground (Booch, Rumbaugh, & Jacobson, 1999). In each case, convergence was driven by communicative need, not by committee.
+I find this future exciting and terrifying in equal measure. 
 
-That said, the convergence is uneven, and I suspect it always will be. 
-Some fields developed tight conventions quickly. Others remain fragmented. Different domains have different tolerance for ambiguity. Each found its own level of formality. Where failure is catastrophic, more formal. Where flexibility helps more than rigidity, more informal.
+We could be looking at another seventy years of work to make this reliable, secure, and genuinely pleasant to use. The entire ecosystem would have to shift. It's no longer just the compiler designer asking "how do I build a language people can use?" but also the tool designer asking "how do I build an environment where people can program semiformally?"
+That's a different problem—harder in some ways, as it requires time to understand how to better support the user experience, and it is not tangible.
 
----
-### **Part VII: There will be Code**
+But it's the problem that follows from taking seriously the idea that programming should be expression, not conformance. If the user's notation is the program, then the user is always, in some sense, a language designer. 
 
-So where does this leave us?
+And I hope that can also bring us to malleable software.
 
-I'm glad the idea took off, though the path surprised me. The concept of "programming language" has genuinely shifted toward the human side. People in the same field share notation the way people from the same culture share slang. They understand each other, more or less, with room for personal variation. Not the rigid universality of Python, but not chaos either.
+Where we build software that is malleable and highly customizable. Applications built with semiformal code wouldn't be frozen artifacts but would leave intentional room for interpretation. Data processing libraries would not have to preassume how users' data should be formatted; visualization libraries would not have to decide layout from common heuristics but could infer from actual user data; the search box could support semantic search by concept, not just keyword; the table could have grouping and sorting based on the user's data structure rather than alphabetical order...
 
-Something in between.
+I'm also imagining something like semiformal execution.
 
-But "something in between" is exactly where the hard design questions live. Semiformal systems are powerful because they are flexible. They are dangerous for the same reason. The interpretive layer that makes a radiologist's shorthand executable is the same layer that can silently drift when a model updates, inferring a subtly different meaning from the same annotation.
+Not compilation from informal to formal to machine code, but direct, continuous interpretation of the semiformal artifact itself. The debug console might have a mixture of code errors and LLM reasoning, where the reasoning steps are editable and can steer back the model.
 
-This is why formal languages are not going away (Martin, 2009). 
-The most important development wasn't about notation at all. It was about verification. Teams learned, sometimes the hard way, to write formal test specifications alongside their semiformal programs. Even if the program itself is sketchy and interpretive, the tests are precise. The interpretation layer can drift, can be nondeterministic, can update with new model versions. But the tests catch it.
+## Epilogue: The Language We Never Stopped Speaking
 
-Regulation focused on the right place. 
-The artifact that a domain expert edits is not the same artifact that executes on the machine, and the interpretation layer between them is where risk concentrates. Medical device software requires formal verification beneath any semiformal interface. Aviation systems still use rigid languages for flight-critical code. Financial systems enforce deterministic test suites that run on every model update.
+The human computers of 1945 knew something we've forgotten: that the point was never the notation. It was the thinking. The notation was just a way to make thinking executable. We taught humans to speak like machines because we had no choice. The machines were rigid, literal, unforgiving. They couldn't meet us halfway.
 
-The transformation was foundational. 
-For seventy years, the bottleneck on what humanity could build with computers was the requirement that humans think like compilers. Removing that bottleneck didn't just help programmers. It helped the marine biologist, the teacher, the urban planner, the epidemiologist, the agronomist. None of them needed to learn Python. They needed the machine to learn them.
-That is the highest net positive transformation AI has offered. Not replacing human thinking but making it executable. Not generating code on behalf of people, but eliminating code as the mandatory intermediary between intention and action.
+That constraint is lifting. Not completely, not overnight, but meaningfully. The question now isn't whether machines can interpret human intent with some flexibility. They already can. The question is whether we're willing to build on that, to do the hard work of combining informal expression with formal guarantees, even when the path isn't clear.
 
----
+The real obstacle is cultural, not technical.
 
-### **Part VIII: The Last Compiler**
+Grace Hopper had a clock on her wall that ran counterclockwise. "Humans are allergic to change," she said. "They love to say, 'We've always done it this way.' I try to fight that." The allergy she diagnosed hasn't gone away. If anything, seventy years of programming tradition has made it chronic.
 
-I want to end with a prediction, because I made one twenty years ago and the tradition feels important, even if I'll be embarrassed by it later.
+Maybe
 
-Right now, every semiformal system still transpiles to a formal host language for execution. My sketches become Python. The interpretation layer is sophisticated, but at the bottom of the stack, there's still a compiler, still the old rigid machinery.
-
-I don't think that has to be permanent.
-We're approaching a point where the generation and interpretation speed of language models are essentially real-time. If the model can interpret a sketch as fast as I can draw it, and execute the interpretation as fast as I can observe it, then the formal code in between becomes an implementation detail that could, in principle, be eliminated.
-
-I'm imagining something like semiformal execution. Not compilation from informal to formal to machine code, but direct, continuous interpretation of the semiformal artifact itself. The model doesn't generate code from your sketch. It runs your sketch. With a human-in-the-loop reinforcement learning process that keeps the interpretation honest, a system that treats execution not as a one-time translation but as an ongoing conversation between intent and behavior.
-
-This would mean fundamentally rethinking the compiler. Not as a formal-to-formal translator but as a real-time interpreter of mixed human expression.
-
-Is this realistic? I genuinely don't know. It might take another twenty years. Sammet made a prediction in 1966 that took sixty years to arrive.
-
-Well, I guess being wrong in the short term and right in the long term looks exactly the same as being wrong, until suddenly it doesn't.
+Maybe it's time to see what happens when we get to speak our own languages.
 
 ---
 
 ### References
 
-Booch, G., Rumbaugh, J., & Jacobson, I. (1999). *The Unified Modeling Language User Guide*. Addison-Wesley.
-
 Dijkstra, E. W. (1979). On the foolishness of "natural language programming." *EWD667*.
-
-Drosos, I., et al. (2025). How scientists use large language models to program. *CHI '25*.
 
 Eckert, P., & McConnell-Ginet, S. (1992). Think practically and look locally: Language and gender as community-based practice. *Annual Review of Anthropology, 21*, 461-490.
 
 Giles, H., Edwards, A. L., & Walther, J. B. (2023). Communication accommodation theory: Past accomplishments, current trends, and future prospects. *Language & Communication, 93*, 3-12.
 
-Karpathy, A. (2025, February 2). "There's a new kind of coding I call 'vibe coding'..." [Post]. X.
-
-Kery, M. B., & Myers, B. A. (2017, October). Exploring exploratory programming. In 2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) (pp. 25-29). IEEE.
-
 Light, J. (1999). When computers were women. *Technology and Culture, 40*(3), 455-483.
 
-Martin, R. C. (2009). Clean code: a handbook of agile software craftsmanship. Pearson Education.
-
-Nguyen, S., et al. (2024). How beginning programmers and Code LLMs (mis)read each other. *CHI '24*.
+Martin, R. C. (2009). *Clean Code: A Handbook of Agile Software Craftsmanship*. Pearson Education.
 
 Sammet, J. E. (1966). The use of English as a programming language. *Communications of the ACM, 9*(3), 228-230.
 
-Trant, J. (2009). Studying social tagging and folksonomy: A review and framework.
+Trant, J. (2009). Studying social tagging and folksonomy: A review and framework. *Journal of Digital Information, 10*(1).
 
 Wenger, É. (1998). *Communities of Practice: Learning, Meaning, and Identity*. Cambridge University Press.
-
-World Economic Forum. (2025). *Future of Jobs Report 2025*.
-
-Zamfirescu-Pereira, J. D., et al. (2023). Why Johnny can't prompt: How non-AI experts try (and fail) to design LLM prompts. *CHI '23*.

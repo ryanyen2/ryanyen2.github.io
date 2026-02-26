@@ -108,7 +108,7 @@
 }
 
 /* Language badge */
-.highlight::before {
+/* .highlight::before {
   content: attr(data-lang);
   display: block;
   background: #444;
@@ -117,7 +117,7 @@
   padding: 0.2em 0.5em;
   border-radius: 3px 3px 0 0;
   font-family: 'IBM Plex Mono', monospace;
-}
+} */
 
 /* Customizing the font */
 .highlight code {
