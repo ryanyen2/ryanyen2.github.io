@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki Graph | Ryan Yen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/publications.css">
+  
+  
+</head>
+<body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">Ryan Yen</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <nav class="tree-nav">
+        <ul>
+          
+            <li class=" active">
+              <a href="/" >
+                
+                    <img src="/assets/images/icons/note-taking.svg" alt="Menu Item" class="nav-icon">
+                
+                Home
+              </a>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/publications/" >
+                
+                    <img src="/assets/images/icons/writing.svg" alt="Publications" class="nav-icon">
+                  
+                Publications
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/publications/semi-formal-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Semi-formal Programming
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coladder">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoLadder
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coprompt">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoPrompt
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/memolet">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Memolet
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/search-or-gen">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        To Search or To Gen
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/blog/" >
+                
+                    <img src="/assets/images/icons/pen.svg" alt="Blog" class="nav-icon">
+                  
+                Blog
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/blog/the-language-we-forgot-we-could-speak">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Language We Forgot We Could Speak
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/the-fear-of-success">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Fear of Success
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/big-idea">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Big Idea & Deep Work
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/let-me-sink">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Let Me Sink, Not Think
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Untold Story of Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/map-and-territory">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Map and Territory
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/readings/" >
+                
+                    <img src="/assets/images/icons/reading.svg" alt="Readings" class="nav-icon">
+                  
+                Readings
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/readings/reification-polymorphism-reuse">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Reification, Polymorphism and Reuse
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/demonstrational-interfaces">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Demonstrational Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/cognitive-engineering">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Cognitive Engineering
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/designing-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Designing Interaction, not Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/instrumental-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Instrumental Interaction
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/direct-manipulation">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Direct Manipulation Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/thinking-with-external-representations">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Thinking with External Representations
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/ultra-lightweight-constraints">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Ultra-Lightweight Constraints
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/what-is-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        What Is Interaction?
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/usability-analysis-visual-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Usability Analysis of Visual Programming Environments
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      </nav>
+
+      <div class="breadcrumb">
+        
+      </div>
+    </div>
+    
+    <div class="content">
+      <main>
+        <div class="wiki-graph-page">
+  <h1>Knowledge Graph</h1>
+  <p>This is a visualization of how content on this site relates to each other through wiki-style links.</p>
+  
+  <div id="graph-controls">
+    <label>
+      <input type="checkbox" id="show-labels" checked> Show Labels
+    </label>
+    <label>
+      <input type="checkbox" id="group-by-type" checked> Group by Type
+    </label>
+  </div>
+  
+  <div id="graph-container"></div>
+</div>
+
+<script type="application/json" id="graph-data">
+{"nodes":[{"id":0,"title":"Blog","url":"/blog/","type":"post"},{"id":1,"title":"Home","url":"/","type":"page"},{"id":2,"title":"Publications","url":"/publications/","type":"publication"},{"id":3,"title":"Readings","url":"/readings/","type":"reading"},{"id":4,"title":"Wiki Graph","url":"/wiki-graph/","type":"page"},{"id":5,"title":"Malleable Interaction Interface","url":"/blog/malleable-interaction-interface/","type":"posts"},{"id":6,"title":"Map and Territory","url":"/blog/map-and-territory/","type":"posts"},{"id":7,"title":"The Untold Story of Code Shaping","url":"/blog/code-shaping/","type":"posts"},{"id":8,"title":"Let Me Sink, Not Think","url":"/blog/let-me-sink/","type":"posts"},{"id":9,"title":"Big Idea & Deep Work","url":"/blog/big-idea/","type":"posts"},{"id":10,"title":"The Fear of Success","url":"/blog/the-fear-of-success/","type":"posts"},{"id":11,"title":"The Language We Forgot We Could Speak","url":"/blog/the-language-we-forgot-we-could-speak/","type":"posts"},{"id":12,"title":"Cognitive Engineering","url":"/readings/cognitive-engineering/","type":"readings"},{"id":13,"title":"Demonstrational Interfaces","url":"/readings/demonstrational-interfaces/","type":"readings"},{"id":14,"title":"Designing Interaction, not Interfaces","url":"/readings/designing-interaction/","type":"readings"},{"id":15,"title":"Direct Manipulation Interfaces","url":"/readings/direct-manipulation/","type":"readings"},{"id":16,"title":"Instrumental Interaction","url":"/readings/instrumental-interaction/","type":"readings"},{"id":17,"title":"Reification, Polymorphism and Reuse","url":"/readings/reification-polymorphism-reuse/","type":"readings"},{"id":18,"title":"Code Shaping","url":"/publications/code-shaping/","type":"publications"},{"id":19,"title":"CoLadder","url":"/publications/coladder/","type":"publications"},{"id":20,"title":"CoPrompt","url":"/publications/coprompt/","type":"publications"},{"id":21,"title":"Gait Gestures","url":"/publications/gait-gestures/","type":"publications"},{"id":22,"title":"Memolet","url":"/publications/memolet/","type":"publications"},{"id":23,"title":"Scholarly Exploration via Conversations","url":"/publications/scholet/","type":"publications"},{"id":24,"title":"To Search or To Gen?","url":"/publications/search-or-gen/","type":"publications"},{"id":25,"title":"Semi-Formal Programming","url":"/publications/semi-formal-programming/","type":"publications"}],"links":[{"source":0,"target":18},{"source":1,"target":25},{"source":1,"target":18},{"source":1,"target":19},{"source":1,"target":22},{"source":1,"target":24},{"source":1,"target":0},{"source":1,"target":17},{"source":1,"target":16},{"source":1,"target":15},{"source":2,"target":25},{"source":2,"target":18},{"source":2,"target":19},{"source":2,"target":20},{"source":2,"target":22},{"source":2,"target":24},{"source":3,"target":17},{"source":3,"target":16},{"source":3,"target":14},{"source":3,"target":13},{"source":3,"target":12},{"source":3,"target":15},{"source":7,"target":18},{"source":7,"target":25},{"source":8,"target":18}]}
+</script>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Load graph data from the JSON embedded in the page
+  let graphData;
+  try {
+    const dataElement = document.getElementById('graph-data');
+    graphData = JSON.parse(dataElement.textContent);
+  } catch (e) {
+    console.error("Error loading graph data:", e);
+    graphData = {nodes: [], links: []};
+  }
+  
+  // Graph dimensions
+  const width = document.getElementById('graph-container').clientWidth;
+  const height = 600;
+  
+  // Color scale for node types
+  const color = d3.scaleOrdinal()
+    .domain(['page', 'post', 'project', 'publication', 'reading'])
+    .range(['#6E8B87', '#C9A66B', '#8FB996', '#426A5A', '#7C90A0']);
+  
+  // Create SVG
+  const svg = d3.select('#graph-container')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr('viewBox', [0, 0, width, height]);
+  
+  // Create force simulation
+  const simulation = d3.forceSimulation(graphData.nodes)
+    .force('link', d3.forceLink(graphData.links).id(d => d.id))
+    .force('charge', d3.forceManyBody().strength(-300))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(30));
+  
+  if (document.getElementById('group-by-type').checked) {
+    simulation.force('x', d3.forceX().x(d => {
+      switch(d.type) {
+        case 'publication': return width * 0.2;
+        case 'reading': return width * 0.4;
+        case 'project': return width * 0.6;
+        case 'post': return width * 0.8;
+        default: return width * 0.5;
+      }
+    }).strength(0.1));
+  }
+  
+  // Create links
+  const link = svg.append('g')
+    .selectAll('line')
+    .data(graphData.links)
+    .join('line')
+    .attr('stroke', '#999')
+    .attr('stroke-opacity', 0.6)
+    .attr('stroke-width', 1);
+  
+  // Create nodes
+  const node = svg.append('g')
+    .selectAll('circle')
+    .data(graphData.nodes)
+    .join('circle')
+    .attr('r', 8)
+    .attr('fill', d => color(d.type))
+    .call(drag(simulation));
+  
+  // Add titles/tooltips to nodes
+  node.append('title')
+    .text(d => d.title);
+  
+  // Add text labels
+  const label = svg.append('g')
+    .selectAll('text')
+    .data(graphData.nodes)
+    .join('text')
+    .attr('font-size', 10)
+    .attr('dx', 12)
+    .attr('dy', 4)
+    .text(d => d.title);
+  
+  // Update label visibility based on checkbox
+  function updateLabels() {
+    if (document.getElementById('show-labels').checked) {
+      label.style('display', null);
+    } else {
+      label.style('display', 'none');
+    }
+  }
+  
+  document.getElementById('show-labels').addEventListener('change', updateLabels);
+  updateLabels();
+  
+  // Update grouping based on checkbox
+  document.getElementById('group-by-type').addEventListener('change', function() {
+    if (this.checked) {
+      simulation.force('x', d3.forceX().x(d => {
+        switch(d.type) {
+          case 'publication': return width * 0.2;
+          case 'reading': return width * 0.4;
+          case 'project': return width * 0.6;
+          case 'post': return width * 0.8;
+          default: return width * 0.5;
+        }
+      }).strength(0.1));
+    } else {
+      simulation.force('x', null);
+    }
+    simulation.alpha(1).restart();
+  });
+  
+  // Make nodes clickable to navigate to their page
+  node.on('click', function(event, d) {
+    window.location.href = d.url;
+  });
+  
+  // Update the simulation on each tick
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+    
+    node
+      .attr('cx', d => d.x)
+      .attr('cy', d => d.y);
+    
+    label
+      .attr('x', d => d.x)
+      .attr('y', d => d.y);
+  });
+  
+  // Drag functions for nodes
+  function drag(simulation) {
+    function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+    }
+    
+    function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+    }
+    
+    function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+    }
+    
+    return d3.drag()
+      .on('start', dragstarted)
+      .on('drag', dragged)
+      .on('end', dragended);
+  }
+});
+</script>
+
+<style>
+.wiki-graph-page {
+  max-width: 100%;
+  padding: 20px;
+}
+
+#graph-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  background-color: #fefdf9;
+  overflow: hidden;
+}
+
+#graph-controls {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f5f3e8;
+  border-radius: 5px;
+}
+
+#graph-controls label {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+circle {
+  cursor: pointer;
+}
+
+text {
+  pointer-events: none;
+  user-select: none;
+}
+
+#graph-data {
+  display: none;
+}
+</style> 
+      </main>
+    </div>
+  </div>
+  
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/video-enhancer.js"></script>
+</body>
+</html> 

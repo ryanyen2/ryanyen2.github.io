@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Language We Forgot We Could Speak | Ryan Yen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Caveat&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/publications.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  
+</head>
+<body class="bg-parchment">
+  <!-- Mobile header -->
+  <div class="mobile-header">
+    <button class="hamburger-menu" aria-label="Toggle navigation menu"></button>
+    <div class="mobile-title">Ryan Yen</div>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay"></div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <nav class="tree-nav">
+        <ul>
+          
+            <li class=" active">
+              <a href="/" >
+                
+                    <img src="/assets/images/icons/note-taking.svg" alt="Menu Item" class="nav-icon">
+                
+                Home
+              </a>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/publications/" >
+                
+                    <img src="/assets/images/icons/writing.svg" alt="Publications" class="nav-icon">
+                  
+                Publications
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/publications/semi-formal-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Semi-formal Programming
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coladder">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoLadder
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/coprompt">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        CoPrompt
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/memolet">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        Memolet
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/search-or-gen">
+                        <!-- 
+                            <img src="/assets/images/icons/news.svg" alt="Publication" class="nav-icon">
+                           -->
+                        To Search or To Gen
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children active">
+              <a href="/blog/" >
+                
+                    <img src="/assets/images/icons/pen.svg" alt="Blog" class="nav-icon">
+                  
+                Blog
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/blog/the-language-we-forgot-we-could-speak">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Language We Forgot We Could Speak
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/the-fear-of-success">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Fear of Success
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/big-idea">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Big Idea & Deep Work
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/let-me-sink">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Let Me Sink, Not Think
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/code-shaping">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        The Untold Story of Code Shaping
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/blog/map-and-territory">
+                        <!-- 
+                            <img src="/assets/images/icons/note-taking.svg" alt="Blog Post" class="nav-icon">
+                           -->
+                        Map and Territory
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="has-children ">
+              <a href="/readings/" >
+                
+                    <img src="/assets/images/icons/reading.svg" alt="Readings" class="nav-icon">
+                  
+                Readings
+              </a>
+              
+                <ul class="child-items">
+                  
+                    <li>
+                      <a href="/readings/reification-polymorphism-reuse">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Reification, Polymorphism and Reuse
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/demonstrational-interfaces">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Demonstrational Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/cognitive-engineering">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Cognitive Engineering
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/designing-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Designing Interaction, not Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/instrumental-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Instrumental Interaction
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/direct-manipulation">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Direct Manipulation Interfaces
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/thinking-with-external-representations">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Thinking with External Representations
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/ultra-lightweight-constraints">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Ultra-Lightweight Constraints
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/what-is-interaction">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        What Is Interaction?
+                      </a>
+                      
+                    </li>
+                  
+                    <li>
+                      <a href="/readings/usability-analysis-visual-programming">
+                        <!-- 
+                            <img src="/assets/images/icons/link.svg" alt="Reading" class="nav-icon">
+                           -->
+                        Usability Analysis of Visual Programming Environments
+                      </a>
+                      
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      </nav>
+
+      <div class="breadcrumb">
+        
+          <div class="breadcrumb-path">Blog > The Language We Forgot We Could Speak</div>
+        
+      </div>
+    </div>
+    
+    <div class="content">
+      <main>
+        
+
+
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">The Language We Forgot We Could Speak</h1>
+    <p class="post-meta">Feb 8, 2026</p>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Author</strong>: Ryan Yen</p>
+
+<p>Before “computer” meant a machine, it meant a person.</p>
+
+<p>In 1945, approximately 100 women worked as “human computers” at the University of Pennsylvania, calculating artillery firing tables for the U.S. Army (Light, 1999). Each ballistics trajectory required hours of hand calculation using mechanical desktop calculators. The women worked in teams, passing intermediate results down rows of desks like an assembly line of arithmetic.</p>
+
+<p>These women stood between scientists and machine. A physicist would hand them an equation, some beautiful, ambiguous thing full of implicit assumptions and contextual shortcuts. The “computer” would translate this into steps.</p>
+
+<p>When ENIAC arrived in 1945, something interesting happened. The Army didn’t fire the human computers but selected six women to program the machine.</p>
+
+<p>But “program” is almost the wrong word. 
+There was no programming language.</p>
+
+<p>The ENIAC programmers had to physically rewire the machine for each calculation, setting thousands of switches and plugging cables into patch panels, but soon after, punched media allowed programs to be prepared separately and loaded in. Programs were entered using punched cards or paper tape, strips of paper with holes punched in patterns to represent instructions.</p>
+<figure class="float-right">
+  <img src="/assets/images/future/punchcard.png" alt="Punched cards arranged in a program deck." />
+  <figcaption>Data and instructions were once stored on <a href="https://en.wikipedia.org/wiki/Punched_card">punched cards</a>, which were kept arranged in program decks.</figcaption>
+</figure>
+
+<p>These “computers” were still doing the same job their predecessors had done: translating intention into mechanism. The only difference was that now the mechanism was electronic instead of mental.</p>
+
+<p>This arrangement—humans as the flexible interpreters between messy intent and rigid machinery, lasted for about a decade. 
+Then something changed. 
+Not all at once, but gradually, so gradually that nobody noticed what was being lost.</p>
+
+<h2 id="part-ii-the-cultural-shift">Part II: The Cultural Shift</h2>
+
+<p>It started with a reasonable question: why should humans do the translation at all?</p>
+
+<p>Grace Hopper had an answer. In 1952, working at Remington Rand, she created the A-0 System, generally considered the first compiler. Her colleagues were skeptical. “Nobody believed that [we] had a running compiler and nobody would touch it,” she later recalled. The idea seemed absurd, that you could write instructions in something closer to mathematical notation, and a program would translate them into machine code.</p>
+
+<p>FORTRAN followed in 1957, developed by John Backus’s team at IBM. And with FORTRAN came a transformation that’s easy to miss from our vantage point today. Programmers weren’t just translators anymore. They became authors, writing in languages bound by strict, unforgiving rules. A missing semicolon would break everything. A misplaced word rendered the whole thing meaningless.</p>
+
+<p>This trade-off, surrendering the flexibility of natural communication for the precision of formal notation, wasn’t inevitable. It was a choice, one that came to define programming for seventy years. A language had to be unambiguous, complete, verifiable. A program had to mean exactly the same thing to everyone who read it.</p>
+
+<p>Variation was error. Flexibility was weakness.</p>
+
+<p>There were rebels though. In 1966, Jean Sammet published “The Use of English as a Programming Language” (Sammet, 1966), imagining machines that might learn human language.</p>
+
+<p>Thirteen years later, Edsger Dijkstra wrote “On the Foolishness of ‘Natural Language Programming’” (Dijkstra, 1979). His argument was precise. Natural language is ambiguous. Computers need unambiguous instructions, the details that natural language could not provide. Considering English as a programming language wasn’t just technically hard. It was a category error.</p>
+
+<p>With the machines that existed in 1979, he was right. Those machines were rigid, literal, unforgiving. They couldn’t infer. They couldn’t fill gaps. Formal languages weren’t a preference; they were a necessity. And we still use formal languages today because they provide the precise details about requirements that we need.</p>
+
+<p>But Sammet wasn’t wrong either. She was early.</p>
+
+<p>For seventy years after, “programming language” meant a language for computers, not for humans. We kept climbing the ladder of abstraction, from machine code to assembly to FORTRAN to Python, each rung promising to be more readable, more intuitive. But each rung introduced its own concepts, its own rules, its own ways of breaking. The more “natural” it tries to be, the more deceptive it becomes, as it is still formal and rigid.</p>
+
+<p>And as Dijkstra predicted,</p>
+
+<blockquote>
+  <p>From one gut feeling I derive much consolation: I suspect that machines to be programmed in our native tongues […] are as damned difficult to make as they would be to use. (Dijkstra, 1979)</p>
+</blockquote>
+
+<h2 id="part-iii-the-dream-deferred">Part III: The Dream Deferred</h2>
+
+<p>Then, all at once, something shifted.</p>
+
+<p>Large language models arrived with a strange new capability. You could describe what you wanted in plain English, and they would generate code. LLMs suddenly became the bridge between natural language and working programs.</p>
+
+<p>The headlines went wild:</p>
+
+<p>“No Code Required.”</p>
+
+<p>“The End of Programming.”</p>
+
+<p>“AI Will Replace Developers.”</p>
+
+<p>But something odd happened. The instructions you gave the model weren’t part of the program. You were talking to a separate machine, asking it to generate formal code on your behalf. The dream of natural language programming was about writing programs in natural language. This was different. This was writing natural language instructions to a translator that would then write the formal code for you.</p>
+
+<p>But because natural language isn’t the program itself, programmers still need to read, learn, and understand the formal code that gets generated. Here’s the pattern I’ve seen play out:</p>
+
+<p>A manager wants an application.</p>
+
+<p>A programmer, Alicia, describes it in English.</p>
+
+<p>The LLM produces code.</p>
+
+<p>But the code doesn’t quite work, there’s a bug, an edge case the prompt didn’t specify.</p>
+
+<p>She needs to debug it.</p>
+
+<p>But to debug it, she needs to understand it.</p>
+
+<p>And to understand it, she needs to learn… programming.</p>
+
+<p>The thing she thought she’d bypassed.</p>
+
+<p>The LLM moved the barrier, but it didn’t remove it. In some ways it made things worse, because now you need to understand not just programming, but what the LLM did, which is far less transparent than code you wrote yourself.</p>
+
+<p>So here we are, two years into the LLM era, and most people still can’t program.</p>
+
+<p>The formal bottleneck remains.</p>
+
+<h2 id="part-iv-the-possibility-we-overlooked">Part IV: The Possibility We Overlooked</h2>
+
+<p>But what if we’re asking the wrong question?</p>
+
+<p>The LLM sits outside the program, translating natural language into formal code. But what if the natural language could <em>be</em> part of the program itself? What if the LLM wasn’t a separate translator, but an interpreter woven into execution, reading informal specifications alongside formal logic, making sense of both as the program runs?</p>
+
+<p>We struggle to imagine this because seventy years of compiler-thinking has trained us to believe programs must be completely formalized before they execute. But that’s a historical accident, not a law of nature.</p>
+
+<p>Think back to the human computers. They didn’t all use the same notation. A physicist’s calculator developed shorthand for physics equations. A statistician’s calculator developed patterns for statistical work. Each created their own language suited to their domain. The machine didn’t care, because the human interpreter could handle the variation.</p>
+
+<p>When we built automatic compilers, we lost this flexibility. A compiler understands one language, spoken perfectly. Everyone must speak the same way.</p>
+
+<p>But an LLM isn’t a compiler in the old sense. It’s something stranger and more flexible. It can understand multiple notations. It can infer intention across contexts. It can hold both formal and informal representations simultaneously.</p>
+
+<p>This opens a different possibility: users don’t need to learn “the language.” They express themselves in whatever notation makes sense, of course formal code where precision matters, natural language where intent is enough, equations, sketches, examples, whatever…</p>
+
+<p>and the system interprets it during execution.</p>
+
+<p>We call this way of program, <a href="/publications/semi-formal-programming/" class="wiki-link" data-target="Semi-Formal Programming">Semi-Formal Programming</a>.</p>
+
+<p>The crucial difference from prompting is that these expressions <em>are</em> the program. They’re not prompts to an AI sitting outside. They’re not completely formal code to a compiler. They’re the program itself, written in whatever notation feels natural, mixing formality and informality freely.</p>
+
+<p>The system assigns semantics to each piece. Once a notation has semantics, reusing it produces the same behavior. The program becomes a living document where some parts are precise and some parts are sketches, and both execute.</p>
+
+<p>Let’s see what semiformal program might look like in practice:</p>
+
+<hr />
+
+<p>Consider a marine biologist modelling coral bleaching. Today her work lives in three places: equations in a paper, temperature data in a spreadsheet, Python scripts she half-understands.</p>
+
+<p>In a semiformal system, she writes in her domain’s notation:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>thermal_stress[t] = Σ(SST[t] - MMM) for days where SST &gt; MMM + 1°C
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>that notation gets parsed and assigned a specific computational meaning. <code class="language-html highlighter-rouge">thermal_stress</code> is an accumulator with a conditional filter, <code class="language-html highlighter-rouge">MMM</code> is Maximum Monthly Mean, a climatological baseline that needs a data source.</p>
+
+<p>Each piece has semantics she can inspect. She clicks <code class="language-html highlighter-rouge">MMM</code> and sees where it comes from, what it’s bound to, whether she wants to override it with local measurements. When she changes the bleaching threshold from 4 to 6 DHW, the system traces dependencies and recomputes only what’s affected.</p>
+
+<p>Her notations are the program.</p>
+
+<hr />
+
+<p>The same principle applies across domains.</p>
+
+<p><img src="/assets/images/future/cirquit-scenario.png" alt="Circuit scenario: sketch-based quantum circuit notation. Illustration generated by NanoBanana from Google Gemini." /></p>
+
+<p>A quantum computing researcher is sketching a circuit. She doesn’t write Qiskit or Cirq. She draws: a horizontal line for a qubit, a box with “H” for a Hadamard gate, a vertical connection with a control dot for a CNOT.</p>
+
+<p>She draws a small subcircuit and writes <code class="language-html highlighter-rouge">C =</code> next to it. That becomes a definition.</p>
+
+<p>Later, when she draws a box labeled “C,” the system recognizes the subcircuit she defined, with its semantics intact and expandable to the same gates on the same qubit topology.</p>
+
+<p>She adds an ellipsis with a superscript <em>n</em> to indicate repetition across qubits. It’s informal shorthand, the kind physicists scribble on whiteboards, but the system parses it:</p>
+
+<blockquote>
+  <p>this pattern repeats with parameter <em>n</em>, inferred from context.</p>
+</blockquote>
+
+<p>When she modifies the circuit, she doesn’t edit generated code but erases a gate and draws a different one. The implementation updates to match and propagate changes downstream.</p>
+
+<p>Her sketches are the program.</p>
+
+<hr />
+
+<p>These two examples show the core idea of semiformal programming that the gap between human expression and machine execution isn’t bridged by compilation, but by interpretation.</p>
+
+<p>The biologist’s equation and the physicist’s sketch aren’t converted into Python or Qiskit, they remain as written, in their native notations. The system doesn’t ask them to formalize everything upfront. Instead, it assigns computational meaning to whatever they write, in whatever form they write it, and executes that meaning directly. The notation <em>is</em> the program, and the program adapts to the user’s language, keeps iterating reactively, and remains a living artifact.</p>
+
+<h2 id="part-v-the-hard-questions">Part V: The Hard Questions</h2>
+
+<p>While these envisioned scenarios get the best of both worlds, they also share the worst of both worlds.</p>
+
+<p>Traditional software has bugs, but the bugs are deterministic. Run the same input twice, get the same wrong output twice. Debug by tracing execution, find the line that’s wrong, fix it. Semiformal systems don’t work this way. The same input might produce different outputs based on subtle context variations. The interpretation layer might “drift” as the underlying models update. The behavior you tested last month might not be the behavior you get today.</p>
+
+<p>For low-stakes applications, casual data analysis, personal organization, creative exploration, this is probably fine. We tolerate uncertainty in lots of tools we use daily.</p>
+
+<p>For high-stakes applications, the places where software failures harm people or crash markets, this is a serious barrier.</p>
+
+<p>Regulation should be focused on the right place: the artifact that a domain expert edits is not the same artifact that executes on the machine, and the interpretation layer between them is where risk concentrates. Medical device software requires formal verification beneath any semiformal interface. Aviation systems still use rigid languages for flight-critical code. Financial systems enforce deterministic test suites that run on every model update.</p>
+
+<p>This is why formal languages are not going away (Martin, 2009). The most important development wasn’t about notation at all. It was about verification. Teams learned, sometimes the hard way, to write formal test specifications alongside their semiformal programs. Even if the program itself is sketchy and interpretive, the tests are precise. The interpretation layer can drift, can be nondeterministic, can update with new model versions. But the tests catch it.</p>
+
+<p>The formal verification layer beneath the semiformal interface is always required to guarantee safety properties regardless of how the interpretation layer behaves. Either way, the path to adoption in safety-critical domains will be long, and it probably should be.</p>
+
+<p>The collaboration problem might be even thornier. I’ve been describing semiformal programming as liberating, as freeing individuals to express computation in their own terms. But “your own terms” and “terms we can share” are in tension.</p>
+
+<p>Traditional programming languages were designed for shared understanding. A Java program means the same thing to everyone who reads it. The syntax is fixed. The semantics are specified. Two programmers can collaborate on code without ever meeting, because the language itself enforces common ground.</p>
+
+<p>Semiformal systems could fragment this. If my physics model uses my idiosyncratic notation and your physics model uses yours, how do we combine them? What if my program offended you? How do we even have a meaningful conversation about whether our models are consistent?</p>
+
+<p>We have a hypothesis about how this might resolve.
+Sociolinguistics had already studied exactly this kind of convergence. When people share a goal, they naturally adjust their communication styles toward each other. Not because anyone mandates it, but because mutual understanding requires it (Giles et al., 2023). When groups engage in shared activity over time, they develop common vocabulary and negotiated conventions that emerge from use rather than from top-down standardization (Wenger, 1998). Members converge not to lose individuality but to enable communication (Eckert &amp; McConnell-Ginet, 1992).</p>
+
+<p>I suspected something like folksonomy would happen (Trant, 2009), the way users on early social platforms organically converged on shared hashtags without anyone dictating which tags to use. A community would gravitate toward common marks simply because shared marks are more useful than private ones.</p>
+
+<p>I hope that gradually, domain by domain, shared patterns will crystallize. Marine biologists working on thermal stress developed shared conventions for expressing bleaching thresholds. It happened the way any community develops shared slang: through use, repetition, and the slow pressure of needing to be understood.</p>
+
+<p>Corporations can publish what amounted to “semiformal language protocols,” internal style guides that defined which notations carried which computational semantics within their organization.</p>
+
+<h2 id="part-vi-semiformal-software-and-execution">Part VI: Semiformal Software and Execution</h2>
+
+<p>I find this future exciting and terrifying in equal measure.</p>
+
+<p>We could be looking at another seventy years of work to make this reliable, secure, and genuinely pleasant to use. The entire ecosystem would have to shift. It’s no longer just the compiler designer asking “how do I build a language people can use?” but also the tool designer asking “how do I build an environment where people can program semiformally?”
+That’s a different problem—harder in some ways, as it requires time to understand how to better support the user experience, and it is not tangible.</p>
+
+<p>But it’s the problem that follows from taking seriously the idea that programming should be expression, not conformance. If the user’s notation is the program, then the user is always, in some sense, a language designer.</p>
+
+<p>And I hope that can also bring us to malleable software.</p>
+
+<p>Where we build software that is malleable and highly customizable. Applications built with semiformal code wouldn’t be frozen artifacts but would leave intentional room for interpretation. Data processing libraries would not have to preassume how users’ data should be formatted; visualization libraries would not have to decide layout from common heuristics but could infer from actual user data; the search box could support semantic search by concept, not just keyword; the table could have grouping and sorting based on the user’s data structure rather than alphabetical order…</p>
+
+<p>I’m also imagining something like semiformal execution.</p>
+
+<p>Not compilation from informal to formal to machine code, but direct, continuous interpretation of the semiformal artifact itself. The debug console might have a mixture of code errors and LLM reasoning, where the reasoning steps are editable and can steer back the model.</p>
+
+<h2 id="epilogue-the-language-we-never-stopped-speaking">Epilogue: The Language We Never Stopped Speaking</h2>
+
+<p>The human computers of 1945 knew something we’ve forgotten: that the point was never the notation. It was the thinking. The notation was just a way to make thinking executable. We taught humans to speak like machines because we had no choice. The machines were rigid, literal, unforgiving. They couldn’t meet us halfway.</p>
+
+<p>That constraint is lifting. Not completely, not overnight, but meaningfully. The question now isn’t whether machines can interpret human intent with some flexibility. They already can. The question is whether we’re willing to build on that, to do the hard work of combining informal expression with formal guarantees, even when the path isn’t clear.</p>
+
+<p>The real obstacle is cultural, not technical.</p>
+
+<p>Grace Hopper had a clock on her wall that ran counterclockwise. “Humans are allergic to change,” she said. “They love to say, ‘We’ve always done it this way.’ I try to fight that.” The allergy she diagnosed hasn’t gone away. If anything, seventy years of programming tradition has made it chronic.</p>
+
+<p>Maybe</p>
+
+<p>Maybe it’s time to see what happens when we get to speak our own languages.</p>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<p>Dijkstra, E. W. (1979). On the foolishness of “natural language programming.” <em>EWD667</em>.</p>
+
+<p>Eckert, P., &amp; McConnell-Ginet, S. (1992). Think practically and look locally: Language and gender as community-based practice. <em>Annual Review of Anthropology, 21</em>, 461-490.</p>
+
+<p>Giles, H., Edwards, A. L., &amp; Walther, J. B. (2023). Communication accommodation theory: Past accomplishments, current trends, and future prospects. <em>Language &amp; Communication, 93</em>, 3-12.</p>
+
+<p>Light, J. (1999). When computers were women. <em>Technology and Culture, 40</em>(3), 455-483.</p>
+
+<p>Martin, R. C. (2009). <em>Clean Code: A Handbook of Agile Software Craftsmanship</em>. Pearson Education.</p>
+
+<p>Sammet, J. E. (1966). The use of English as a programming language. <em>Communications of the ACM, 9</em>(3), 228-230.</p>
+
+<p>Trant, J. (2009). Studying social tagging and folksonomy: A review and framework. <em>Journal of Digital Information, 10</em>(1).</p>
+
+<p>Wenger, É. (1998). <em>Communities of Practice: Learning, Meaning, and Identity</em>. Cambridge University Press.</p>
+
+  </div>
+
+  
+  
+  
+  <script src="https://giscus.app/client.js"
+    data-repo="ryanyen2/ryanyen2.github.io"
+    data-repo-id="R_kgDOI9Xwbw"
+    data-category="General"
+    data-category-id="DIC_kwDOI9Xwb84CohW2"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <div class="comments">
+    <h2>Comments</h2>
+    <!-- giscus comment system -->
+<script src="https://giscus.app/client.js"
+        data-repo="ryanyen2/ryanyen2.github.io"
+        data-repo-id="R_kgDOI9Xwbw"
+        data-category="General"
+        data-category-id="DIC_kwDOI9Xwb84CohW2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script> 
+  </div>
+  
+</article>
+
+<script>
+  // Add language attribute to code blocks for styling
+  document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.highlight');
+    
+    codeBlocks.forEach(function(block) {
+      // Find the language class (usually the second class after 'highlight')
+      const classes = block.className.split(' ');
+      if (classes.length > 1) {
+        const lang = classes[1].replace('language-', '');
+        block.setAttribute('data-lang', lang);
+      }
+    });
+    
+    // Fix figure references
+    const figures = document.querySelectorAll('figure[id]');
+    const links = document.querySelectorAll('a[href^="#figure"]');
+    
+    // Create a map of figure IDs
+    const figureMap = {};
+    figures.forEach(figure => {
+      figureMap[figure.id] = true;
+    });
+    
+    // Check if links point to valid figures
+    links.forEach(link => {
+      const targetId = link.getAttribute('href').substring(1);
+      if (!figureMap[targetId]) {
+        console.warn(`Reference to non-existent figure: ${targetId}`);
+      }
+    });
+  });
+</script> 
+      </main>
+    </div>
+  </div>
+  
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/video-enhancer.js"></script>
+</body>
+</html> 
