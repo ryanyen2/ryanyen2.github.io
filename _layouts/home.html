@@ -11,7 +11,9 @@ layout: default
 {% endif %}
 
 <div class="home">
-  {{ content }}
+  <div class="post-content home-content">
+    {{ content }}
+  </div>
 
   {% if site.data.backlinks[page.title] %}
   <div class="backlinks">
